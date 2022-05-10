@@ -1,4 +1,4 @@
-## Sample
+## OSCAR Corpus
 
 One more, finally. Or not? :)
 
