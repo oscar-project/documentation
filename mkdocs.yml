@@ -1,9 +1,9 @@
-site_name: Test docs
-site_description: 'A docs test'
-site_author: 'Michael Hausenblas'
+site_name: OSCAR Documentation
+site_description: 'Documentation of the OSCAR Project, corpus, tools and community.'
+site_author: 'OSCAR Team'
 docs_dir: docs/
-repo_name: 'mhausenblas/mkdocs-template'
-repo_url: 'https://github.com/mhausenblas/mkdocs-template'
+repo_name: 'oscar-corpus'
+repo_url: 'https://github.com/oscar-corpus/documentation'
 nav:
     - Home: index.md
 theme:
