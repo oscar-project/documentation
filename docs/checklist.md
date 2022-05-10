@@ -1,3 +1,7 @@
+---
+title: Checklist
+---
+
 # Checklist Documentation
 
 1. OSCAR Versions
