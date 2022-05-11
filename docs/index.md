@@ -1,40 +1,10 @@
-## OSCAR Corpus
+## OSCAR Corpus Documentation
 
-One more, finally. Or not? :)
+Welcome to the OSCAR Corpus Documentation!
+This website aims to gather information about the corpus in a technical point of view:
 
-Now:
+- Corpus versions and their respective file formats.
+- Tools and pipelines, how to install and use them.
+- More general documentation and how to contribute.
 
-```
-$ some 
-```
-
-Look what she said:
-
-> This is it!
-
-### Subtitle
-
-And now this:
-
-- One
-- Two
-- Three
-
-
-#### As well
-
-#### As this
-
-### Another
-
-[a link](https://aws.com)
-
-More?
-
-
-Can we now have `the build`?
-
-NOW!
-
-
-Not gonna work, is it?
+Head on to the [tutorial](tutorial) page to get a glimpse of what's possible to do!
