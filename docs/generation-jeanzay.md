@@ -5,7 +5,7 @@
 This is currently prefered to just getting it from `cargo install ungoliant`.
 
 - `git clone https://github.com/oscar-project/ungoliant`
-- Get inside a `compil` node: `srun --partition=compil -A rcy@cpu --pty bash`
+- Get inside a `compil` node: `srun --partition=compil -A <GROUP ID>@cpu --pty bash`
 - Run `module load llvm boost cargo` (`boost` and `llvm` for compiling KenLM/fasttext)
 - Run `cd ungoliant`
 - Run `cargo b --release --features kenlm`
