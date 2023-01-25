@@ -66,3 +66,31 @@ export DST=<DESTINATION>
 
 ./target/release/ungoliant download -o <NB_DOWNLOADED> $PATHS_FILE $DST
 ```
+
+### Generate OSCAR
+
+When you have your shards ready, create a new SLURM file with:
+
+```bash
+#! /bin/bash
+
+#SBATCH --partition=cpu_p1
+#SBATCH --job-name=gen_oscar # create a short name for your job
+#SBATCH --mail-type=BEGIN,END,FAIL          # Mail events (NONE, BEGIN, END, FAIL, ALL)
+#SBATCH --mail-user=<YOUR MAIL>    # Where to send mail
+#SBATCH --nodes="1" #Combien de nœuds
+#SBATCH --ntasks-per-node="1" # Une tâche par GPU
+#SBATCH --cpus-per-task="40" # nombre de coeurs à réserver par tâche
+#SBATCH --time="100:00:00" # temps d'exécution maximum demande (HH:MM:SS)
+#SBATCH -A <GROUP ID>@cpu
+
+export CARGO_HOME=<CARGO HOME PATH>
+export CC_FOLDER=<SHARDS PATH>
+export KENLM_FOLDER=<PATH TO KENLMS MODELS IF APPLICABLE>
+export CORPUS=<DESTINATION FOLDER>
+export BLOCKLIST=<BLOCKLIST FOLDER (must contain subfolders with category names..)>
+export LID_PATH=<PATH TO FASTTEXT LangID>
+export UNGOLIANT_PATH=<PATH TO UNGOLIANT BINARY>
+
+$UNGOLIANT_PATH pipeline $CC_FOLDER $CORPUS --blocklist-path $BLOCKLIST --kenlms-path $KENLM_FOLDER --lid-path $LID_PATH
+```
