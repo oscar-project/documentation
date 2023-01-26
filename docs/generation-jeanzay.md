@@ -41,10 +41,11 @@ export DST=<DESTINATION>
 ./target/release/ungoliant download $PATHS_FILE $DST
 ```
 
-When the time has run out, you have to ensure that the last downloaded shards weren't corrupted (because of a potential kill while downloading). TODO
+When the time has run out, you have to ensure that the last downloaded shards weren't corrupted (because of a potential kill while downloading).
 
 Then, after potentially removing faulty shards, run the following slurm job.
 The only difference with the previous one is the use of the `-o n` parameter on `ungoliant download`, which will ignore the first `n` lines of the `wet.paths`.
+You can/should also use another `DESTINATION` folder, and then do the merge by hand.
 
 ```bash
 #! /bin/bash
@@ -66,6 +67,20 @@ export DST=<DESTINATION>
 
 ./target/release/ungoliant download -o <NB_DOWNLOADED> $PATHS_FILE $DST
 ```
+
+You can then check that no shards are missing:
+
+```py
+import os
+path = "./shards"
+num_shards = 88000 # change this
+for i in range(num_shards):
+    if not os.path.isfile(f"{path}/{i}.txt.gz"):
+        print(f"{i} missing")
+```
+
+If shards are missing, you can take the n-th (0-based) line(s) from the `wet.paths` and download them again. 
+A semi-automatic way of doing that should be implemented some time.
 
 ### Generate OSCAR
 
