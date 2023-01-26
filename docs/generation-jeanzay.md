@@ -87,7 +87,7 @@ with open(paths_file) as f:
     shard_paths = f.readlines()
     for missing_shard_number in missing_shards:
         print(
-            f"wget -nc {cc_rooturl}{shard_paths[missing_shard_number].strip()} -0 {missing_shard_number}.txt.gz"
+            f"wget -nc {cc_rooturl}{shard_paths[missing_shard_number].strip()} -O {missing_shard_number}.txt.gz"
         )
 ```
 
