@@ -72,15 +72,26 @@ You can then check that no shards are missing:
 
 ```py
 import os
-path = "./shards"
-num_shards = 88000 # change this
-for i in range(num_shards):
-    if not os.path.isfile(f"{path}/{i}.txt.gz"):
-        print(f"{i} missing")
+
+shards_dir = "./shards"
+paths_file = "wet.paths"
+cc_rooturl = "https://data.commoncrawl.org/"
+
+missing_shards = list()
+for i in range(88000):
+    if not os.path.isfile(f"{shards_dir}/{i}.txt.gz"):
+        missing_shards.append(i)
+print(f"missing {len(missing_shards)} shards")
+
+with open(paths_file) as f:
+    shard_paths = f.readlines()
+    for missing_shard_number in missing_shards:
+        print(
+            f"wget -nc {cc_rooturl}{shard_paths[missing_shard_number].strip()} -0 {missing_shard_number}.txt.gz"
+        )
 ```
 
-If shards are missing, you can take the n-th (0-based) line(s) from the `wet.paths` and download them again. 
-A semi-automatic way of doing that should be implemented some time.
+This will give you the `wget` commands to get the missing shards, with a `-nc` param to avoid overwriting already existing files.
 
 ### Generate OSCAR
 
