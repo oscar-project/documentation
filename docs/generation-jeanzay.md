@@ -97,6 +97,12 @@ This will give you the `wget` commands to get the missing shards, with a `-nc` p
 
 When you have your shards ready, create a new SLURM file with:
 
+We use a QoS of t4 because since we can only use one node and corpus generation time is likely >20h, we need the 100 mark.
+
+Other strategies could be tested (for example, splitting CC data into 4 buckets and launch 4 `ungoliant` jobs.
+Then, merging back the datasets should be done. 
+*Note that in that case, rebuild files will be less efficient (since we'll have 4 of them)*
+
 ```bash
 #! /bin/bash
 
@@ -108,6 +114,7 @@ When you have your shards ready, create a new SLURM file with:
 #SBATCH --ntasks-per-node="1" # Une tâche par GPU
 #SBATCH --cpus-per-task="40" # nombre de coeurs à réserver par tâche
 #SBATCH --time="100:00:00" # temps d'exécution maximum demande (HH:MM:SS)
+#SBATCH --qos=qos_cpu-t4
 #SBATCH -A <GROUP ID>@cpu
 
 export CARGO_HOME=<CARGO HOME PATH>
