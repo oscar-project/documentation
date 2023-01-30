@@ -135,6 +135,8 @@ As of Jan. 2023, using `ungoliant 1.3.0 ([c14acc8](https://github.com/oscar-proj
 Files in `$SCRATCH` are deleted after 30 days if no R/W is operated on them. You should move out files to `$STORE` if you plan on keeping them. 
 Unfortunately, due to the file size, you'll need to launch another job to do the copying of the files.
 
+!!! warning
+    `rsync -n` enables a dry-run, enabling you to see which files would be moved, and where. Remove the `-n` parameter when you want to perform the actual copy.
 ```bash
 #! /bin/bash
 
