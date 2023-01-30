@@ -127,3 +127,42 @@ export UNGOLIANT_PATH=<PATH TO UNGOLIANT BINARY>
 
 $UNGOLIANT_PATH pipeline $CC_FOLDER $CORPUS --blocklist-path $BLOCKLIST --kenlms-path $KENLM_FOLDER --lid-path $LID_PATH
 ```
+
+As of Jan. 2023, using `ungoliant 1.3.0 ([c14acc8](https://github.com/oscar-project/ungoliant/tree/c14acc8c6a87913d138a022cf4819024d66b3e06))`, with a 88,000-shard dump of CommonCrawl ([November/December 2022](https://commoncrawl.org/2022/12/nov-dec-2022-crawl-archive-now-available/), ~9.5TB compressed), this process took around 20 hours and yielded a corpus weighing arount 12TB (uncompressed).
+
+### Move OSCAR
+
+Files in `$SCRATCH` are deleted after 30 days if no R/W is operated on them. You should move out files to `$STORE` if you plan on keeping them. 
+Unfortunately, due to the file size, you'll need to launch another job to do the copying of the files.
+
+```bash
+#! /bin/bash
+
+#SBATCH --partition=prepost
+#SBATCH --job-name=copy_oscar # create a short name for your job
+#SBATCH --mail-type=BEGIN,END,FAIL          # Mail events (NONE, BEGIN, END, FAIL, ALL)
+#SBATCH --mail-user=julien.abadji@inria.fr    # Where to send mail
+#SBATCH --nodes="1" #Combien de nœuds
+#SBATCH --ntasks-per-node="1" # Une tâche par GPU
+#SBATCH --cpus-per-task="4" # nombre de coeurs à réserver par tâche
+#SBATCH --time="20:00:00" # temps d'exécution maximum demande (HH:MM:SS)
+#SBATCH -A <GROUP ID>@cpu
+
+export SRC=<CORPUS SOURCE>
+export DST=<CORPUS DESTINATION>
+
+rsync -anvP $SRC $DST
+```
+
+### Preparing for release
+
+## Splitting
+
+TODO
+## Compressing
+
+TODO
+## Packaging
+
+checksum + move into folders
+TODO
