@@ -160,8 +160,41 @@ On the same example as before, copying took around 9 hours.
 ### Preparing for release
 
 ## Splitting
+We use `oscar-tools` to split the corpus.
 
-TODO
+!!! note
+    At the time of writing, `oscar-tools` is not available via [crates.io](crates.io)/`cargo install`, so you have to compile it from source. Luckily, it's easy.
+    
+??? Compiling `oscar-tools`
+    1. Get the source: `git clone https://github.com/oscar-project/oscar-tools`
+    2. Go inside a `compil` node: ` srun --partition=compil -A <GROUP ID>@cpu --pty bash`
+    3. `cd oscar-tools`
+    4. `CARGO_HOME=<Somewhere not in your ~, like $SCRATCH/.cargo> cargo b --release`
+    5. Wait ~some hours~ 
+    6. That's it! Your binary sits at `target/release/oscar-tools`.
+
+```bash
+#! /bin/bash
+
+#SBATCH --partition=prepost
+#SBATCH --job-name=split_oscar # create a short name for your job
+#SBATCH --mail-type=BEGIN,END,FAIL          # Mail events (NONE, BEGIN, END, FAIL, ALL)
+#SBATCH --mail-user=<Your email address>    # Where to send mail
+#SBATCH --nodes="1" #Combien de nœuds
+#SBATCH --ntasks-per-node="1" # Une tâche par GPU
+#SBATCH --cpus-per-task="10" # nombre de coeurs à réserver par tâche
+#SBATCH --time="20:00:00" # temps d'exécution maximum demande (HH:MM:SS)
+#SBATCH -A <group id>@cpu
+
+export OSCAR_TOOLS_BIN=<path to oscar-tools binary>
+export CORPUS=<path to corpus>
+export DST=<where the split corpus will be put>
+
+$OSCAR_TOOLS_BIN v2 split $CORPUS $DST -s 2000
+```
+
+This step took around 3 hours (assuming both `CORPUS` and `DST` are on `$SCRATCH`).
+
 ## Compressing
 
 TODO
