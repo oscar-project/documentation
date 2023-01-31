@@ -169,7 +169,7 @@ We use `oscar-tools` to split the corpus.
     1. Get the source: `git clone https://github.com/oscar-project/oscar-tools`
     2. Go inside a `compil` node: ` srun --partition=compil -A <GROUP ID>@cpu --pty bash`
     3. `cd oscar-tools`
-    4. `CARGO_HOME=<Somewhere not in your ~, like $SCRATCH/.cargo> cargo b --release`
+    4. `CARGO_HOME=<Somewhere not in your ~, like $SCRATCH/.cargo> cargo b --features zstd --release`.
     5. Wait ~some hours~ 
     6. That's it! Your binary sits at `target/release/oscar-tools`.
 
