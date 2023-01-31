@@ -5,7 +5,7 @@
 This is currently prefered to just getting it from `cargo install ungoliant`.
 
 - `git clone https://github.com/oscar-project/ungoliant`
-- Get inside a `compil` node: `srun --partition=compil -A <GROUP ID>@cpu --pty bash`
+- Open an interactive session on a `compil` node: `srun --partition=compil -A <GROUP ID>@cpu --pty bash`
 - Run `module load llvm boost cargo` (`boost` and `llvm` for compiling KenLM/fasttext)
 - Run `cd ungoliant`
 - Run `cargo b --release --features kenlm`
@@ -100,7 +100,7 @@ When you have your shards ready, create a new SLURM file with:
 We use a QoS of t4 because since we can only use one node and corpus generation time is likely >20h, we need the 100 mark.
 
 Other strategies could be tested (for example, splitting CC data into 4 buckets and launch 4 `ungoliant` jobs.
-Then, merging back the datasets should be done. 
+Then, merging back the datasets should be done.
 *Note that in that case, rebuild files will be less efficient (since we'll have 4 of them)*
 
 ```bash
