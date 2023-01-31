@@ -156,6 +156,8 @@ export DST=<CORPUS DESTINATION>
 rsync -anvP $SRC $DST
 ```
 
+On the same example as before, copying took around 9 hours.
+
 ### Preparing for release
 
 ## Splitting
