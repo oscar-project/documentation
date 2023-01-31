@@ -12,7 +12,7 @@ This is currently preferred to just getting it from `cargo install ungoliant`.
 
 ## Download the data from CommonCrawl
 
-We advise the use of the `prepost` partition for downloading the data form _Common Crawl_. However, please bear in mind that jobs are limited to 20hours in the `prepost` partition, meaning that you'll likely run out of time before completing the download of a whole dump.
+We advise the use of the `prepost` partition for downloading the data form _Common Crawl_. However, please bear in mind that jobs are limited to 20hours in the `prepost` partition, meaning that you'll likely run out of time before completing the download of a whole _Common Crawl_ dump.
 
 - Download the `wet.paths.gz` file for the latest release (likely [here](https://commoncrawl.org/connect/blog/)
 - `gzip -d wet.paths.gz`
