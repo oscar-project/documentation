@@ -2,18 +2,17 @@
 
 ## Compile the latest version of Unogliant
 
-This is currently prefered to just getting it from `cargo install ungoliant`.
+This is currently preferred to just getting it from `cargo install ungoliant`.
 
 - `git clone https://github.com/oscar-project/ungoliant`
 - Open an interactive session on a `compil` node: `srun --partition=compil -A <GROUP ID>@cpu --pty bash`
-- Run `module load llvm boost cargo` (`boost` and `llvm` for compiling KenLM/fasttext)
+- Run `module load llvm boost cargo` (`boost` and `llvm` are necessary for compiling _KenLM_ and _FastText_)
 - Run `cd ungoliant`
 - Run `cargo b --release --features kenlm`
 
-## Get data from CommonCrawl
+## Download the data from CommonCrawl
 
-Use the `prepost` node for that, and bear in mind that jobs are killed at the 20h mark. 
-This means you'll likely run out of time before finishing the download.
+We advise the use of the `prepost` partition for downloading the data form _Common Crawl_. However, please bear in mind that jobs are limited to 20hours in the `prepost` partition, meaning that you'll likely run out of time before completing the download of a whole dump.
 
 - Download the `wet.paths.gz` file for the latest release (likely [here](https://commoncrawl.org/connect/blog/)
 - `gzip -d wet.paths.gz`
