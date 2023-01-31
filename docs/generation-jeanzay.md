@@ -165,7 +165,7 @@ We use `oscar-tools` to split the corpus.
 !!! note
     At the time of writing, `oscar-tools` is not available via [crates.io](crates.io)/`cargo install`, so you have to compile it from source. Luckily, it's easy.
     
-??? Compiling `oscar-tools`
+??? note "Compiling `oscar-tools`"
     1. Get the source: `git clone https://github.com/oscar-project/oscar-tools`
     2. Go inside a `compil` node: ` srun --partition=compil -A <GROUP ID>@cpu --pty bash`
     3. `cd oscar-tools`
