@@ -197,7 +197,28 @@ This step took around 3 hours (assuming both `CORPUS` and `DST` are on `$SCRATCH
 
 ## Compressing
 
-TODO
+```bash
+#! /bin/bash
+
+#SBATCH --partition=prepost
+#SBATCH --job-name=compress_oscar # create a short name for your job
+#SBATCH --mail-type=BEGIN,END,FAIL          # Mail events (NONE, BEGIN, END, FAIL, ALL)
+#SBATCH --mail-user=<email address>    # Where to send mail
+#SBATCH --nodes="1" #Combien de nœuds
+#SBATCH --ntasks-per-node="1" # Une tâche par GPU
+#SBATCH --cpus-per-task="48" # nombre de coeurs à réserver par tâche
+#SBATCH --time="20:00:00" # temps d'exécution maximum demande (HH:MM:SS)
+#SBATCH -A <group id>@cpu
+
+export OSCAR_TOOLS_BIN=<link to oscar-tools binary>
+export CORPUS=<path to split focus>
+export DST=<where the compressed ocrpus will be saved>
+
+$OSCAR_TOOLS_BIN v2 compress $CORPUS $DST
+```
+
+This step took around 2 hours, going from 12TB to 3.3TB
+
 ## Packaging
 
 checksum + move into folders
