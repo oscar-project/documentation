@@ -219,7 +219,28 @@ $OSCAR_TOOLS_BIN v2 compress $CORPUS $DST
 
 This step took around 2 hours, going from 12TB to 3.3TB
 
-## Packaging
+## Checksuming
 
-checksum + move into folders
-TODO
+The last step is to create `checksum` files for each language, so that people can check that their downloads have been successful.
+Also, it acts as a split list for [download-oscar](https://pypi.org/project/download-oscar/).
+
+```bash
+#! /bin/bash
+
+#SBATCH --partition=prepost
+#SBATCH --job-name=compress_oscar # create a short name for your job
+#SBATCH --mail-type=BEGIN,END,FAIL          # Mail events (NONE, BEGIN, END, FAIL, ALL)
+#SBATCH --mail-user=<email address>    # Where to send mail
+#SBATCH --nodes="1" #Combien de nœuds
+#SBATCH --ntasks-per-node="1" # Une tâche par GPU
+#SBATCH --cpus-per-task="48" # nombre de coeurs à réserver par tâche
+#SBATCH --time="20:00:00" # temps d'exécution maximum demande (HH:MM:SS)
+#SBATCH -A <group id>@cpu
+
+export OSCAR_TOOLS_BIN=<link to oscar-tools binary>
+export CORPUS=<path to split focus>
+
+$OSCAR_TOOLS_BIN v2 checksum $CORPUS
+```
+
+The process took around 2 hours.
