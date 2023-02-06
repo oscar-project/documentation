@@ -1,6 +1,7 @@
 # OSCAR 2301
 
-OSCAR 2301 is the January 2023 
+OSCAR 2301 is the January 2023.
+
 ## Summary
 ## Access
 
@@ -10,24 +11,27 @@ TODO Access page
 
 ### Categories
 
-OSCAR 22.01 leveraged the [UT1 Blocklists]() project to attempt to classify some adult content present in OSCAR.
+OSCAR 22.01 leveraged the [UT1 Blocklists](https://dsi.ut-capitole.fr/blacklists/index_en.php) project to attempt to classify some adult content present in OSCAR.
 The OSCAR 23.01 pipeline iterated on this to include all of the blocklists provided by UT1.
 
-The UT1 Blocklists page lists all the categories along with a short description. 
-We **strongly** encourage you to read the descriptions if you plan on using them.
+!!! warning
+    The UT1 Blocklists page lists all the categories along with a short description. 
+    We **strongly** encourage you to read the descriptions if you plan on using them.
+
+!!! note
+    A single document can have multiple categories.
 
 These categories are in a field that is at this path: `metadata.categories`.
 
-A single document can have multiple categories.
 
 ### KenLM-based adult content filtering
 
 _Work by TODO_
 
-For a select number of subcorpora, a measure of perplexity has been added. This perplexity comes from a KenLM model trained on harmful content, previously gathered by using the `adult` annotation in OSCAR 22.01.
+For a select number of subcorpora, a measure of perplexity has been added. This perplexity comes from a [KenLM](https://kheafield.com/code/kenlm/) model trained on harmful content, previously gathered by using the `adult` annotation in OSCAR 22.01.
 In other terms, the lower it is, the more likely a given document contains harmful/adult content. 
 
-!!! warning
+!!! danger
     This feature can be considered as unstable/unsafe, since we also want to evaluate its impact on particular issues.
 
     As such, we do not provide a boolean value indicating if a given document can be harmful/adult content, but rather the raw perplexity.
@@ -37,12 +41,17 @@ In other terms, the lower it is, the more likely a given document contains harmf
 
 We use [TLSH](https://tlsh.org/papers.html) to compute a hash for each document. These hashes are particular in that two similar documents should have similar hashes. 
 
-This can enable both exact- and near- deduplication. 
+This can be used to do both exact- and near- deduplication.
+
+Hashes are at `metadata.tlsh`.
 
 
 ### Minor changes
 
-- `metadata.annotations` has been renamed `metadata.quality_warnings`, and only contains length based quality warnings (see TODO).
+- `metadata.annotations` has been renamed `metadata.quality_warnings`, and only contains length based quality warnings (see the [OSCAR 2201](versions/oscar-2201/#annotations) documentation for details).
+- Some language tags have changed to better respect the [BCP47](https://en.wikipedia.org/wiki/IETF_language_tag):
+    - `als` has become `gsw`. Previously, `als` was erroneously used as the tag for Alemannic/Swiss German, whereas it is the tag for Tosk Albanian.
+    - `eml` has become `x-eml`. The `eml` tag is deprecated and as such has been replaced by a private tag (`x-eml`).
 
 ## Layout
 

@@ -1,6 +1,6 @@
-# OSCAR 22.01
+# OSCAR 2201
 
-OSCAR 22.01 is the OSCAR version from January, 2022. 
+OSCAR 2201 is the OSCAR version from January, 2022. 
 It features a **different** file layout that makes it **not** backward compatible with code designed to run with previous OSCAR versions.
 
 [Request access](#){ .md-button }
@@ -73,6 +73,18 @@ Subcorpora are distributed in [JSONLines](https://jsonlines.org), split into 1GB
 3. Document-wide identification. `prob` is the weighted average of the confidence of identified lines.
 4. Annotations of the document. `null` if no annotation.
 5. Line-by-line identifications. `null` for each line that has no identification.
+
+
+## Annotations
+
+* `tiny`: The document has a low (<5) number of lines.
+* `short_sentences`: The document has a high number (>50%) of short lines (<400 bytes)
+* `header`: The document has a high number of short lines at its head, suggesting the presence of low quality content.
+* `footer`: The document has a high number of short lines at its tail, suggesting the presence of low quality content.
+* `noisy`: The document has a high percentage of punctuation (>50%)
+* `adult`: The document contains adult content. This annotation uses a blocklist and labels a tiny part of the corpus: It does not catch most of the adult content.
+
+More information about the thresholds and annotators are present in our [paper](https://oscar-project.org/publication/2022/arxiv/towards/).
 
 ## Filtering
 
