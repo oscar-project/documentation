@@ -80,3 +80,12 @@ Here is an example from OSCAR 2301:
 7. _(Corresponds to `annotations` pre-2301)_ Potential quality warnings. Based on content/sentence length. See [here]() for more info.
 8. Blocklist-bsaed categories. Uses the [UT1 Blocklist](https://dsi.ut-capitole.fr/blacklists/index_en.php), plus custom additions (TODO). Please refer to the UT1 website for categories description.
 9. Sentence-level identifications. A `null` value means no identification with a good enough threshold (>0.8 on 2301).
+
+
+## Getting access
+
+There are different ways of getting access to OSCAR depending on your status! Head on to our [dedicated page](./accessing.md).
+
+## Using the corpus
+
+TODO say to head on to examples
