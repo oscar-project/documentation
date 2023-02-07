@@ -272,15 +272,3 @@ Hashes are at `metadata.tlsh`.
 | 150 | Yiddish                  | 208M         | soon     | soon      |
 | 151 | Yoruba                   | 80K          | soon     | soon      |
 | 152 | Chinese                  | 1.4T         | soon     | soon      |
-
-``` plotly
-{
-    "data": [
-        {
-            "x": ["giraffes", "orangutans", "monkeys"],
-            "y": [20, 14, 23],
-            "type": "bar"
-        }
-    ]
-}
-```
