@@ -1,6 +1,6 @@
 # OSCAR 2301
 
-OSCAR 2301 is the January 2023 version of the OSCAR Corpus. While being mostly similar to OSCAR 2201, it contains several new features, including KenLM-based adult content detection, inclusion of Locality-Sensitive Hashes, and blocklist-based categories.
+OSCAR 2301 is the January 2023 version of the OSCAR Corpus. While being mostly similar to OSCAR 2201, it contains several new features, including [KenLM](https://kheafield.com/code/kenlm/)-based adult content detection, inclusion of [Locality-Sensitive Hashes](https://fr.wikipedia.org/wiki/Locality_sensitive_hashing), and [blocklist](https://dsi.ut-capitole.fr/blacklists/index_en.php)-based categories.
 
 ## Access
 
@@ -10,7 +10,7 @@ OSCAR 2301 is the January 2023 version of the OSCAR Corpus. While being mostly s
 
 Access to the OSCAR Corpus changes depending on your status. More info on our dedicated page.
 
-[Getting access](./accessing.md){ .md-button }
+[Getting access](../../accessing){ .md-button }
 
 ## New Features
 

@@ -2,14 +2,17 @@ site_name: OSCAR Documentation
 site_description: "Documentation of the OSCAR Project, corpus, tools and community."
 site_author: "OSCAR Team"
 docs_dir: docs/
-repo_name: "oscar-corpus"
-repo_url: "https://github.com/oscar-corpus/documentation"
+repo_name: "documentation"
+repo_url: "https://github.com/oscar-project/documentation"
 # nav:
 #     - Home: index.md
 theme:
   name: "material"
+  logo: "static/media/oscar.png"
   features:
     - content.code.annotate
+    - navigation.footer
+
 markdown_extensions:
   - meta
   - admonition
@@ -42,3 +45,13 @@ extra_javascript:
 
 plugins:
   - plotly
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/oscarnlp
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/invite/4JNg9FTar4
+    - icon: fontawesome/brands/mastodon
+      link: https://mastodon.social/@oscarproj

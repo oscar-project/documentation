@@ -163,7 +163,7 @@ On the same example as before, copying took around 9 hours.
 We use `oscar-tools` to split the corpus.
 
 !!! note
-    At the time of writing, `oscar-tools` is not available via [crates.io](crates.io)/`cargo install`, so you have to compile it from source. Luckily, it's easy.
+    At the time of writing, `oscar-tools` is not available via [crates.io](https://crates.io)/`cargo install`, so you have to compile it from source. Luckily, it's easy.
     
 ??? note "Compiling `oscar-tools`"
     1. Get the source: `git clone https://github.com/oscar-project/oscar-tools`
