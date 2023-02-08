@@ -24,9 +24,22 @@ The OSCAR 23.01 pipeline iterated on this to include all of the blocklists provi
     We **strongly** encourage you to read the descriptions if you plan on using them.
 
 !!! note
-    A single document can have multiple categories.
+    A single document can belong to multiple categories.
 
 These categories are in a field that is at this path: `metadata.categories`.
+
+!!! example
+    ```js
+    {
+        "content":"foo",
+        "metadata": {
+            // ...
+            "categories": ["blog", "news"],
+            // ...
+        }
+        // ...
+    }
+    ```
 
 
 ### KenLM-based adult content filtering
@@ -42,9 +55,11 @@ In other terms, the lower it is, the more likely a given document contains harmf
     As such, we do not provide a boolean value indicating if a given document can be harmful/adult content, but rather the raw perplexity.
     We have found a threshold that works well in **English**, but encourage you to experiment with it and to report back your findings.
 
-### Locality-Sentitive Hashing
+### Locality sentitive hashing
 
-We use [TLSH](https://tlsh.org/papers.html) to compute a hash for each document. These hashes are particular in that two similar documents should have similar hashes. 
+We use [TLSH](https://tlsh.org/papers.html) to compute a hash for each document.
+
+[Locality sensitive hashing](https://fr.wikipedia.org/wiki/Locality_sensitive_hashing) is a hashing method that computes similar hashes for similar documents. 
 
 This can be used to do both exact- and near- deduplication.
 
