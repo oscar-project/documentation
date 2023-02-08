@@ -24,7 +24,7 @@ The OSCAR 23.01 pipeline iterated on this to include all of the blocklists provi
     We **strongly** encourage you to read the descriptions if you plan on using them.
 
 !!! note
-    A single document can belong to multiple categories.
+    A document can belong to multiple categories.
 
 These categories are in a field that is at this path: `metadata.categories`.
 
