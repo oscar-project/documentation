@@ -93,7 +93,7 @@ More information about the thresholds and annotators are present in our [paper](
 Filtering can be done using classic Python tools, such as [`ujson`](https://github.com/ultrajson/ultrajson). 
 While we don't supply a Python library enabling easy filtering/transformation for OSCAR 22.01, we provide some filtering examples that you can change to better suit your needs.
 
-### Getting documents that come from wikipedia only
+### Getting documents that come from Wikipedia only
 
 Using filters on `warc_headers.warc-target-uri` makes filtering on URLs easy.
 
@@ -119,7 +119,7 @@ TODO
 
 ## Languages
 
-OSCAR 22.01 has subcorpora for 142 languagees (counting the Multilingual corpus).
+OSCAR 22.01 has subcorpora for 142 languages (counting the Multilingual corpus).
 The following table exhibits the size, number of documents and number of words for each of them.
 
 Note that the size accounts for the raw uncompressed file size, counting metadata.
