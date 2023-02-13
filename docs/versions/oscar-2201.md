@@ -1,6 +1,6 @@
-# OSCAR 2201
+# OSCAR 22.01
 
-OSCAR 2201 is the OSCAR version from January, 2022. 
+OSCAR 2201 is the OSCAR version from January, 2022, the [November/December 2021 dump of Common Crawl](https://commoncrawl.org/2021/12/nov-dec-2021-crawl-archive-now-available/).
 It features a **different** file layout that makes it **not** backward compatible with code designed to run with previous OSCAR versions.
 
 [Request access](#){ .md-button }
@@ -73,7 +73,6 @@ Subcorpora are distributed in [JSONLines](https://jsonlines.org), split into 1GB
 3. Document-wide identification. `prob` is the weighted average of the confidence of identified lines.
 4. Annotations of the document. `null` if no annotation.
 5. Line-by-line identifications. `null` for each line that has no identification.
-
 
 ## Annotations
 

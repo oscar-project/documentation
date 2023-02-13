@@ -1,6 +1,6 @@
 # OSCAR 23.01
 
-OSCAR 23.01 is the January 2023 version of the OSCAR Corpus. While being quite similar to OSCAR 22.01, it contains several new features, including [KenLM](https://kheafield.com/code/kenlm/)-based adult content detection, precomputed [Locality-Sensitive Hashes](https://fr.wikipedia.org/wiki/Locality_sensitive_hashing) for near deduplication, and [blocklist](https://dsi.ut-capitole.fr/blacklists/index_en.php)-based categories.
+OSCAR 23.01 is the January 2023 version of the OSCAR Corpus based on the [November/December 2022 dump of Common Crawl](https://commoncrawl.org/2022/12/nov-dec-2022-crawl-archive-now-available/). While being quite similar to OSCAR 22.01, it contains several new features, including [KenLM](https://kheafield.com/code/kenlm/)-based adult content detection, precomputed [Locality-Sensitive Hashes](https://fr.wikipedia.org/wiki/Locality_sensitive_hashing) for near deduplication, and [blocklist](https://dsi.ut-capitole.fr/blacklists/index_en.php)-based categories. OSCAR 23.01 has also moved from gzip to [Zstandard compression](https://facebook.github.io/zstd/). You might already have `zstd` installed on your system, but if not, please check the [Zstandard website](https://facebook.github.io/zstd/) for installation instructions.
 
 ## Access
 
