@@ -130,158 +130,158 @@ Some important notes:
 
 ## Language table
 
-|     | Language                 | File size    | # docs   | # words   |
-|----:|:-------------------------|:-------------|:---------|:----------|
-|   0 | Afrikaans                | 48M          | soon     | soon      |
-|   1 | Amharic                  | 598M         | soon     | soon      |
-|   2 | Aragonese                | 32K          | soon     | soon      |
-|   3 | Arabic                   | 129G         | soon     | soon      |
-|   4 | Egyptian Arabic          | 5.5M         | soon     | soon      |
-|   5 | Assamese                 | 475M         | soon     | soon      |
-|   6 | Asturian                 | 256K         | soon     | soon      |
-|   7 | Avaric                   | 48K          | soon     | soon      |
-|   8 | South Azerbaijani        | 41M          | soon     | soon      |
-|   9 | Azerbaijani              | 3.9G         | soon     | soon      |
-|  10 | Bashkir                  | 433M         | soon     | soon      |
-|  11 | Belarusian               | 2.7G         | soon     | soon      |
-|  12 | Bulgarian                | 50G          | soon     | soon      |
-|  13 | Bihari languages         | 32K          | soon     | soon      |
-|  14 | Bangla                   | 22G          | soon     | soon      |
-|  15 | Tibetan                  | 564M         | soon     | soon      |
-|  16 | Bishnupriya              | 6.8M         | soon     | soon      |
-|  17 | Breton                   | 51M          | soon     | soon      |
-|  18 | Bosnian                  | 16K          | soon     | soon      |
-|  19 | Russia Buriat            | 48K          | soon     | soon      |
-|  20 | Catalan                  | 20G          | soon     | soon      |
-|  21 | Cebuano                  | 51M          | soon     | soon      |
-|  22 | Chechen                  | 19M          | soon     | soon      |
-|  23 | Central Kurdish          | 895M         | soon     | soon      |
-|  24 | Czech                    | 101G         | soon     | soon      |
-|  25 | Chuvash                  | 52M          | soon     | soon      |
-|  26 | Welsh                    | 422M         | soon     | soon      |
-|  27 | Danish                   | 19G          | soon     | soon      |
-|  28 | German                   | 749G         | soon     | soon      |
-|  29 | Lower Sorbian            | 512          | soon     | soon      |
-|  30 | Divehi                   | 247M         | soon     | soon      |
-|  31 | Greek                    | 112G         | soon     | soon      |
-|  32 | English                  | 4.2T         | soon     | soon      |
-|  33 | Esperanto                | 629M         | soon     | soon      |
-|  34 | Spanish                  | 543G         | soon     | soon      |
-|  35 | Estonian                 | 11G          | soon     | soon      |
-|  36 | Basque                   | 1.6G         | soon     | soon      |
-|  37 | Persian                  | 110G         | soon     | soon      |
-|  38 | Finnish                  | 53G          | soon     | soon      |
-|  39 | French                   | 547G         | soon     | soon      |
-|  40 | Western Frisian          | 94M          | soon     | soon      |
-|  41 | Irish                    | 81M          | soon     | soon      |
-|  42 | Scottish Gaelic          | 464K         | soon     | soon      |
-|  43 | Galician                 | 366M         | soon     | soon      |
-|  44 | Guarani                  | 16K          | soon     | soon      |
-|  45 | Goan Konkani             | 2.6M         | soon     | soon      |
-|  46 | Swiss German             | 384K         | soon     | soon      |
-|  47 | Gujarati                 | 6.3G         | soon     | soon      |
-|  48 | Hebrew                   | 21G          | soon     | soon      |
-|  49 | Hindi                    | 36G          | soon     | soon      |
-|  50 | Croatian                 | 39M          | soon     | soon      |
-|  51 | Upper Sorbian            | 288K         | soon     | soon      |
-|  52 | Haitian Creole           | 128K         | soon     | soon      |
-|  53 | Hungarian                | 182G         | soon     | soon      |
-|  54 | Armenian                 | 5.6G         | soon     | soon      |
-|  55 | Interlingua              | 64K          | soon     | soon      |
-|  56 | Indonesian               | 27G          | soon     | soon      |
-|  57 | Interlingue              | 512          | soon     | soon      |
-|  58 | Iloko                    | 96K          | soon     | soon      |
-|  59 | Ido                      | 112K         | soon     | soon      |
-|  60 | Icelandic                | 2.9G         | soon     | soon      |
-|  61 | Italian                  | 327G         | soon     | soon      |
-|  62 | Japanese                 | 228G         | soon     | soon      |
-|  63 | Lojban                   | 2.0M         | soon     | soon      |
-|  64 | Javanese                 | 96K          | soon     | soon      |
-|  65 | Georgian                 | 9.2G         | soon     | soon      |
-|  66 | Kazakh                   | 3.8G         | soon     | soon      |
-|  67 | Khmer                    | 3.4G         | soon     | soon      |
-|  68 | Kannada                  | 2.9G         | soon     | soon      |
-|  69 | Korean                   | 46G          | soon     | soon      |
-|  70 | Karachay-Balkar          | 336K         | soon     | soon      |
-|  71 | Kurdish                  | 221M         | soon     | soon      |
-|  72 | Komi                     | 272K         | soon     | soon      |
-|  73 | Cornish                  | 512          | soon     | soon      |
-|  74 | Kyrgyz                   | 581M         | soon     | soon      |
-|  75 | Latin                    | 7.7M         | soon     | soon      |
-|  76 | Luxembourgish            | 27M          | soon     | soon      |
-|  77 | Lezghian                 | 1.2M         | soon     | soon      |
-|  78 | Limburgish               | 512          | soon     | soon      |
-|  79 | Lombard                  | 80K          | soon     | soon      |
-|  80 | Lao                      | 538M         | soon     | soon      |
-|  81 | Lithuanian               | 19G          | soon     | soon      |
-|  82 | Latvian                  | 9.2G         | soon     | soon      |
-|  83 | Maithili                 | 32K          | soon     | soon      |
-|  84 | Malagasy                 | 16M          | soon     | soon      |
-|  85 | Eastern Mari             | 28M          | soon     | soon      |
-|  86 | Minangkabau              | 5.0M         | soon     | soon      |
-|  87 | Macedonian               | 5.5G         | soon     | soon      |
-|  88 | Malayalam                | 6.3G         | soon     | soon      |
-|  89 | Mongolian                | 6.5G         | soon     | soon      |
-|  90 | Western Mari             | 1008K        | soon     | soon      |
-|  91 | Marathi                  | 4.9G         | soon     | soon      |
-|  92 | Malay                    | 7.1M         | soon     | soon      |
-|  93 | Maltese                  | 3.3M         | soon     | soon      |
-|  94 | multi                    | 14G          | soon     | soon      |
-|  95 | Mirandese                | 512          | soon     | soon      |
-|  96 | Burmese                  | 3.3G         | soon     | soon      |
-|  97 | Mazanderani              | 352K         | soon     | soon      |
-|  98 | Nahuatl languages        | 32K          | soon     | soon      |
-|  99 | Low German               | 14M          | soon     | soon      |
-| 100 | Nepali                   | 5.4G         | soon     | soon      |
-| 101 | Newari                   | 4.9M         | soon     | soon      |
-| 102 | Dutch                    | 180G         | soon     | soon      |
-| 103 | Norwegian Nynorsk        | 12M          | soon     | soon      |
-| 104 | Norwegian                | 3.8G         | soon     | soon      |
-| 105 | Occitan                  | 784K         | soon     | soon      |
-| 106 | Odia                     | 642M         | soon     | soon      |
-| 107 | Ossetic                  | 57M          | soon     | soon      |
-| 108 | Punjabi                  | 1.6G         | soon     | soon      |
-| 109 | Polish                   | 193G         | soon     | soon      |
-| 110 | Piedmontese              | 4.3M         | soon     | soon      |
-| 111 | Western Panjabi          | 117M         | soon     | soon      |
-| 112 | Pashto                   | 318M         | soon     | soon      |
-| 113 | Portuguese               | 131G         | soon     | soon      |
-| 114 | Quechua                  | 512          | soon     | soon      |
-| 115 | Romanian                 | 56G          | soon     | soon      |
-| 116 | Russian                  | 1.3T         | soon     | soon      |
-| 117 | Sakha                    | 81M          | soon     | soon      |
-| 118 | Sanskrit                 | 65M          | soon     | soon      |
-| 119 | Sindhi                   | 161M         | soon     | soon      |
-| 120 | Serbian (Latin)          | 2.1M         | soon     | soon      |
-| 121 | Sinhala                  | 2.8G         | soon     | soon      |
-| 122 | Slovak                   | 27G          | soon     | soon      |
-| 123 | Slovenian                | 1.9G         | soon     | soon      |
-| 124 | Somali                   | 512          | soon     | soon      |
-| 125 | Albanian                 | 4.1G         | soon     | soon      |
-| 126 | Serbian                  | 8.7G         | soon     | soon      |
-| 127 | Sundanese                | 16K          | soon     | soon      |
-| 128 | Swedish                  | 65G          | soon     | soon      |
-| 129 | Swahili                  | 1.9M         | soon     | soon      |
-| 130 | Tamil                    | 17G          | soon     | soon      |
-| 131 | Telugu                   | 4.3G         | soon     | soon      |
-| 132 | Tajik                    | 1.2G         | soon     | soon      |
-| 133 | Thai                     | 100G         | soon     | soon      |
-| 134 | Turkmen                  | 5.2M         | soon     | soon      |
-| 135 | Filipino                 | 880M         | soon     | soon      |
-| 136 | Turkish                  | 93G          | soon     | soon      |
-| 137 | Tatar                    | 981M         | soon     | soon      |
-| 138 | Uyghur                   | 257M         | soon     | soon      |
-| 139 | Ukrainian                | 52G          | soon     | soon      |
-| 140 | Urdu                     | 4.3G         | soon     | soon      |
-| 141 | Uzbek                    | 23M          | soon     | soon      |
-| 142 | Vietnamese               | 170G         | soon     | soon      |
-| 143 | Volapük                  | 800K         | soon     | soon      |
-| 144 | Walloon                  | 192K         | soon     | soon      |
-| 145 | Waray                    | 720K         | soon     | soon      |
-| 146 | Wu Chinese               | 80K          | soon     | soon      |
-| 147 | Kalmyk                   | 512          | soon     | soon      |
-| 148 | Unknown language [x-eml] | 512          | soon     | soon      |
-| 149 | Mingrelian               | 9.8M         | soon     | soon      |
-| 150 | Yiddish                  | 208M         | soon     | soon      |
-| 151 | Yoruba                   | 80K          | soon     | soon      |
-| 152 | Chinese                  | 1.4T         | soon     | soon      |
+|     | Language                 | Code        | Size         | # docs   | # words   |
+|----:|:-------------------------|:------------|:-------------|:---------|:----------|
+|   0 | Afrikaans                | af          | 48M          | soon     | soon      |
+|   1 | Amharic                  | am          | 598M         | soon     | soon      |
+|   2 | Aragonese                | an          | 32K          | soon     | soon      |
+|   3 | Arabic                   | ar          | 129G         | soon     | soon      |
+|   4 | Egyptian Arabic          | arz         | 5.5M         | soon     | soon      |
+|   5 | Assamese                 | as          | 475M         | soon     | soon      |
+|   6 | Asturian                 | ast         | 256K         | soon     | soon      |
+|   7 | Avaric                   | av          | 48K          | soon     | soon      |
+|   8 | South Azerbaijani        | azb         | 41M          | soon     | soon      |
+|   9 | Azerbaijani              | az          | 3.9G         | soon     | soon      |
+|  10 | Bashkir                  | ba          | 433M         | soon     | soon      |
+|  11 | Belarusian               | be          | 2.7G         | soon     | soon      |
+|  12 | Bulgarian                | bg          | 50G          | soon     | soon      |
+|  13 | Bihari languages         | bh          | 32K          | soon     | soon      |
+|  14 | Bangla                   | bn          | 22G          | soon     | soon      |
+|  15 | Tibetan                  | bo          | 564M         | soon     | soon      |
+|  16 | Bishnupriya              | bpy         | 6.8M         | soon     | soon      |
+|  17 | Breton                   | br          | 51M          | soon     | soon      |
+|  18 | Bosnian                  | bs          | 16K          | soon     | soon      |
+|  19 | Russia Buriat            | bxr         | 48K          | soon     | soon      |
+|  20 | Catalan                  | ca          | 20G          | soon     | soon      |
+|  21 | Cebuano                  | ceb         | 51M          | soon     | soon      |
+|  22 | Chechen                  | ce          | 19M          | soon     | soon      |
+|  23 | Central Kurdish          | ckb         | 895M         | soon     | soon      |
+|  24 | Czech                    | cs          | 101G         | soon     | soon      |
+|  25 | Chuvash                  | cv          | 52M          | soon     | soon      |
+|  26 | Welsh                    | cy          | 422M         | soon     | soon      |
+|  27 | Danish                   | da          | 19G          | soon     | soon      |
+|  28 | German                   | de          | 749G         | soon     | soon      |
+|  29 | Lower Sorbian            | dsb         | 512          | soon     | soon      |
+|  30 | Divehi                   | dv          | 247M         | soon     | soon      |
+|  31 | Greek                    | el          | 112G         | soon     | soon      |
+|  32 | English                  | en          | 4.2T         | soon     | soon      |
+|  33 | Esperanto                | eo          | 629M         | soon     | soon      |
+|  34 | Spanish                  | es          | 543G         | soon     | soon      |
+|  35 | Estonian                 | et          | 11G          | soon     | soon      |
+|  36 | Basque                   | eu          | 1.6G         | soon     | soon      |
+|  37 | Persian                  | fa          | 110G         | soon     | soon      |
+|  38 | Finnish                  | fi          | 53G          | soon     | soon      |
+|  39 | French                   | fr          | 547G         | soon     | soon      |
+|  40 | Western Frisian          | fy          | 94M          | soon     | soon      |
+|  41 | Irish                    | ga          | 81M          | soon     | soon      |
+|  42 | Scottish Gaelic          | gd          | 464K         | soon     | soon      |
+|  43 | Galician                 | gl          | 366M         | soon     | soon      |
+|  44 | Guarani                  | gn          | 16K          | soon     | soon      |
+|  45 | Goan Konkani             | gom         | 2.6M         | soon     | soon      |
+|  46 | Swiss German             | gsw         | 384K         | soon     | soon      |
+|  47 | Gujarati                 | gu          | 6.3G         | soon     | soon      |
+|  48 | Hebrew                   | he          | 21G          | soon     | soon      |
+|  49 | Hindi                    | hi          | 36G          | soon     | soon      |
+|  50 | Croatian                 | hr          | 39M          | soon     | soon      |
+|  51 | Upper Sorbian            | hsb         | 288K         | soon     | soon      |
+|  52 | Haitian Creole           | ht          | 128K         | soon     | soon      |
+|  53 | Hungarian                | hu          | 182G         | soon     | soon      |
+|  54 | Armenian                 | hy          | 5.6G         | soon     | soon      |
+|  55 | Interlingua              | ia          | 64K          | soon     | soon      |
+|  56 | Indonesian               | id          | 27G          | soon     | soon      |
+|  57 | Interlingue              | ie          | 512          | soon     | soon      |
+|  58 | Iloko                    | ilo         | 96K          | soon     | soon      |
+|  59 | Ido                      | io          | 112K         | soon     | soon      |
+|  60 | Icelandic                | is          | 2.9G         | soon     | soon      |
+|  61 | Italian                  | it          | 327G         | soon     | soon      |
+|  62 | Japanese                 | ja          | 228G         | soon     | soon      |
+|  63 | Lojban                   | jbo         | 2.0M         | soon     | soon      |
+|  64 | Javanese                 | jv          | 96K          | soon     | soon      |
+|  65 | Georgian                 | ka          | 9.2G         | soon     | soon      |
+|  66 | Kazakh                   | kk          | 3.8G         | soon     | soon      |
+|  67 | Khmer                    | km          | 3.4G         | soon     | soon      |
+|  68 | Kannada                  | kn          | 2.9G         | soon     | soon      |
+|  69 | Korean                   | ko          | 46G          | soon     | soon      |
+|  70 | Karachay-Balkar          | krc         | 336K         | soon     | soon      |
+|  71 | Kurdish                  | ku          | 221M         | soon     | soon      |
+|  72 | Komi                     | kv          | 272K         | soon     | soon      |
+|  73 | Cornish                  | kw          | 512          | soon     | soon      |
+|  74 | Kyrgyz                   | ky          | 581M         | soon     | soon      |
+|  75 | Latin                    | la          | 7.7M         | soon     | soon      |
+|  76 | Luxembourgish            | lb          | 27M          | soon     | soon      |
+|  77 | Lezghian                 | lez         | 1.2M         | soon     | soon      |
+|  78 | Limburgish               | li          | 512          | soon     | soon      |
+|  79 | Lombard                  | lmo         | 80K          | soon     | soon      |
+|  80 | Lao                      | lo          | 538M         | soon     | soon      |
+|  81 | Lithuanian               | lt          | 19G          | soon     | soon      |
+|  82 | Latvian                  | lv          | 9.2G         | soon     | soon      |
+|  83 | Maithili                 | mai         | 32K          | soon     | soon      |
+|  84 | Malagasy                 | mg          | 16M          | soon     | soon      |
+|  85 | Eastern Mari             | mhr         | 28M          | soon     | soon      |
+|  86 | Minangkabau              | min         | 5.0M         | soon     | soon      |
+|  87 | Macedonian               | mk          | 5.5G         | soon     | soon      |
+|  88 | Malayalam                | ml          | 6.3G         | soon     | soon      |
+|  89 | Mongolian                | mn          | 6.5G         | soon     | soon      |
+|  90 | Western Mari             | mrj         | 1008K        | soon     | soon      |
+|  91 | Marathi                  | mr          | 4.9G         | soon     | soon      |
+|  92 | Malay                    | ms          | 7.1M         | soon     | soon      |
+|  93 | Maltese                  | mt          | 3.3M         | soon     | soon      |
+|  94 | Maltese                  | multi       | 14G          | soon     | soon      |
+|  95 | Mirandese                | mwl         | 512          | soon     | soon      |
+|  96 | Burmese                  | my          | 3.3G         | soon     | soon      |
+|  97 | Mazanderani              | mzn         | 352K         | soon     | soon      |
+|  98 | Nahuatl languages        | nah         | 32K          | soon     | soon      |
+|  99 | Low German               | nds         | 14M          | soon     | soon      |
+| 100 | Nepali                   | ne          | 5.4G         | soon     | soon      |
+| 101 | Newari                   | new         | 4.9M         | soon     | soon      |
+| 102 | Dutch                    | nl          | 180G         | soon     | soon      |
+| 103 | Norwegian Nynorsk        | nn          | 12M          | soon     | soon      |
+| 104 | Norwegian                | no          | 3.8G         | soon     | soon      |
+| 105 | Occitan                  | oc          | 784K         | soon     | soon      |
+| 106 | Odia                     | or          | 642M         | soon     | soon      |
+| 107 | Ossetic                  | os          | 57M          | soon     | soon      |
+| 108 | Punjabi                  | pa          | 1.6G         | soon     | soon      |
+| 109 | Polish                   | pl          | 193G         | soon     | soon      |
+| 110 | Piedmontese              | pms         | 4.3M         | soon     | soon      |
+| 111 | Western Panjabi          | pnb         | 117M         | soon     | soon      |
+| 112 | Pashto                   | ps          | 318M         | soon     | soon      |
+| 113 | Portuguese               | pt          | 131G         | soon     | soon      |
+| 114 | Quechua                  | qu          | 512          | soon     | soon      |
+| 115 | Romanian                 | ro          | 56G          | soon     | soon      |
+| 116 | Russian                  | ru          | 1.3T         | soon     | soon      |
+| 117 | Sakha                    | sah         | 81M          | soon     | soon      |
+| 118 | Sanskrit                 | sa          | 65M          | soon     | soon      |
+| 119 | Sindhi                   | sd          | 161M         | soon     | soon      |
+| 120 | Serbian (Latin)          | sh          | 2.1M         | soon     | soon      |
+| 121 | Sinhala                  | si          | 2.8G         | soon     | soon      |
+| 122 | Slovak                   | sk          | 27G          | soon     | soon      |
+| 123 | Slovenian                | sl          | 1.9G         | soon     | soon      |
+| 124 | Somali                   | so          | 512          | soon     | soon      |
+| 125 | Albanian                 | sq          | 4.1G         | soon     | soon      |
+| 126 | Serbian                  | sr          | 8.7G         | soon     | soon      |
+| 127 | Sundanese                | su          | 16K          | soon     | soon      |
+| 128 | Swedish                  | sv          | 65G          | soon     | soon      |
+| 129 | Swahili                  | sw          | 1.9M         | soon     | soon      |
+| 130 | Tamil                    | ta          | 17G          | soon     | soon      |
+| 131 | Telugu                   | te          | 4.3G         | soon     | soon      |
+| 132 | Tajik                    | tg          | 1.2G         | soon     | soon      |
+| 133 | Thai                     | th          | 100G         | soon     | soon      |
+| 134 | Turkmen                  | tk          | 5.2M         | soon     | soon      |
+| 135 | Filipino                 | tl          | 880M         | soon     | soon      |
+| 136 | Turkish                  | tr          | 93G          | soon     | soon      |
+| 137 | Tatar                    | tt          | 981M         | soon     | soon      |
+| 138 | Uyghur                   | ug          | 257M         | soon     | soon      |
+| 139 | Ukrainian                | uk          | 52G          | soon     | soon      |
+| 140 | Urdu                     | ur          | 4.3G         | soon     | soon      |
+| 141 | Uzbek                    | uz          | 23M          | soon     | soon      |
+| 142 | Vietnamese               | vi          | 170G         | soon     | soon      |
+| 143 | Volapük                  | vo          | 800K         | soon     | soon      |
+| 144 | Walloon                  | wa          | 192K         | soon     | soon      |
+| 145 | Waray                    | war         | 720K         | soon     | soon      |
+| 146 | Wu Chinese               | wuu         | 80K          | soon     | soon      |
+| 147 | Kalmyk                   | xal         | 512          | soon     | soon      |
+| 148 | Unknown language [x-eml] | x-eml       | 512          | soon     | soon      |
+| 149 | Mingrelian               | xmf         | 9.8M         | soon     | soon      |
+| 150 | Yiddish                  | yi          | 208M         | soon     | soon      |
+| 151 | Yoruba                   | yo          | 80K          | soon     | soon      |
+| 152 | Chinese                  | zh          | 1.4T         | soon     | soon      |
