@@ -71,7 +71,7 @@ There is a lot more operations implemented on OSCAR 22.01-like corpora.
 
 ### `extract-tags`
 
-`extract-tags` extracts documents that meet certain annotation constraints. 
+`extract-tags` extracts documents that meet certain annotation constraints.
 
 ```
 oscar-tools-v2-extract-tags 
