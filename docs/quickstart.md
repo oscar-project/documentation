@@ -1,11 +1,12 @@
 # OSCAR Quickstart
 
 ## What is OSCAR?
+
 OSCAR is a collection of web-based multilingual corpus of several terabytes, containing subcorpora in more than 150 languages.
 
-Each OSCAR Corpus has a version name that tells you its approximate generation time, which usually coincides with the source crawl time. 
-The latest OSCAR Corpus is **OSCAR 2301**. 
-We advise you to always use the latest version, as we incrementally include new features that enables new ways of filtering the corpus for your applications.
+Each OSCAR Corpus has a version name that tells you its approximate generation time, which usually coincides with the source crawl time.
+The latest OSCAR Corpus is **OSCAR 2301**.
+We advise you to always use the latest version, as we incrementally include new features that enable new ways of filtering the corpus for your applications.
 
 ## Basic data layout
 
@@ -72,15 +73,14 @@ Here is an example from OSCAR 2301:
 ```
 
 1. Newline-separated content.
-2. Headers from the crawled dumps, untouched. See the [WARC specification](https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.1/#named-fields) for more info.
+2. Headers from the crawled dumps are left untouched. See the [WARC specification](https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.1/#named-fields) for more info.
 3. Since `warc_headers` are copied and content can be altered by [Ungoliant](TODO), `content-length` and `warc-block-digest` can be different from actual values.
-4. Document-level identification. Computation details can be found [here](todo).
-5. TODO
+4. Document-level identification. Computation details can be found on the [OSCAR 22.01 paper](https://aclanthology.org/2022.lrec-1.463/).
+5. Perplexity of the document, computed using a KenLM model trained on harmful content. See [this pre-print](https://arxiv.org/abs/2212.10440) for more info. The lower this number is, the higher the probability that it will contain harmful or adult content. This annotation will be changed from `harmful_pp` to `harmful_ppl`in future releases.
 6. Locality Sensitive Hash of the documents' content, using [TLSH](https://tlsh.org/). Useful for both exact and near deduplication.
-7. _(Corresponds to `annotations` pre-2301)_ Potential quality warnings. Based on content/sentence length. See [here]() for more info.
-8. Blocklist-bsaed categories. Uses the [UT1 Blocklist](https://dsi.ut-capitole.fr/blacklists/index_en.php), plus custom additions (TODO). Please refer to the UT1 website for categories description.
-9. Sentence-level identifications. A `null` value means no identification with a good enough threshold (>0.8 on 2301).
-
+7. _(Corresponds to `annotations` pre-23.01)_ Potential quality warnings. Based on content/sentence length. See [[OSCAR 22.01 paper](https://aclanthology.org/2022.lrec-1.463/) for more info.
+8. Blocklist-based categories. Uses the [UT1 Blocklist](https://dsi.ut-capitole.fr/blacklists/index_en.php), plus custom additions (TODO). Please refer to the UT1 website for categories description. Note that the descriptions are in French.
+9. Sentence-level identifications. A `null` value means no identification with a good enough threshold (>0.8 on 23.01).
 
 ## Getting access
 
