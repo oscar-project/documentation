@@ -5,7 +5,7 @@ OSCAR 23.01 is the January 2023 version of the OSCAR Corpus. While being quite s
 ## Access
 
 !!! note
-    If you already have access to the corpus, there's nothing to do! 
+    If you already have access to the corpus, there's nothing to do!
     Go up in the file hierarchy on the link you've been given, and you should find the new corpus.
 
 Access to the OSCAR Corpus changes depending on your status. More info on our dedicated page.
@@ -20,8 +20,8 @@ OSCAR 22.01 leveraged the [UT1 Blocklists](https://dsi.ut-capitole.fr/blacklists
 The OSCAR 23.01 pipeline iterated on this to include all of the blocklists provided by UT1.
 
 !!! warning
-    The UT1 Blocklists page lists all the categories along with a short description. 
-    We **strongly** encourage you to read the descriptions if you plan on using them.
+    The UT1 Blocklists page lists all the categories along with a short description.
+    We **strongly** encourage you to read the descriptions if you plan on using them. Please also note that these descriptions are in _French_. We're working on an English translation of them.
 
 !!! note
     A document can belong to multiple categories.
@@ -41,13 +41,10 @@ These categories are in a field that is at this path: `metadata.categories`.
     }
     ```
 
-
-### KenLM-based adult content filtering
-
-_Work by TODO_
+### KenLM-based Adult Content Filtering
 
 For a select number of subcorpora, a measure of perplexity has been added. This perplexity comes from a [KenLM](https://kheafield.com/code/kenlm/) model trained on harmful content, previously gathered by using the `adult` annotation in OSCAR 22.01.
-In other terms, the lower it is, the more likely a given document contains harmful/adult content. 
+In other terms, the lower it is, the more likely a given document contains harmful/adult content.
 
 !!! danger
     This feature can be considered as unstable/unsafe, since we also want to evaluate its impact on particular issues.
@@ -55,16 +52,15 @@ In other terms, the lower it is, the more likely a given document contains harmf
     As such, we do not provide a boolean value indicating if a given document can be harmful/adult content, but rather the raw perplexity.
     We have found a threshold that works well in **English**, but encourage you to experiment with it and to report back your findings.
 
-### Locality sentitive hashing
+### Locality Sentitive Hashing
 
 We use [TLSH](https://tlsh.org/papers.html) to compute a hash for each document.
 
-[Locality sensitive hashing](https://fr.wikipedia.org/wiki/Locality_sensitive_hashing) is a hashing method that computes similar hashes for similar documents. 
+[Locality sensitive hashing](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) is a hashing method that computes similar hashes for similar documents.
 
 This can be used to do both exact- and near- deduplication.
 
 Hashes are at `metadata.tlsh`.
-
 
 ### Minor changes
 
@@ -120,15 +116,17 @@ Hashes are at `metadata.tlsh`.
 }
 ```
 
+Some important notes:
+
 1. Newline-separated content.
-2. Headers from the crawled dumps, untouched. See the [WARC specification](https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.1/#named-fields) for more info.
+2. Headers from the crawled dumps are left untouched. See the [WARC specification](https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.1/#named-fields) for more info.
 3. Since `warc_headers` are copied and content can be altered by [Ungoliant](TODO), `content-length` and `warc-block-digest` can be different from actual values.
-4. Document-level identification. Computation details can be found [here](todo).
-5. TODO
+4. Document-level identification. Computation details can be found on the [OSCAR 22.01 paper](https://aclanthology.org/2022.lrec-1.463/).
+5. Perplexity of the document, computed using a KenLM model trained on harmful content. See [this pre-print](https://arxiv.org/abs/2212.10440) for more info. The lower this number is, the higher the probability that it will contain harmful or adult content. This annotation will be changed from `harmful_pp` to `harmful_ppl`in future releases.
 6. Locality Sensitive Hash of the documents' content, using [TLSH](https://tlsh.org/). Useful for both exact and near deduplication.
-7. _(Corresponds to `annotations` pre-2301)_ Potential quality warnings. Based on content/sentence length. See [here]() for more info.
-8. Blocklist-bsaed categories. Uses the [UT1 Blocklist](https://dsi.ut-capitole.fr/blacklists/index_en.php), plus custom additions (TODO). Please refer to the UT1 website for categories description.
-9. Sentence-level identifications. A `null` value means no identification with a good enough threshold (>0.8 on 2301).
+7. _(Corresponds to `annotations` pre-23.01)_ Potential quality warnings. Based on content/sentence length. See [[OSCAR 22.01 paper](https://aclanthology.org/2022.lrec-1.463/) for more info.
+8. Blocklist-based categories. Uses the [UT1 Blocklist](https://dsi.ut-capitole.fr/blacklists/index_en.php), plus custom additions (TODO). Please refer to the UT1 website for categories description. Note that the descriptions are in French.
+9. Sentence-level identifications. A `null` value means no identification with a good enough threshold (>0.8 on 23.01).
 
 ## Language table
 
