@@ -120,12 +120,12 @@ Some important notes:
 
 1. Newline-separated content.
 2. Headers from the crawled dumps are left untouched. See the [WARC specification](https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.1/#named-fields) for more info.
-3. Since `warc_headers` are copied and content can be altered by [Ungoliant](TODO), `content-length` and `warc-block-digest` can be different from actual values.
+3. Since `warc_headers` are copied and content can be altered by [Ungoliant](https://github.com/oscar-project/ungoliant) at generation stage, `content-length` and `warc-block-digest` can be different from actual values.
 4. Document-level identification. Computation details can be found on the [OSCAR 22.01 paper](https://aclanthology.org/2022.lrec-1.463/).
 5. Perplexity of the document, computed using a KenLM model trained on harmful content. See [this pre-print](https://arxiv.org/abs/2212.10440) for more info. The lower this number is, the higher the probability that it will contain harmful or adult content. This annotation will be changed from `harmful_pp` to `harmful_ppl`in future releases.
 6. Locality Sensitive Hash of the documents' content, using [TLSH](https://tlsh.org/). Useful for both exact and near deduplication.
 7. _(Corresponds to `annotations` pre-23.01)_ Potential quality warnings. Based on content/sentence length. See [[OSCAR 22.01 paper](https://aclanthology.org/2022.lrec-1.463/) for more info.
-8. Blocklist-based categories. Uses the [UT1 Blocklist](https://dsi.ut-capitole.fr/blacklists/index_en.php), plus custom additions (TODO). Please refer to the UT1 website for categories description. Note that the descriptions are in French.
+8. Blocklist-based categories. Uses the [UT1 Blocklist](https://dsi.ut-capitole.fr/blacklists/index_en.php), plus [custom additions](https://github.com/oscar-project/oscar-blocklists). Please refer to the UT1 website for categories description. Note that the categories are in French.
 9. Sentence-level identifications. A `null` value means no identification with a good enough threshold (>0.8 on 23.01).
 
 ## Language table
