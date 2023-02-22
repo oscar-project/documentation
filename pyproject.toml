@@ -7,6 +7,7 @@ authors = ["jabadji <julien.abadji@inria.fr>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 mkdocs-material = "^8.2.14"
+mkdocs-plotly-plugin = "^0.1.2"
 
 [tool.poetry.dev-dependencies]
 
