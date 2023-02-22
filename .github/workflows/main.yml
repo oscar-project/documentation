@@ -15,4 +15,6 @@ jobs:
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
+	  EXTRA_PACKAGES: mkdocs-plotly-plugin
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+	  REQUIREMENTS: requirements.txt
