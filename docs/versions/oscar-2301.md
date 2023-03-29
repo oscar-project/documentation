@@ -130,158 +130,159 @@ Some important notes:
 
 ## Language table
 
-|     | Language                 | Code        | Size         | # docs   | # words   |
-|----:|:-------------------------|:------------|:-------------|:---------|:----------|
-|   0 | Afrikaans                | af          | 48M          | soon     | soon      |
-|   1 | Amharic                  | am          | 598M         | soon     | soon      |
-|   2 | Aragonese                | an          | 32K          | soon     | soon      |
-|   3 | Arabic                   | ar          | 129G         | soon     | soon      |
-|   4 | Egyptian Arabic          | arz         | 5.5M         | soon     | soon      |
-|   5 | Assamese                 | as          | 475M         | soon     | soon      |
-|   6 | Asturian                 | ast         | 256K         | soon     | soon      |
-|   7 | Avaric                   | av          | 48K          | soon     | soon      |
-|   8 | South Azerbaijani        | azb         | 41M          | soon     | soon      |
-|   9 | Azerbaijani              | az          | 3.9G         | soon     | soon      |
-|  10 | Bashkir                  | ba          | 433M         | soon     | soon      |
-|  11 | Belarusian               | be          | 2.7G         | soon     | soon      |
-|  12 | Bulgarian                | bg          | 50G          | soon     | soon      |
-|  13 | Bihari languages         | bh          | 32K          | soon     | soon      |
-|  14 | Bangla                   | bn          | 22G          | soon     | soon      |
-|  15 | Tibetan                  | bo          | 564M         | soon     | soon      |
-|  16 | Bishnupriya              | bpy         | 6.8M         | soon     | soon      |
-|  17 | Breton                   | br          | 51M          | soon     | soon      |
-|  18 | Bosnian                  | bs          | 16K          | soon     | soon      |
-|  19 | Russia Buriat            | bxr         | 48K          | soon     | soon      |
-|  20 | Catalan                  | ca          | 20G          | soon     | soon      |
-|  21 | Cebuano                  | ceb         | 51M          | soon     | soon      |
-|  22 | Chechen                  | ce          | 19M          | soon     | soon      |
-|  23 | Central Kurdish          | ckb         | 895M         | soon     | soon      |
-|  24 | Czech                    | cs          | 101G         | soon     | soon      |
-|  25 | Chuvash                  | cv          | 52M          | soon     | soon      |
-|  26 | Welsh                    | cy          | 422M         | soon     | soon      |
-|  27 | Danish                   | da          | 19G          | soon     | soon      |
-|  28 | German                   | de          | 749G         | soon     | soon      |
-|  29 | Lower Sorbian            | dsb         | 512          | soon     | soon      |
-|  30 | Divehi                   | dv          | 247M         | soon     | soon      |
-|  31 | Greek                    | el          | 112G         | soon     | soon      |
-|  32 | English                  | en          | 4.2T         | soon     | soon      |
-|  33 | Esperanto                | eo          | 629M         | soon     | soon      |
-|  34 | Spanish                  | es          | 543G         | soon     | soon      |
-|  35 | Estonian                 | et          | 11G          | soon     | soon      |
-|  36 | Basque                   | eu          | 1.6G         | soon     | soon      |
-|  37 | Persian                  | fa          | 110G         | soon     | soon      |
-|  38 | Finnish                  | fi          | 53G          | soon     | soon      |
-|  39 | French                   | fr          | 547G         | soon     | soon      |
-|  40 | Western Frisian          | fy          | 94M          | soon     | soon      |
-|  41 | Irish                    | ga          | 81M          | soon     | soon      |
-|  42 | Scottish Gaelic          | gd          | 464K         | soon     | soon      |
-|  43 | Galician                 | gl          | 366M         | soon     | soon      |
-|  44 | Guarani                  | gn          | 16K          | soon     | soon      |
-|  45 | Goan Konkani             | gom         | 2.6M         | soon     | soon      |
-|  46 | Swiss German             | gsw         | 384K         | soon     | soon      |
-|  47 | Gujarati                 | gu          | 6.3G         | soon     | soon      |
-|  48 | Hebrew                   | he          | 21G          | soon     | soon      |
-|  49 | Hindi                    | hi          | 36G          | soon     | soon      |
-|  50 | Croatian                 | hr          | 39M          | soon     | soon      |
-|  51 | Upper Sorbian            | hsb         | 288K         | soon     | soon      |
-|  52 | Haitian Creole           | ht          | 128K         | soon     | soon      |
-|  53 | Hungarian                | hu          | 182G         | soon     | soon      |
-|  54 | Armenian                 | hy          | 5.6G         | soon     | soon      |
-|  55 | Interlingua              | ia          | 64K          | soon     | soon      |
-|  56 | Indonesian               | id          | 27G          | soon     | soon      |
-|  57 | Interlingue              | ie          | 512          | soon     | soon      |
-|  58 | Iloko                    | ilo         | 96K          | soon     | soon      |
-|  59 | Ido                      | io          | 112K         | soon     | soon      |
-|  60 | Icelandic                | is          | 2.9G         | soon     | soon      |
-|  61 | Italian                  | it          | 327G         | soon     | soon      |
-|  62 | Japanese                 | ja          | 228G         | soon     | soon      |
-|  63 | Lojban                   | jbo         | 2.0M         | soon     | soon      |
-|  64 | Javanese                 | jv          | 96K          | soon     | soon      |
-|  65 | Georgian                 | ka          | 9.2G         | soon     | soon      |
-|  66 | Kazakh                   | kk          | 3.8G         | soon     | soon      |
-|  67 | Khmer                    | km          | 3.4G         | soon     | soon      |
-|  68 | Kannada                  | kn          | 2.9G         | soon     | soon      |
-|  69 | Korean                   | ko          | 46G          | soon     | soon      |
-|  70 | Karachay-Balkar          | krc         | 336K         | soon     | soon      |
-|  71 | Kurdish                  | ku          | 221M         | soon     | soon      |
-|  72 | Komi                     | kv          | 272K         | soon     | soon      |
-|  73 | Cornish                  | kw          | 512          | soon     | soon      |
-|  74 | Kyrgyz                   | ky          | 581M         | soon     | soon      |
-|  75 | Latin                    | la          | 7.7M         | soon     | soon      |
-|  76 | Luxembourgish            | lb          | 27M          | soon     | soon      |
-|  77 | Lezghian                 | lez         | 1.2M         | soon     | soon      |
-|  78 | Limburgish               | li          | 512          | soon     | soon      |
-|  79 | Lombard                  | lmo         | 80K          | soon     | soon      |
-|  80 | Lao                      | lo          | 538M         | soon     | soon      |
-|  81 | Lithuanian               | lt          | 19G          | soon     | soon      |
-|  82 | Latvian                  | lv          | 9.2G         | soon     | soon      |
-|  83 | Maithili                 | mai         | 32K          | soon     | soon      |
-|  84 | Malagasy                 | mg          | 16M          | soon     | soon      |
-|  85 | Eastern Mari             | mhr         | 28M          | soon     | soon      |
-|  86 | Minangkabau              | min         | 5.0M         | soon     | soon      |
-|  87 | Macedonian               | mk          | 5.5G         | soon     | soon      |
-|  88 | Malayalam                | ml          | 6.3G         | soon     | soon      |
-|  89 | Mongolian                | mn          | 6.5G         | soon     | soon      |
-|  90 | Western Mari             | mrj         | 1008K        | soon     | soon      |
-|  91 | Marathi                  | mr          | 4.9G         | soon     | soon      |
-|  92 | Malay                    | ms          | 7.1M         | soon     | soon      |
-|  93 | Maltese                  | mt          | 3.3M         | soon     | soon      |
-|  94 | Maltese                  | multi       | 14G          | soon     | soon      |
-|  95 | Mirandese                | mwl         | 512          | soon     | soon      |
-|  96 | Burmese                  | my          | 3.3G         | soon     | soon      |
-|  97 | Mazanderani              | mzn         | 352K         | soon     | soon      |
-|  98 | Nahuatl languages        | nah         | 32K          | soon     | soon      |
-|  99 | Low German               | nds         | 14M          | soon     | soon      |
-| 100 | Nepali                   | ne          | 5.4G         | soon     | soon      |
-| 101 | Newari                   | new         | 4.9M         | soon     | soon      |
-| 102 | Dutch                    | nl          | 180G         | soon     | soon      |
-| 103 | Norwegian Nynorsk        | nn          | 12M          | soon     | soon      |
-| 104 | Norwegian                | no          | 3.8G         | soon     | soon      |
-| 105 | Occitan                  | oc          | 784K         | soon     | soon      |
-| 106 | Odia                     | or          | 642M         | soon     | soon      |
-| 107 | Ossetic                  | os          | 57M          | soon     | soon      |
-| 108 | Punjabi                  | pa          | 1.6G         | soon     | soon      |
-| 109 | Polish                   | pl          | 193G         | soon     | soon      |
-| 110 | Piedmontese              | pms         | 4.3M         | soon     | soon      |
-| 111 | Western Panjabi          | pnb         | 117M         | soon     | soon      |
-| 112 | Pashto                   | ps          | 318M         | soon     | soon      |
-| 113 | Portuguese               | pt          | 131G         | soon     | soon      |
-| 114 | Quechua                  | qu          | 512          | soon     | soon      |
-| 115 | Romanian                 | ro          | 56G          | soon     | soon      |
-| 116 | Russian                  | ru          | 1.3T         | soon     | soon      |
-| 117 | Sakha                    | sah         | 81M          | soon     | soon      |
-| 118 | Sanskrit                 | sa          | 65M          | soon     | soon      |
-| 119 | Sindhi                   | sd          | 161M         | soon     | soon      |
-| 120 | Serbian (Latin)          | sh          | 2.1M         | soon     | soon      |
-| 121 | Sinhala                  | si          | 2.8G         | soon     | soon      |
-| 122 | Slovak                   | sk          | 27G          | soon     | soon      |
-| 123 | Slovenian                | sl          | 1.9G         | soon     | soon      |
-| 124 | Somali                   | so          | 512          | soon     | soon      |
-| 125 | Albanian                 | sq          | 4.1G         | soon     | soon      |
-| 126 | Serbian                  | sr          | 8.7G         | soon     | soon      |
-| 127 | Sundanese                | su          | 16K          | soon     | soon      |
-| 128 | Swedish                  | sv          | 65G          | soon     | soon      |
-| 129 | Swahili                  | sw          | 1.9M         | soon     | soon      |
-| 130 | Tamil                    | ta          | 17G          | soon     | soon      |
-| 131 | Telugu                   | te          | 4.3G         | soon     | soon      |
-| 132 | Tajik                    | tg          | 1.2G         | soon     | soon      |
-| 133 | Thai                     | th          | 100G         | soon     | soon      |
-| 134 | Turkmen                  | tk          | 5.2M         | soon     | soon      |
-| 135 | Filipino                 | tl          | 880M         | soon     | soon      |
-| 136 | Turkish                  | tr          | 93G          | soon     | soon      |
-| 137 | Tatar                    | tt          | 981M         | soon     | soon      |
-| 138 | Uyghur                   | ug          | 257M         | soon     | soon      |
-| 139 | Ukrainian                | uk          | 52G          | soon     | soon      |
-| 140 | Urdu                     | ur          | 4.3G         | soon     | soon      |
-| 141 | Uzbek                    | uz          | 23M          | soon     | soon      |
-| 142 | Vietnamese               | vi          | 170G         | soon     | soon      |
-| 143 | Volapük                  | vo          | 800K         | soon     | soon      |
-| 144 | Walloon                  | wa          | 192K         | soon     | soon      |
-| 145 | Waray                    | war         | 720K         | soon     | soon      |
-| 146 | Wu Chinese               | wuu         | 80K          | soon     | soon      |
-| 147 | Kalmyk                   | xal         | 512          | soon     | soon      |
-| 148 | Unknown language [x-eml] | x-eml       | 512          | soon     | soon      |
-| 149 | Mingrelian               | xmf         | 9.8M         | soon     | soon      |
-| 150 | Yiddish                  | yi          | 208M         | soon     | soon      |
-| 151 | Yoruba                   | yo          | 80K          | soon     | soon      |
-| 152 | Chinese                  | zh          | 1.4T         | soon     | soon      |
+**Note: English is missing from the table**
+
+|     | Code   | Language                 | # docs      | # words        | Size             |
+|----:|:-------|:-------------------------|:------------|:---------------|:-----------------|
+|   0 | af     | Afrikaans                | 23,994      | 6,217,024      | 37.2 MB          |
+|   1 | sq     | Albanian                 | 1,342,790   | 462,694,599    | 3.2 GB           |
+|   2 | am     | Amharic                  | 119,434     | 40,262,809     | 512.9 MB         |
+|   3 | ar     | Arabic                   | 25,012,116  | 10,081,452,882 | 110.7 GB         |
+|   4 | an     | Aragonese                | 34          | 264            | 11.0 kB          |
+|   5 | hy     | Armenian                 | 1,056,974   | 336,045,041    | 4.9 GB           |
+|   6 | as     | Assamese                 | 89,542      | 24,395,215     | 412.1 MB         |
+|   7 | ast    | Asturian                 | 440         | 10,917         | 74.1 kB          |
+|   8 | av     | Avaric                   | 44          | 1,073          | 18.6 kB          |
+|   9 | az     | Azerbaijani              | 1,159,994   | 316,850,330    | 3.0 GB           |
+|  10 | bn     | Bangla                   | 3,474,086   | 1,092,983,765  | 19.1 GB          |
+|  11 | ba     | Bashkir                  | 128,248     | 26,036,637     | 363.7 MB         |
+|  12 | eu     | Basque                   | 678,474     | 136,672,615    | 1.2 GB           |
+|  13 | be     | Belarusian               | 445,612     | 164,729,607    | 2.3 GB           |
+|  14 | bh     | Bihari languages         | 48          | 507            | 6.8 kB           |
+|  15 | bpy    | Bishnupriya              | 2,346       | 346,947        | 5.4 MB           |
+|  16 | bs     | Bosnian                  | 20          | 395            | 3.0 kB           |
+|  17 | br     | Breton                   | 36,338      | 4,759,407      | 31.4 MB          |
+|  18 | bg     | Bulgarian                | 8,933,998   | 3,635,273,738  | 44.1 GB          |
+|  19 | my     | Burmese                  | 430,276     | 82,433,836     | 3.0 GB           |
+|  20 | ca     | Catalan                  | 6,953,898   | 2,240,460,836  | 15.3 GB          |
+|  21 | ceb    | Cebuano                  | 16,174      | 6,263,404      | 41.1 MB          |
+|  22 | ckb    | Central Kurdish          | 182,508     | 61,334,746     | 772.9 MB         |
+|  23 | ce     | Chechen                  | 11,686      | 1,051,752      | 13.9 MB          |
+|  24 | zh     | Chinese                  | 138,478,270 | 44,378,380,161 | 1.4 TB           |
+|  25 | cv     | Chuvash                  | 16,652      | 3,039,925      | 42.3 MB          |
+|  26 | kw     | Cornish                  | 8           | 80             | 432 Bytes        |
+|  27 | hr     | Croatian                 | 31,808      | 3,542,961      | 26.5 MB          |
+|  28 | cs     | Czech                    | 34,859,632  | 9,717,378,559  | 77.0 GB          |
+|  29 | da     | Danish                   | 7,214,338   | 2,217,634,340  | 14.8 GB          |
+|  30 | dv     | Divehi                   | 77,060      | 10,655,359     | 200.1 MB         |
+|  31 | nl     | Dutch                    | 72,552,688  | 19,564,553,306 | 135.0 GB         |
+|  32 | mhr    | Eastern Mari             | 9,502       | 1,615,215      | 22.9 MB          |
+|  33 | arz    | Egyptian Arabic          | 3,958       | 385,511        | 3.7 MB           |
+|  34 | eo     | Esperanto                | 226,924     | 67,774,923     | 474.8 MB         |
+|  35 | et     | Estonian                 | 3,601,904   | 938,296,892    | 8.0 GB           |
+|  36 | tl     | Filipino                 | 250,558     | 110,560,444    | 719.2 MB         |
+|  37 | fi     | Finnish                  | 14,471,710  | 4,198,143,883  | 41.1 GB          |
+|  38 | fr     | French                   | 158,334,998 | 62,127,088,294 | 430.5 GB         |
+|  39 | gl     | Galician                 | 248,762     | 38,345,625     | 255.7 MB         |
+|  40 | ka     | Georgian                 | 1,343,036   | 373,935,158    | 8.4 GB           |
+|  41 | de     | German                   | 206,598,430 | 73,848,586,648 | 594.7 GB         |
+|  42 | gom    | Goan Konkani             | 398         | 121,035        | 2.3 MB           |
+|  43 | el     | Greek                    | 20,282,864  | 7,691,622,692  | 95.7 GB          |
+|  44 | gn     | Guarani                  | 14          | 260            | 2.2 kB           |
+|  45 | gu     | Gujarati                 | 425,552     | 417,001,705    | 5.6 GB           |
+|  46 | ht     | Haitian Creole           | 2           | 20,671         | 93.1 kB          |
+|  47 | he     | Hebrew                   | 3,997,888   | 1,697,158,891  | 18.0 GB          |
+|  48 | hi     | Hindi                    | 5,514,454   | 2,475,605,444  | 32.6 GB          |
+|  49 | hu     | Hungarian                | 21,349,372  | 16,013,364,289 | 150.1 GB         |
+|  50 | is     | Icelandic                | 1,210,232   | 294,471,539    | 2.2 GB           |
+|  51 | io     | Ido                      | 224         | 2,598          | 16.1 kB          |
+|  52 | ilo    | Iloko                    | 144         | 4,411          | 28.0 kB          |
+|  53 | id     | Indonesian               | 7,109,778   | 3,228,020,221  | 23.4 GB          |
+|  54 | ia     | Interlingua              | 34          | 9,384          | 33.5 kB          |
+|  55 | ie     | Interlingue              | 2           | 0              | 881 Bytes        |
+|  56 | ga     | Irish                    | 29,894      | 9,054,923      | 63.2 MB          |
+|  57 | it     | Italian                  | 89,021,606  | 36,327,274,203 | 259.4 GB         |
+|  58 | ja     | Japanese                 | 94,236,404  | 4,401,059,165  | 181.2 GB         |
+|  59 | jv     | Javanese                 | 172         | 3,286          | 25.7 kB          |
+|  60 | xal    | Kalmyk                   | 2           | 27             | 315 Bytes        |
+|  61 | kn     | Kannada                  | 448,500     | 124,924,350    | 2.6 GB           |
+|  62 | krc    | Karachay-Balkar          | 496         | 8,385          | 122.4 kB         |
+|  63 | kk     | Kazakh                   | 677,622     | 214,679,857    | 3.3 GB           |
+|  64 | km     | Khmer                    | 450,660     | 59,880,231     | 3.2 GB           |
+|  65 | kv     | Komi                     | 460         | 5,909          | 70.3 kB          |
+|  66 | ko     | Korean                   | 15,147,698  | 3,435,866,935  | 38.1 GB          |
+|  67 | ku     | Kurdish                  | 80,338      | 25,921,607     | 174.1 MB         |
+|  68 | ky     | Kyrgyz                   | 144,288     | 32,062,783     | 489.3 MB         |
+|  69 | lo     | Lao                      | 118,374     | 10,659,203     | 472.1 MB         |
+|  70 | la     | Latin                    | 14,384      | 307,865        | 2.0 MB           |
+|  71 | lv     | Latvian                  | 2,435,882   | 845,459,899    | 7.4 GB           |
+|  72 | lez    | Lezghian                 | 676         | 60,634         | 856.6 kB         |
+|  73 | li     | Limburgish               | 6           | 169            | 1.4 kB           |
+|  74 | lt     | Lithuanian               | 5,182,028   | 1,674,362,574  | 14.5 GB          |
+|  75 | jbo    | Lojban                   | 572         | 312,315        | 1.5 MB           |
+|  76 | lmo    | Lombard                  | 112         | 3,269          | 21.0 kB          |
+|  77 | nds    | Low German               | 5,248       | 1,612,175      | 10.7 MB          |
+|  78 | dsb    | Lower Sorbian            | 8           | 84             | 664 Bytes        |
+|  79 | lb     | Luxembourgish            | 18,090      | 2,514,838      | 18.4 MB          |
+|  80 | mk     | Macedonian               | 1,063,298   | 389,344,425    | 4.7 GB           |
+|  81 | mai    | Maithili                 | 46          | 467            | 6.8 kB           |
+|  82 | mg     | Malagasy                 | 10,830      | 1,416,430      | 11.2 MB          |
+|  83 | ms     | Malay                    | 11,500      | 238,477        | 2.6 MB           |
+|  84 | ml     | Malayalam                | 800,936     | 236,597,838    | 5.8 GB           |
+|  85 | mt     | Maltese                  | 5,180       | 149,886        | 1.3 MB           |
+|  86 | mr     | Marathi                  | 729,578     | 252,706,331    | 4.5 GB           |
+|  87 | mzn    | Mazanderani              | 384         | 16,115         | 169.2 kB         |
+|  88 | min    | Minangkabau              | 2,436       | 305,589        | 3.8 MB           |
+|  89 | xmf    | Mingrelian               | 7,318       | 283,316        | 6.1 MB           |
+|  90 | mwl    | Mirandese                | 4           | 54             | 423 Bytes        |
+|  91 | mn     | Mongolian                | 1,061,710   | 454,350,415    | 5.8 GB           |
+|  92 | multi  | Multilingual             | 2,948,202   | 1,251,676,406  | 11.9 GB          |
+|  93 | nah    | Nahuatl languages        | 38          | 279            | 2.4 kB           |
+|  94 | ne     | Nepali                   | 1,152,156   | 278,901,036    | 4.9 GB           |
+|  95 | new    | Newari                   | 1,996       | 229,703        | 4.0 MB           |
+|  96 | no     | Norwegian                | 2,797,378   | 373,160,033    | 2.6 GB           |
+|  97 | nn     | Norwegian Nynorsk        | 19,470      | 575,518        | 3.7 MB           |
+|  98 | oc     | Occitan                  | 920         | 34,701         | 405.0 kB         |
+|  99 | or     | Odia                     | 158,426     | 31,963,340     | 543.1 MB         |
+| 100 | os     | Ossetic                  | 8,628       | 3,935,964      | 50.7 MB          |
+| 101 | ps     | Pashto                   | 87,408      | 30,196,179     | 261.6 MB         |
+| 102 | fa     | Persian                  | 23,813,882  | 9,609,206,698  | 93.2 GB          |
+| 103 | pms    | Piedmontese              | 2,524       | 510,087        | 3.1 MB           |
+| 104 | pl     | Polish                   | 57,184,826  | 18,073,705,588 | 147.1 GB         |
+| 105 | pt     | Portuguese               | 36,062,800  | 15,172,557,311 | 105.0 GB         |
+| 106 | pa     | Punjabi                  | 222,058     | 104,235,418    | 1.4 GB           |
+| 107 | qu     | Quechua                  | 2           | 13             | 143 Bytes        |
+| 108 | ro     | Romanian                 | 11,985,668  | 6,302,600,833  | 45.6 GB          |
+| 109 | bxr    | Russia Buriat            | 72          | 698            | 8.2 kB           |
+| 110 | ru     | Russian                  | 194,143,422 | 78,032,029,344 | 1.1 TB           |
+| 111 | sah    | Sakha                    | 17,566      | 4,288,051      | 68.8 MB          |
+| 112 | sa     | Sanskrit                 | 16,802      | 2,479,345      | 56.3 MB          |
+| 113 | gd     | Scottish Gaelic          | 776         | 18,458         | 146.1 kB         |
+| 114 | sr     | Serbian                  | 1,677,896   | 632,781,822    | 7.7 GB           |
+| 115 | sh     | Serbian (Latin)          | 3,214       | 166,517        | 816.4 kB         |
+| 116 | sd     | Sindhi                   | 48,566      | 14,667,207     | 131.6 MB         |
+| 117 | si     | Sinhala                  | 301,066     | 172,755,385    | 2.6 GB           |
+| 118 | sk     | Slovak                   | 8,931,784   | 2,704,716,280  | 21.5 GB          |
+| 119 | sl     | Slovenian                | 1,112,560   | 192,816,743    | 1.4 GB           |
+| 120 | so     | Somali                   | 6           | 51             | 503 Bytes        |
+| 121 | azb    | South Azerbaijani        | 26,364      | 2,029,729      | 28.4 MB          |
+| 122 | es     | Spanish                  | 153,574,556 | 63,388,237,965 | 429.9 GB         |
+| 123 | su     | Sundanese                | 18          | 258            | 2.0 kB           |
+| 124 | sw     | Swahili                  | 1,664       | 164,459        | 1.0 MB           |
+| 125 | sv     | Swedish                  | 21,891,348  | 6,993,719,601  | 50.0 GB          |
+| 126 | gsw    | Swiss German             | 342         | 34,328         | 232.7 kB         |
+| 127 | tg     | Tajik                    | 144,932     | 76,987,285     | 1.0 GB           |
+| 128 | ta     | Tamil                    | 1,638,238   | 738,824,392    | 15.8 GB          |
+| 129 | tt     | Tatar                    | 262,654     | 59,253,765     | 833.8 MB         |
+| 130 | te     | Telugu                   | 644,712     | 201,575,815    | 3.9 GB           |
+| 131 | th     | Thai                     | 14,845,900  | 2,224,483,018  | 92.0 GB          |
+| 132 | bo     | Tibetan                  | 62,352      | 6,062,558      | 531.6 MB         |
+| 133 | tr     | Turkish                  | 26,654,330  | 8,290,890,087  | 73.7 GB          |
+| 134 | tk     | Turkmen                  | 4,576       | 325,786        | 3.3 MB           |
+| 135 | uk     | Ukrainian                | 10,059,992  | 3,183,842,018  | 44.7 GB          |
+| 136 | x-eml  | Unknown language [x-eml] | 4           | 329            | 1.8 kB           |
+| 137 | hsb    | Upper Sorbian            | 402         | 15,827         | 123.2 kB         |
+| 138 | ur     | Urdu                     | 887,004     | 434,023,273    | 3.8 GB           |
+| 139 | ug     | Uyghur                   | 51,304      | 14,659,554     | 219.8 MB         |
+| 140 | uz     | Uzbek                    | 15,806      | 1,665,960      | 15.3 MB          |
+| 141 | vi     | Vietnamese               | 33,933,994  | 22,424,984,210 | 140.8 GB         |
+| 142 | vo     | Volapük                  | 896         | 49,968         | 371.9 kB         |
+| 143 | wa     | Walloon                  | 390         | 6,347          | 34.3 kB          |
+| 144 | war    | Waray                    | 1,494       | 19,665         | 126.8 kB         |
+| 145 | cy     | Welsh                    | 151,512     | 52,250,043     | 333.0 MB         |
+| 146 | fy     | Western Frisian          | 45,458      | 9,885,788      | 70.4 MB          |
+| 147 | mrj    | Western Mari             | 496         | 60,180         | 765.8 kB         |
+| 148 | pnb    | Western Panjabi          | 12,904      | 11,844,695     | 105.8 MB         |
+| 149 | wuu    | Wu Chinese               | 136         | 1,199          | 26.8 kB          |
+| 150 | yi     | Yiddish                  | 47,438      | 14,287,370     | 171.7 MB         |
+| 151 | yo     | Yoruba                   | 128         | 2,396          | 16.6 kB          |
