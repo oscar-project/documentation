@@ -226,7 +226,7 @@ Some important notes:
 |  89 | xmf    | Mingrelian               | 7,318       | 283,316        | 6.1 MB           |
 |  90 | mwl    | Mirandese                | 4           | 54             | 423 Bytes        |
 |  91 | mn     | Mongolian                | 1,061,710   | 454,350,415    | 5.8 GB           |
-|  92 | multi  | Multilingual             | 2,948,202   | 1,251,676,406  | 11.9 GB          |
+|  92 | multi  | **Multilingual**         | 2,948,202   | 1,251,676,406  | 11.9 GB          |
 |  93 | nah    | Nahuatl languages        | 38          | 279            | 2.4 kB           |
 |  94 | ne     | Nepali                   | 1,152,156   | 278,901,036    | 4.9 GB           |
 |  95 | new    | Newari                   | 1,996       | 229,703        | 4.0 MB           |
@@ -270,7 +270,7 @@ Some important notes:
 | 133 | tr     | Turkish                  | 26,654,330  | 8,290,890,087  | 73.7 GB          |
 | 134 | tk     | Turkmen                  | 4,576       | 325,786        | 3.3 MB           |
 | 135 | uk     | Ukrainian                | 10,059,992  | 3,183,842,018  | 44.7 GB          |
-| 136 | x-eml  | Unknown language [x-eml] | 4           | 329            | 1.8 kB           |
+| 136 | x-eml  | Emilian-Romagnol         | 4           | 329            | 1.8 kB           |
 | 137 | hsb    | Upper Sorbian            | 402         | 15,827         | 123.2 kB         |
 | 138 | ur     | Urdu                     | 887,004     | 434,023,273    | 3.8 GB           |
 | 139 | ug     | Uyghur                   | 51,304      | 14,659,554     | 219.8 MB         |
