@@ -270,7 +270,7 @@ Some important notes:
 | 134 | tr     | Turkish                  | 26,654,330    | 8,290,890,087   | 73.7 GB          |
 | 135 | tk     | Turkmen                  | 4,576         | 325,786         | 3.3 MB           |
 | 136 | uk     | Ukrainian                | 10,059,992    | 3,183,842,018   | 44.7 GB          |
-| 137 | x-eml  | Unknown language [x-eml] | 4             | 329             | 1.8 kB           |
+| 137 | x-eml  | Emiliano-Romagnol        | 4             | 329             | 1.8 kB           |
 | 138 | hsb    | Upper Sorbian            | 402           | 15,827          | 123.2 kB         |
 | 139 | ur     | Urdu                     | 887,004       | 434,023,273     | 3.8 GB           |
 | 140 | ug     | Uyghur                   | 51,304        | 14,659,554      | 219.8 MB         |
