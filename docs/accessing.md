@@ -17,9 +17,12 @@ Depending on your status, you might not have the choice.
 
     !!! danger
         Do not create an account by yourselves, as it could delay you access by weeks! We will create an account for you.
-
+        
     Send us an email at **contact at oscar-project.org**, with **OSCAR Access Request** as the title, and the following (completed) as the body:
 
+    !!! warning
+        Please send your email using your institutional/academic address when possible. Otherwise, your access might be delayed/refused.
+        
     ```
     - First name:
     - Last name:
