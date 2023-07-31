@@ -62,6 +62,8 @@ We use [TLSH](https://tlsh.org/papers.html) to compute a hash for each document.
 [Locality sensitive hashing](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) is a hashing method that computes similar hashes for similar documents.
 
 This can be used to do both exact- and near- deduplication.
+Same documents have same hashes (the reverse might not be true). So you only need to check for identity amongst documents with identical hashes.
+TLSH hashes can be compared to yield a distance metric. According to the original paper, a cutoff of < 40 yields a false positive rate of 0.07% and a detect rate of 49.6%, while a cutoff of < 100 yields a FP rate of 6.43% and detect rate of 94.5%. You should choose a value that meets your purposes.
 
 Hashes are at `metadata.tlsh`.
 
