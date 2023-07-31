@@ -62,6 +62,28 @@ We use [TLSH](https://tlsh.org/papers.html) to compute a hash for each document.
 [Locality sensitive hashing](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) is a hashing method that computes similar hashes for similar documents.
 
 This can be used to do both exact- and near- deduplication.
+Same documents have same hashes (the reverse might not be true). So you only need to check for identity amongst documents with identical hashes.
+TLSH hashes can be compared to yield a distance metric. According to the original paper, a cutoff of < 40 yields a false positive rate of 0.07% and a detect rate of 49.6%, while a cutoff of < 100 yields a FP rate of 6.43% and detect rate of 94.5%. You should choose a value that meets your purposes.
+
+The above is true for the default version of TLSH which is used in packages such as `py-tlsh`. OSCAR 23.01 uses a TLSH with a hyperparameter of 256 buckets (Full hash), and 3 byte checksums (collision rate : 1 in 5800) instead of 1 byte checksums (collision rate : 1 in 24).
+
+If you would like to use `py-tlsh`, follow these instructions (You need `CMake` installed to perform the necessary modifications and build):
+```
+# download py-tlsh source package
+pip download python-tlsh
+# unpack the source tar.gz and enter the directory
+tar -xvf python-tlsh-4.5.0.tar.gz && cd python-tlsh-4.5.0
+# run the following command to implement the changes
+# alternatively, you can use vi or a text editor
+# change TLSH_BUCKETS_128 into TLSH_BUCKETS_256 and change TLSH_CHECKSUM_1B into TLSH_CHECKSUM_3B
+sed -i 's/set(TLSH_BUCKETS_128 1)/set(TLSH_BUCKETS_256 1)/g; s/set(TLSH_CHECKSUM_1B 1)/set(TLSH_CHECKSUM_3B 1)/g' CMakeLists.txt
+
+# build and activate pip venv if not already done
+# python3 -m venv ~/.venv
+source ~/.venv/bin/activate
+# build and install the new py-tlsh
+python3 setup.py install
+```
 
 Hashes are at `metadata.tlsh`.
 
