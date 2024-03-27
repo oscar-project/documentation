@@ -55,7 +55,7 @@ In other terms, the lower it is, the more likely a given document contains harmf
     As such, we do not provide a boolean value indicating if a given document can be harmful/adult content, but rather the raw perplexity.
     We have found a threshold that works well in **English**, but encourage you to experiment with it and to report back your findings.
 
-### Locality Sentitive Hashing
+### Locality Sensitive Hashing
 
 We use [TLSH](https://tlsh.org/papers.html) to compute a hash for each document.
 
