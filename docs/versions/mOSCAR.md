@@ -6,7 +6,9 @@ mOSCAR is a large-scale multilingual and multimodal document corpus crawled from
 
 Access to the mOSCAR is granted via the [Hugging Face Hub](https://huggingface.co/datasets/oscar-corpus/mOSCAR).
 
-All data is avaialble at [https://huggingface.co/datasets/oscar-corpus/mOSCAR](https://huggingface.co/datasets/oscar-corpus/mOSCAR).
+All data is available at [https://huggingface.co/datasets/oscar-corpus/mOSCAR](https://huggingface.co/datasets/oscar-corpus/mOSCAR).
+
+Paper link: [https://arxiv.org/abs/2406.08707](https://arxiv.org/abs/2406.08707) 
 
 ## Layout
 
@@ -199,3 +201,13 @@ These data are released under this licensing scheme:
 - We license the actual packaging of these data under the Creative Commons CC BY 4.0 license.
 - To the extent possible under law, Inria has waived all copyright and related or neighboring rights to OSCAR.
 - This work is published from: France.
+
+## Citation
+```
+@article{futeral2024moscar,
+  title={mOSCAR: A Large-scale Multilingual and Multimodal Document-level Corpus},
+  author={Futeral, Matthieu and Zebaze, Armel and Suarez, Pedro Ortiz and Abadji, Julien and Lacroix, R{\'e}mi and Schmid, Cordelia and Bawden, Rachel and Sagot, Beno{\^\i}t},
+  journal={arXiv preprint arXiv:2406.08707},
+  year={2024}
+}
+```
