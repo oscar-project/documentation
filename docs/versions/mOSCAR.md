@@ -27,8 +27,8 @@ Paper link: [https://arxiv.org/abs/2406.08707](https://arxiv.org/abs/2406.08707)
 
 ## Language table
 
-| Lang. name             | Code     | Family        | Script     | #documents  | #images     | # tokens       |
-| ---------------------- | -------- | ------------- | ---------- | ----------- | ----------- | -------------- |
+| Lang. name             | Code     | Family         | Script     | #documents | #images     | # tokens       |
+| ---------------------- | -------- | -------------- | ---------- | ---------- | ----------- | -------------- |
 | Acehnese               | ace_Latn | Austronesian   | Latin      | 7,803      | 32,461      | 2,889,134      |
 | Mesopotamian Arabic    | acm_Arab | Afro-Asiatic   | Arabic     | 2,274      | 10,620      | 1,047,748      |
 | Tunisian Arabic        | aeb_Arab | Afro-Asiatic   | Arabic     | 7,640      | 41,570      | 2,715,187      |
@@ -201,6 +201,8 @@ These data are released under this licensing scheme:
 - We license the actual packaging of these data under the Creative Commons CC BY 4.0 license.
 - To the extent possible under law, Inria has waived all copyright and related or neighboring rights to OSCAR.
 - This work is published from: France.
+
+Please also refer to Common Crawl's [Terms of Use](https://commoncrawl.org/terms-of-use)
 
 ## Citation
 ```
