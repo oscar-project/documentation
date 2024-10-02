@@ -139,7 +139,7 @@ Paper link: [https://arxiv.org/abs/2406.08707](https://arxiv.org/abs/2406.08707)
 | Pangasinan             | pag_Latn | Austronesian   | Latin      | 4,214      | 32,287      | 546,071        |
 | Eastern Panjabi        | pan_Guru | Indo-European  | Gurmukhi   | 11,497     | 46,168      | 1,887,991      |
 | Papiamento             | pap_Latn | Indo-European  | Latin      | 55,224     | 363,015     | 10,002,655     |
-| Southern Pasto         | pbt_Arab | Indo-European  | Arabic     | 32,604     | 110,807     | 29,170,322     |
+| Southern Pashto        | pbt_Arab | Indo-European  | Arabic     | 32,604     | 110,807     | 29,170,322     |
 | Western Persian        | pes_Arab | Indo-European  | Arabic     | 7,048,946  | 25,200,571  | 6,210,479,015  |
 | Plateau Malgasy        | plt_Latn | Austronesian   | Latin      | 32,521     | 120,673     | 29,263,848     |
 | Polish                 | pol_Latn | Indo-European  | Latin      | 14,549,605 | 60,639,244  | 11,104,144,109 |
