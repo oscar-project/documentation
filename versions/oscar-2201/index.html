@@ -1,0 +1,2011 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation of the OSCAR Project, corpus, tools and community.">
+      
+      
+        <meta name="author" content="OSCAR Team">
+      
+      
+      
+        <link rel="prev" href="../oscar-2109/">
+      
+      
+        <link rel="next" href="../oscar-2301/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>OSCAR 22.01 - OSCAR Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#oscar-2201" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="OSCAR Documentation" class="md-header__button md-logo" aria-label="OSCAR Documentation" data-md-component="logo">
+      
+  <img src="../../static/media/oscar.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OSCAR Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              OSCAR 22.01
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/oscar-project/documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    documentation
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="OSCAR Documentation" class="md-nav__button md-logo" aria-label="OSCAR Documentation" data-md-component="logo">
+      
+  <img src="../../static/media/oscar.png" alt="logo">
+
+    </a>
+    OSCAR Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/oscar-project/documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    documentation
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OSCAR
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../accessing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting access to OSCAR
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quickstart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OSCAR Quickstart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Schema
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Schema
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schema/schema-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OSCAR Schema v2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/generation-jeanzay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generating a new OSCAR Version on Jean Zay
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/oscar-tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    oscar-tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Versions
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Versions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mOSCAR/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    mOSCAR
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oscar-2019/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OSCAR 2019
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oscar-2109/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OSCAR 21.09
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    OSCAR 22.01
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    OSCAR 22.01
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layout
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example document
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Annotations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filtering
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Filtering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-documents-that-come-from-wikipedia-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting documents that come from Wikipedia only
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extracting-lines-from-non-annotated-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extracting lines from non-annotated documents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-alemannic-lines-from-the-german-corpus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Alemannic lines from the German corpus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Languages
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oscar-2301/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OSCAR 23.01
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layout
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example document
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Annotations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filtering
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Filtering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-documents-that-come-from-wikipedia-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting documents that come from Wikipedia only
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extracting-lines-from-non-annotated-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extracting lines from non-annotated documents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-alemannic-lines-from-the-german-corpus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Alemannic lines from the German corpus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Languages
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="oscar-2201">OSCAR 22.01</h1>
+<p>OSCAR 2201 is the OSCAR version from January, 2022, the <a href="https://commoncrawl.org/2021/12/nov-dec-2021-crawl-archive-now-available/">November/December 2021 dump of Common Crawl</a>.
+It features a <strong>different</strong> file layout that makes it <strong>not</strong> backward compatible with code designed to run with previous OSCAR versions.</p>
+<p><a class="md-button" href="#">Request access</a>
+<a class="md-button" href="#">🤗 Datasets</a>
+<a class="md-button" href="#">Read the paper</a></p>
+<h2 id="summary">Summary</h2>
+<p>OSCAR 22.01 is <strong>document-oriented</strong>, which means that rather than extracting lines and sorting them in language subcorpora, we identify documents as a whole. The main differences are that sentences in a document are contiguous and should make sense one after another, but sentences are not guaranteed to be of the subcorpus' language.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As an example, the English Wikipedia page about <a href="https://en.wikipedia.com/wiki/La_Marseillaise">La Marseillaise</a> contains sentences in French (The anthem's lyrics). In line-oriented corpora, these sentences would have been put in the French subcorpus. In OSCAR 22.01, they should be along with the article, in a document classified as English.</p>
+</div>
+<h2 id="layout">Layout</h2>
+<p>As previous corpora, there is one subcorpus per language, plus <strong>one new subcorpus for multilingual documents</strong>.
+Subcorpora are distributed in <a href="https://jsonlines.org">JSONLines</a>, split into 1GB chunks, then gzipped.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Splits are completely independent and self-contained: It is possible to only download <code>en_meta_134.jsonl.gz</code> and to do processing on it.</p>
+</div>
+<h3 id="example-document">Example document</h3>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">{</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span><span class="s2">"content"</span><span class="o">:</span><span class="s2">"newline\nseparaaaaaaaaaaated\ncontent"</span><span class="p">,</span><span class="w"> </span><span class="c1">// (1)</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">  </span><span class="s2">"warc_headers"</span><span class="o">:</span><span class="p">{</span><span class="w"> </span><span class="c1">// (2) </span>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span><span class="s2">"warc-refers-to"</span><span class="o">:</span><span class="s2">"&lt;urn:uuid:83f2e1d4-5ed3-41db-86ff-f7826c4c20f9&gt;"</span><span class="p">,</span><span class="w"> </span>
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="s2">"warc-date"</span><span class="o">:</span><span class="s2">"2021-09-16T11:07:14Z"</span><span class="p">,</span>
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="s2">"warc-block-digest"</span><span class="o">:</span><span class="s2">"sha1:X3OWP47FG2O5LBNMFSNB44FJF2SSRC26"</span><span class="p">,</span>
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="s2">"warc-type"</span><span class="o">:</span><span class="s2">"conversion"</span><span class="p">,</span>
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">    </span><span class="s2">"warc-identified-content-language"</span><span class="o">:</span><span class="s2">"eng"</span><span class="p">,</span>
+<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">    </span><span class="s2">"content-length"</span><span class="o">:</span><span class="s2">"1694"</span><span class="p">,</span>
+<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">    </span><span class="s2">"warc-target-uri"</span><span class="o">:</span><span class="s2">"https://foo.bar"</span><span class="p">,</span>
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">    </span><span class="s2">"warc-record-id"</span><span class="o">:</span><span class="s2">"&lt;urn:uuid:3304bc27-17d0-4ffd-a692-340381478a5f&gt;"</span><span class="p">,</span>
+<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">    </span><span class="s2">"content-type"</span><span class="o">:</span><span class="s2">"text/plain"</span>
+<a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">  </span><span class="p">},</span>
+<a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">  </span><span class="s2">"metadata"</span><span class="o">:</span><span class="p">{</span>
+<a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">    </span><span class="c1">// (3)</span>
+<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">    </span><span class="s2">"identification"</span><span class="o">:</span><span class="p">{</span>
+<a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">      </span><span class="s2">"label"</span><span class="o">:</span><span class="s2">"en"</span><span class="p">,</span>
+<a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">      </span><span class="s2">"prob"</span><span class="o">:</span><span class="mf">0.6268374</span>
+<a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">    </span><span class="p">},</span>
+<a href="#__codelineno-0-20" id="__codelineno-0-20" name="__codelineno-0-20"></a>
+<a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">    </span><span class="c1">// (4)</span>
+<a href="#__codelineno-0-22" id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">    </span><span class="s2">"annotation"</span><span class="o">:</span><span class="p">[</span>
+<a href="#__codelineno-0-23" id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">      </span><span class="s2">"short_sentences"</span><span class="p">,</span>
+<a href="#__codelineno-0-24" id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">      </span><span class="s2">"footer"</span>
+<a href="#__codelineno-0-25" id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">    </span><span class="p">],</span>
+<a href="#__codelineno-0-26" id="__codelineno-0-26" name="__codelineno-0-26"></a>
+<a href="#__codelineno-0-27" id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="w">    </span><span class="c1">// (5)</span>
+<a href="#__codelineno-0-28" id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="w">    </span><span class="s2">"sentence_identifications"</span><span class="o">:</span><span class="p">[</span>
+<a href="#__codelineno-0-29" id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="w">      </span><span class="p">{</span>
+<a href="#__codelineno-0-30" id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="w">        </span><span class="s2">"label"</span><span class="o">:</span><span class="s2">"en"</span><span class="p">,</span>
+<a href="#__codelineno-0-31" id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="w">        </span><span class="s2">"prob"</span><span class="o">:</span><span class="mf">0.93925816</span>
+<a href="#__codelineno-0-32" id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="w">      </span><span class="p">},</span>
+<a href="#__codelineno-0-33" id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="w">      </span><span class="kc">null</span><span class="p">,</span>
+<a href="#__codelineno-0-34" id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="w">      </span><span class="p">{</span>
+<a href="#__codelineno-0-35" id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="w">        </span><span class="s2">"label"</span><span class="o">:</span><span class="s2">"en"</span><span class="p">,</span>
+<a href="#__codelineno-0-36" id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="w">        </span><span class="s2">"prob"</span><span class="o">:</span><span class="mf">0.9606543</span>
+<a href="#__codelineno-0-37" id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="w">      </span><span class="p">}</span>
+<a href="#__codelineno-0-38" id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="w">    </span><span class="p">]</span>
+<a href="#__codelineno-0-39" id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="w">  </span><span class="p">}</span>
+<a href="#__codelineno-0-40" id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="p">}</span>
+</code></pre></div>
+<ol>
+<li>Content. Lines are separated by <code>\n</code>.</li>
+<li>Headers from the crawler. Note that nothing is changed, so the content length may be incorrect.</li>
+<li>Document-wide identification. <code>prob</code> is the weighted average of the confidence of identified lines.</li>
+<li>Annotations of the document. <code>null</code> if no annotation.</li>
+<li>Line-by-line identifications. <code>null</code> for each line that has no identification.</li>
+</ol>
+<h2 id="annotations">Annotations</h2>
+<ul>
+<li><code>tiny</code>: The document has a low (&lt;5) number of lines.</li>
+<li><code>short_sentences</code>: The document has a high number (&gt;50%) of short lines (&lt;400 bytes)</li>
+<li><code>header</code>: The document has a high number of short lines at its head, suggesting the presence of low quality content.</li>
+<li><code>footer</code>: The document has a high number of short lines at its tail, suggesting the presence of low quality content.</li>
+<li><code>noisy</code>: The document has a high percentage of punctuation (&gt;50%)</li>
+<li><code>adult</code>: The document contains adult content. This annotation uses a blocklist and labels a tiny part of the corpus: It does not catch most of the adult content.</li>
+</ul>
+<p>More information about the thresholds and annotators are present in our <a href="https://oscar-project.org/publication/2022/arxiv/towards/">paper</a>.</p>
+<h2 id="filtering">Filtering</h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Filtering can be done using <a href="https://github.com/oscar-corpus/oscar-tools"><code>oscar-tools</code></a>, a high performance toolkit that provides rapid and efficient ways of transforming corpora into what you need. More info <a href="oscar-tools">here</a>.</p>
+</div>
+<p>Filtering can be done using classic Python tools, such as <a href="https://github.com/ultrajson/ultrajson"><code>ujson</code></a>. 
+While we don't supply a Python library enabling easy filtering/transformation for OSCAR 22.01, we provide some filtering examples that you can change to better suit your needs.</p>
+<h3 id="getting-documents-that-come-from-wikipedia-only">Getting documents that come from Wikipedia only</h3>
+<p>Using filters on <code>warc_headers.warc-target-uri</code> makes filtering on URLs easy.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">TODO</span>
+</code></pre></div>
+<h3 id="extracting-lines-from-non-annotated-documents">Extracting lines from non-annotated documents</h3>
+<p>Non-annotated documents are suspected to be cleaner than annotated ones, so extracting their content should be interesting to do. We extract lines from documents where <code>metadata.annotations == null</code>.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">TODO</span>
+</code></pre></div>
+<h3 id="getting-alemannic-lines-from-the-german-corpus">Getting Alemannic lines from the German corpus</h3>
+<p>As detailed in our paper, we found that the German corpus has a (relative to the Alemannic corpus size) important amount of Alemannic. We use a filter on <code>metadata.sentence_identifications</code> to extract those sentences.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="n">TODO</span>
+</code></pre></div>
+<h2 id="languages">Languages</h2>
+<p>OSCAR 22.01 has subcorpora for 142 languages (counting the Multilingual corpus).
+The following table exhibits the size, number of documents and number of words for each of them.</p>
+<p>Note that the size accounts for the raw uncompressed file size, counting metadata.</p>
+<details class="note">
+<summary>Language table</summary>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Language</th>
+<th style="text-align: left;">Size</th>
+<th style="text-align: left;"># Documents</th>
+<th style="text-align: left;"># Words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>Multilingual</em></td>
+<td style="text-align: left;">12.1 GB</td>
+<td style="text-align: left;">1,210,685</td>
+<td style="text-align: left;">936,187,711</td>
+</tr>
+<tr>
+<td style="text-align: left;">Afrikaans</td>
+<td style="text-align: left;">47.0 MB</td>
+<td style="text-align: left;">12,393</td>
+<td style="text-align: left;">6,227,310</td>
+</tr>
+<tr>
+<td style="text-align: left;">Albanian</td>
+<td style="text-align: left;">3.0 GB</td>
+<td style="text-align: left;">437,287</td>
+<td style="text-align: left;">326,325,149</td>
+</tr>
+<tr>
+<td style="text-align: left;">Alemannic / Swiss German</td>
+<td style="text-align: left;">363.6 kB</td>
+<td style="text-align: left;">139</td>
+<td style="text-align: left;">37,381</td>
+</tr>
+<tr>
+<td style="text-align: left;">Amharic</td>
+<td style="text-align: left;">461.0 MB</td>
+<td style="text-align: left;">37,513</td>
+<td style="text-align: left;">30,481,153</td>
+</tr>
+<tr>
+<td style="text-align: left;">Arabic</td>
+<td style="text-align: left;">84.2 GB</td>
+<td style="text-align: left;">8,718,929</td>
+<td style="text-align: left;">6,103,711,887</td>
+</tr>
+<tr>
+<td style="text-align: left;">Aragonese</td>
+<td style="text-align: left;">10.6 kB</td>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">51</td>
+</tr>
+<tr>
+<td style="text-align: left;">Armenian</td>
+<td style="text-align: left;">4.7 GB</td>
+<td style="text-align: left;">379,267</td>
+<td style="text-align: left;">268,031,270</td>
+</tr>
+<tr>
+<td style="text-align: left;">Assamese</td>
+<td style="text-align: left;">221.2 MB</td>
+<td style="text-align: left;">17,084</td>
+<td style="text-align: left;">11,109,557</td>
+</tr>
+<tr>
+<td style="text-align: left;">Asturian</td>
+<td style="text-align: left;">73.6 kB</td>
+<td style="text-align: left;">77</td>
+<td style="text-align: left;">3,919</td>
+</tr>
+<tr>
+<td style="text-align: left;">Avaric</td>
+<td style="text-align: left;">18.6 kB</td>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">582</td>
+</tr>
+<tr>
+<td style="text-align: left;">Azerbaijani</td>
+<td style="text-align: left;">3.5 GB</td>
+<td style="text-align: left;">491,847</td>
+<td style="text-align: left;">291,927,692</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bangla</td>
+<td style="text-align: left;">15.1 GB</td>
+<td style="text-align: left;">1,171,501</td>
+<td style="text-align: left;">751,877,226</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bashkir</td>
+<td style="text-align: left;">95.5 MB</td>
+<td style="text-align: left;">11,198</td>
+<td style="text-align: left;">5,418,474</td>
+</tr>
+<tr>
+<td style="text-align: left;">Basque</td>
+<td style="text-align: left;">1.1 GB</td>
+<td style="text-align: left;">233,658</td>
+<td style="text-align: left;">97,092,942</td>
+</tr>
+<tr>
+<td style="text-align: left;">Belarusian</td>
+<td style="text-align: left;">1.8 GB</td>
+<td style="text-align: left;">180,046</td>
+<td style="text-align: left;">107,227,860</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bihari languages</td>
+<td style="text-align: left;">24.2 kB</td>
+<td style="text-align: left;">27</td>
+<td style="text-align: left;">569</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bishnupriya</td>
+<td style="text-align: left;">2.0 MB</td>
+<td style="text-align: left;">271</td>
+<td style="text-align: left;">98,419</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bosnian</td>
+<td style="text-align: left;">10.3 kB</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">422</td>
+</tr>
+<tr>
+<td style="text-align: left;">Breton</td>
+<td style="text-align: left;">33.7 MB</td>
+<td style="text-align: left;">16,119</td>
+<td style="text-align: left;">3,111,619</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bulgarian</td>
+<td style="text-align: left;">35.1 GB</td>
+<td style="text-align: left;">2,887,115</td>
+<td style="text-align: left;">2,405,981,285</td>
+</tr>
+<tr>
+<td style="text-align: left;">Burmese</td>
+<td style="text-align: left;">1.9 GB</td>
+<td style="text-align: left;">158,733</td>
+<td style="text-align: left;">44,835,970</td>
+</tr>
+<tr>
+<td style="text-align: left;">Catalan</td>
+<td style="text-align: left;">13.9 GB</td>
+<td style="text-align: left;">2,627,307</td>
+<td style="text-align: left;">1,508,919,864</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cebuano</td>
+<td style="text-align: left;">44.6 MB</td>
+<td style="text-align: left;">5,742</td>
+<td style="text-align: left;">5,253,785</td>
+</tr>
+<tr>
+<td style="text-align: left;">Central Kurdish</td>
+<td style="text-align: left;">716.4 MB</td>
+<td style="text-align: left;">84,950</td>
+<td style="text-align: left;">43,913,025</td>
+</tr>
+<tr>
+<td style="text-align: left;">Chechen</td>
+<td style="text-align: left;">14.0 MB</td>
+<td style="text-align: left;">4,086</td>
+<td style="text-align: left;">798,766</td>
+</tr>
+<tr>
+<td style="text-align: left;">Chinese</td>
+<td style="text-align: left;">900.9 GB</td>
+<td style="text-align: left;">56,524,518</td>
+<td style="text-align: left;">23,149,203,886</td>
+</tr>
+<tr>
+<td style="text-align: left;">Chuvash</td>
+<td style="text-align: left;">41.8 MB</td>
+<td style="text-align: left;">4,750</td>
+<td style="text-align: left;">2,465,782</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cornish</td>
+<td style="text-align: left;">1.4 kB</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">55</td>
+</tr>
+<tr>
+<td style="text-align: left;">Croatian</td>
+<td style="text-align: left;">11.2 MB</td>
+<td style="text-align: left;">11,462</td>
+<td style="text-align: left;">505,369</td>
+</tr>
+<tr>
+<td style="text-align: left;">Czech</td>
+<td style="text-align: left;">58.6 GB</td>
+<td style="text-align: left;">10,381,916</td>
+<td style="text-align: left;">5,452,724,456</td>
+</tr>
+<tr>
+<td style="text-align: left;">Danish</td>
+<td style="text-align: left;">12.6 GB</td>
+<td style="text-align: left;">2,265,479</td>
+<td style="text-align: left;">1,454,439,292</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dimli (individual language)</td>
+<td style="text-align: left;">706 Bytes</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">19</td>
+</tr>
+<tr>
+<td style="text-align: left;">Divehi</td>
+<td style="text-align: left;">217.2 MB</td>
+<td style="text-align: left;">24,067</td>
+<td style="text-align: left;">10,112,205</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dutch</td>
+<td style="text-align: left;">114.0 GB</td>
+<td style="text-align: left;">20,206,532</td>
+<td style="text-align: left;">12,329,127,151</td>
+</tr>
+<tr>
+<td style="text-align: left;">Eastern Mari</td>
+<td style="text-align: left;">11.3 MB</td>
+<td style="text-align: left;">1,612</td>
+<td style="text-align: left;">641,525</td>
+</tr>
+<tr>
+<td style="text-align: left;">Egyptian Arabic</td>
+<td style="text-align: left;">2.8 MB</td>
+<td style="text-align: left;">1,256</td>
+<td style="text-align: left;">176,096</td>
+</tr>
+<tr>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">3.2 TB</td>
+<td style="text-align: left;">431,992,659</td>
+<td style="text-align: left;">377,376,402,775</td>
+</tr>
+<tr>
+<td style="text-align: left;">Esperanto</td>
+<td style="text-align: left;">558.3 MB</td>
+<td style="text-align: left;">111,932</td>
+<td style="text-align: left;">58,416,628</td>
+</tr>
+<tr>
+<td style="text-align: left;">Estonian</td>
+<td style="text-align: left;">9.2 GB</td>
+<td style="text-align: left;">1,362,524</td>
+<td style="text-align: left;">820,975,443</td>
+</tr>
+<tr>
+<td style="text-align: left;">Filipino</td>
+<td style="text-align: left;">646.5 MB</td>
+<td style="text-align: left;">70,394</td>
+<td style="text-align: left;">81,881,278</td>
+</tr>
+<tr>
+<td style="text-align: left;">Finnish</td>
+<td style="text-align: left;">37.8 GB</td>
+<td style="text-align: left;">4,948,961</td>
+<td style="text-align: left;">2,900,615,928</td>
+</tr>
+<tr>
+<td style="text-align: left;">French</td>
+<td style="text-align: left;">382.2 GB</td>
+<td style="text-align: left;">52,037,098</td>
+<td style="text-align: left;">41,713,990,658</td>
+</tr>
+<tr>
+<td style="text-align: left;">Galician</td>
+<td style="text-align: left;">255.2 MB</td>
+<td style="text-align: left;">88,803</td>
+<td style="text-align: left;">27,051,212</td>
+</tr>
+<tr>
+<td style="text-align: left;">Georgian</td>
+<td style="text-align: left;">7.1 GB</td>
+<td style="text-align: left;">488,588</td>
+<td style="text-align: left;">281,430,479</td>
+</tr>
+<tr>
+<td style="text-align: left;">German</td>
+<td style="text-align: left;">496.7 GB</td>
+<td style="text-align: left;">70,075,424</td>
+<td style="text-align: left;">46,826,676,844</td>
+</tr>
+<tr>
+<td style="text-align: left;">Goan Konkani</td>
+<td style="text-align: left;">787.2 kB</td>
+<td style="text-align: left;">46</td>
+<td style="text-align: left;">38,831</td>
+</tr>
+<tr>
+<td style="text-align: left;">Greek</td>
+<td style="text-align: left;">78.3 GB</td>
+<td style="text-align: left;">6,738,546</td>
+<td style="text-align: left;">5,031,242,803</td>
+</tr>
+<tr>
+<td style="text-align: left;">Guarani</td>
+<td style="text-align: left;">9.0 kB</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">374</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gujarati</td>
+<td style="text-align: left;">4.8 GB</td>
+<td style="text-align: left;">136,467</td>
+<td style="text-align: left;">301,170,777</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hebrew</td>
+<td style="text-align: left;">30.3 GB</td>
+<td style="text-align: left;">3,132,396</td>
+<td style="text-align: left;">2,249,377,984</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hindi</td>
+<td style="text-align: left;">23.3 GB</td>
+<td style="text-align: left;">1,529,907</td>
+<td style="text-align: left;">1,534,799,198</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hungarian</td>
+<td style="text-align: left;">53.9 GB</td>
+<td style="text-align: left;">6,866,062</td>
+<td style="text-align: left;">4,598,787,907</td>
+</tr>
+<tr>
+<td style="text-align: left;">Icelandic</td>
+<td style="text-align: left;">2.0 GB</td>
+<td style="text-align: left;">396,183</td>
+<td style="text-align: left;">210,365,124</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ido</td>
+<td style="text-align: left;">77.3 kB</td>
+<td style="text-align: left;">105</td>
+<td style="text-align: left;">2,690</td>
+</tr>
+<tr>
+<td style="text-align: left;">Iloko</td>
+<td style="text-align: left;">97.9 kB</td>
+<td style="text-align: left;">75</td>
+<td style="text-align: left;">8,592</td>
+</tr>
+<tr>
+<td style="text-align: left;">Indonesian</td>
+<td style="text-align: left;">17.4 GB</td>
+<td style="text-align: left;">2,244,622</td>
+<td style="text-align: left;">1,984,195,207</td>
+</tr>
+<tr>
+<td style="text-align: left;">Interlingua</td>
+<td style="text-align: left;">40.2 kB</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">10,125</td>
+</tr>
+<tr>
+<td style="text-align: left;">Irish</td>
+<td style="text-align: left;">45.6 MB</td>
+<td style="text-align: left;">12,233</td>
+<td style="text-align: left;">4,877,850</td>
+</tr>
+<tr>
+<td style="text-align: left;">Italian</td>
+<td style="text-align: left;">229.3 GB</td>
+<td style="text-align: left;">28,502,092</td>
+<td style="text-align: left;">24,294,684,830</td>
+</tr>
+<tr>
+<td style="text-align: left;">Japanese</td>
+<td style="text-align: left;">258.7 GB</td>
+<td style="text-align: left;">36,328,931</td>
+<td style="text-align: left;">5,592,948,356</td>
+</tr>
+<tr>
+<td style="text-align: left;">Javanese</td>
+<td style="text-align: left;">152.7 kB</td>
+<td style="text-align: left;">70</td>
+<td style="text-align: left;">10,441</td>
+</tr>
+<tr>
+<td style="text-align: left;">Kalmyk</td>
+<td style="text-align: left;">9.3 kB</td>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">250</td>
+</tr>
+<tr>
+<td style="text-align: left;">Kannada</td>
+<td style="text-align: left;">2.6 GB</td>
+<td style="text-align: left;">150,850</td>
+<td style="text-align: left;">108,450,571</td>
+</tr>
+<tr>
+<td style="text-align: left;">Karachay-Balkar</td>
+<td style="text-align: left;">119.6 kB</td>
+<td style="text-align: left;">91</td>
+<td style="text-align: left;">4,089</td>
+</tr>
+<tr>
+<td style="text-align: left;">Kazakh</td>
+<td style="text-align: left;">2.9 GB</td>
+<td style="text-align: left;">261,085</td>
+<td style="text-align: left;">157,267,307</td>
+</tr>
+<tr>
+<td style="text-align: left;">Khmer</td>
+<td style="text-align: left;">1.9 GB</td>
+<td style="text-align: left;">121,910</td>
+<td style="text-align: left;">30,564,131</td>
+</tr>
+<tr>
+<td style="text-align: left;">Komi</td>
+<td style="text-align: left;">119.9 kB</td>
+<td style="text-align: left;">127</td>
+<td style="text-align: left;">3,335</td>
+</tr>
+<tr>
+<td style="text-align: left;">Korean</td>
+<td style="text-align: left;">51.8 GB</td>
+<td style="text-align: left;">5,881,481</td>
+<td style="text-align: left;">3,854,968,649</td>
+</tr>
+<tr>
+<td style="text-align: left;">Kurdish</td>
+<td style="text-align: left;">150.3 MB</td>
+<td style="text-align: left;">29,906</td>
+<td style="text-align: left;">17,390,759</td>
+</tr>
+<tr>
+<td style="text-align: left;">Kyrgyz</td>
+<td style="text-align: left;">518.6 MB</td>
+<td style="text-align: left;">62,244</td>
+<td style="text-align: left;">28,028,986</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lao</td>
+<td style="text-align: left;">337.1 MB</td>
+<td style="text-align: left;">28,914</td>
+<td style="text-align: left;">6,682,982</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latin</td>
+<td style="text-align: left;">4.1 MB</td>
+<td style="text-align: left;">4,397</td>
+<td style="text-align: left;">187,446</td>
+</tr>
+<tr>
+<td style="text-align: left;">Latvian</td>
+<td style="text-align: left;">8.2 GB</td>
+<td style="text-align: left;">1,032,987</td>
+<td style="text-align: left;">707,361,898</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lezghian</td>
+<td style="text-align: left;">375.5 kB</td>
+<td style="text-align: left;">124</td>
+<td style="text-align: left;">19,250</td>
+</tr>
+<tr>
+<td style="text-align: left;">Limburgish</td>
+<td style="text-align: left;">1.4 kB</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">41</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lithuanian</td>
+<td style="text-align: left;">20.0 GB</td>
+<td style="text-align: left;">2,303,070</td>
+<td style="text-align: left;">1,712,802,056</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lojban</td>
+<td style="text-align: left;">1.9 MB</td>
+<td style="text-align: left;">570</td>
+<td style="text-align: left;">260,542</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lombard</td>
+<td style="text-align: left;">2.6 kB</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">225</td>
+</tr>
+<tr>
+<td style="text-align: left;">Low German</td>
+<td style="text-align: left;">9.0 MB</td>
+<td style="text-align: left;">1,938</td>
+<td style="text-align: left;">1,012,561</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lower Sorbian</td>
+<td style="text-align: left;">707 Bytes</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">17</td>
+</tr>
+<tr>
+<td style="text-align: left;">Luxembourgish</td>
+<td style="text-align: left;">15.8 MB</td>
+<td style="text-align: left;">5,108</td>
+<td style="text-align: left;">1,545,946</td>
+</tr>
+<tr>
+<td style="text-align: left;">Macedonian</td>
+<td style="text-align: left;">3.6 GB</td>
+<td style="text-align: left;">341,775</td>
+<td style="text-align: left;">244,058,579</td>
+</tr>
+<tr>
+<td style="text-align: left;">Maithili</td>
+<td style="text-align: left;">21.6 kB</td>
+<td style="text-align: left;">23</td>
+<td style="text-align: left;">483</td>
+</tr>
+<tr>
+<td style="text-align: left;">Malagasy</td>
+<td style="text-align: left;">57.3 MB</td>
+<td style="text-align: left;">3,028</td>
+<td style="text-align: left;">7,279,056</td>
+</tr>
+<tr>
+<td style="text-align: left;">Malay</td>
+<td style="text-align: left;">5.3 MB</td>
+<td style="text-align: left;">5,228</td>
+<td style="text-align: left;">217,818</td>
+</tr>
+<tr>
+<td style="text-align: left;">Malayalam</td>
+<td style="text-align: left;">4.1 GB</td>
+<td style="text-align: left;">250,972</td>
+<td style="text-align: left;">137,831,247</td>
+</tr>
+<tr>
+<td style="text-align: left;">Maltese</td>
+<td style="text-align: left;">2.5 MB</td>
+<td style="text-align: left;">2,208</td>
+<td style="text-align: left;">118,190</td>
+</tr>
+<tr>
+<td style="text-align: left;">Marathi</td>
+<td style="text-align: left;">3.3 GB</td>
+<td style="text-align: left;">250,376</td>
+<td style="text-align: left;">160,179,233</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mazanderani</td>
+<td style="text-align: left;">128.2 kB</td>
+<td style="text-align: left;">76</td>
+<td style="text-align: left;">7,337</td>
+</tr>
+<tr>
+<td style="text-align: left;">Minangkabau</td>
+<td style="text-align: left;">6.0 MB</td>
+<td style="text-align: left;">585</td>
+<td style="text-align: left;">614,613</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mingrelian</td>
+<td style="text-align: left;">7.6 MB</td>
+<td style="text-align: left;">2,550</td>
+<td style="text-align: left;">253,333</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mongolian</td>
+<td style="text-align: left;">2.8 GB</td>
+<td style="text-align: left;">237,719</td>
+<td style="text-align: left;">176,405,432</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nahuatl languages</td>
+<td style="text-align: left;">8.7 kB</td>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">179</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nepali</td>
+<td style="text-align: left;">3.7 GB</td>
+<td style="text-align: left;">391,947</td>
+<td style="text-align: left;">177,885,116</td>
+</tr>
+<tr>
+<td style="text-align: left;">Newari</td>
+<td style="text-align: left;">5.7 MB</td>
+<td style="text-align: left;">1,134</td>
+<td style="text-align: left;">273,837</td>
+</tr>
+<tr>
+<td style="text-align: left;">Norwegian</td>
+<td style="text-align: left;">2.8 GB</td>
+<td style="text-align: left;">973,188</td>
+<td style="text-align: left;">279,182,902</td>
+</tr>
+<tr>
+<td style="text-align: left;">Norwegian Nynorsk</td>
+<td style="text-align: left;">6.8 MB</td>
+<td style="text-align: left;">5,835</td>
+<td style="text-align: left;">459,183</td>
+</tr>
+<tr>
+<td style="text-align: left;">Occitan</td>
+<td style="text-align: left;">2.1 MB</td>
+<td style="text-align: left;">373</td>
+<td style="text-align: left;">31,061</td>
+</tr>
+<tr>
+<td style="text-align: left;">Odia</td>
+<td style="text-align: left;">487.9 MB</td>
+<td style="text-align: left;">52,942</td>
+<td style="text-align: left;">23,755,902</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ossetic</td>
+<td style="text-align: left;">13.9 MB</td>
+<td style="text-align: left;">3,560</td>
+<td style="text-align: left;">800,430</td>
+</tr>
+<tr>
+<td style="text-align: left;">Pashto</td>
+<td style="text-align: left;">490.3 MB</td>
+<td style="text-align: left;">50,312</td>
+<td style="text-align: left;">46,293,249</td>
+</tr>
+<tr>
+<td style="text-align: left;">Persian</td>
+<td style="text-align: left;">77.4 GB</td>
+<td style="text-align: left;">7,665,871</td>
+<td style="text-align: left;">6,430,164,396</td>
+</tr>
+<tr>
+<td style="text-align: left;">Piedmontese</td>
+<td style="text-align: left;">1.7 MB</td>
+<td style="text-align: left;">698</td>
+<td style="text-align: left;">188,270</td>
+</tr>
+<tr>
+<td style="text-align: left;">Polish</td>
+<td style="text-align: left;">139.0 GB</td>
+<td style="text-align: left;">19,301,137</td>
+<td style="text-align: left;">12,584,498,906</td>
+</tr>
+<tr>
+<td style="text-align: left;">Portuguese</td>
+<td style="text-align: left;">170.3 GB</td>
+<td style="text-align: left;">23,735,707</td>
+<td style="text-align: left;">18,441,864,893</td>
+</tr>
+<tr>
+<td style="text-align: left;">Punjabi</td>
+<td style="text-align: left;">1.1 GB</td>
+<td style="text-align: left;">68,094</td>
+<td style="text-align: left;">70,068,604</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quechua</td>
+<td style="text-align: left;">744 Bytes</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">14</td>
+</tr>
+<tr>
+<td style="text-align: left;">Romanian</td>
+<td style="text-align: left;">49.2 GB</td>
+<td style="text-align: left;">4,624,764</td>
+<td style="text-align: left;">5,261,803,995</td>
+</tr>
+<tr>
+<td style="text-align: left;">Russia Buriat</td>
+<td style="text-align: left;">32.9 kB</td>
+<td style="text-align: left;">39</td>
+<td style="text-align: left;">785</td>
+</tr>
+<tr>
+<td style="text-align: left;">Russian</td>
+<td style="text-align: left;">1.1 TB</td>
+<td style="text-align: left;">76,060,844</td>
+<td style="text-align: left;">62,811,122,663</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sakha</td>
+<td style="text-align: left;">65.6 MB</td>
+<td style="text-align: left;">6,284</td>
+<td style="text-align: left;">3,473,813</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sanskrit</td>
+<td style="text-align: left;">136.0 MB</td>
+<td style="text-align: left;">4,472</td>
+<td style="text-align: left;">5,671,369</td>
+</tr>
+<tr>
+<td style="text-align: left;">Scottish Gaelic</td>
+<td style="text-align: left;">137.7 kB</td>
+<td style="text-align: left;">136</td>
+<td style="text-align: left;">7,769</td>
+</tr>
+<tr>
+<td style="text-align: left;">Serbian</td>
+<td style="text-align: left;">6.9 GB</td>
+<td style="text-align: left;">577,472</td>
+<td style="text-align: left;">482,932,670</td>
+</tr>
+<tr>
+<td style="text-align: left;">Serbian (Latin)</td>
+<td style="text-align: left;">931.8 kB</td>
+<td style="text-align: left;">738</td>
+<td style="text-align: left;">92,875</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sicilian</td>
+<td style="text-align: left;">1.5 kB</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">50</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sindhi</td>
+<td style="text-align: left;">117.1 MB</td>
+<td style="text-align: left;">15,516</td>
+<td style="text-align: left;">10,685,611</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sinhala</td>
+<td style="text-align: left;">2.0 GB</td>
+<td style="text-align: left;">108,593</td>
+<td style="text-align: left;">113,179,741</td>
+</tr>
+<tr>
+<td style="text-align: left;">Slovak</td>
+<td style="text-align: left;">16.5 GB</td>
+<td style="text-align: left;">2,409,555</td>
+<td style="text-align: left;">1,619,121,944</td>
+</tr>
+<tr>
+<td style="text-align: left;">Slovenian</td>
+<td style="text-align: left;">1.2 GB</td>
+<td style="text-align: left;">351,894</td>
+<td style="text-align: left;">118,400,246</td>
+</tr>
+<tr>
+<td style="text-align: left;">Somali</td>
+<td style="text-align: left;">2.1 kB</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">109</td>
+</tr>
+<tr>
+<td style="text-align: left;">South Azerbaijani</td>
+<td style="text-align: left;">14.1 MB</td>
+<td style="text-align: left;">5,381</td>
+<td style="text-align: left;">693,746</td>
+</tr>
+<tr>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: left;">381.9 GB</td>
+<td style="text-align: left;">51,386,247</td>
+<td style="text-align: left;">42,829,835,316</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sundanese</td>
+<td style="text-align: left;">5.0 MB</td>
+<td style="text-align: left;">263</td>
+<td style="text-align: left;">547,145</td>
+</tr>
+<tr>
+<td style="text-align: left;">Swahili</td>
+<td style="text-align: left;">1.3 MB</td>
+<td style="text-align: left;">462</td>
+<td style="text-align: left;">123,050</td>
+</tr>
+<tr>
+<td style="text-align: left;">Swedish</td>
+<td style="text-align: left;">48.0 GB</td>
+<td style="text-align: left;">7,541,278</td>
+<td style="text-align: left;">5,078,331,128</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tajik</td>
+<td style="text-align: left;">870.9 MB</td>
+<td style="text-align: left;">46,366</td>
+<td style="text-align: left;">56,627,727</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tamil</td>
+<td style="text-align: left;">11.4 GB</td>
+<td style="text-align: left;">556,772</td>
+<td style="text-align: left;">452,343,748</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tatar</td>
+<td style="text-align: left;">915.3 MB</td>
+<td style="text-align: left;">76,398</td>
+<td style="text-align: left;">51,875,265</td>
+</tr>
+<tr>
+<td style="text-align: left;">Telugu</td>
+<td style="text-align: left;">3.4 GB</td>
+<td style="text-align: left;">249,756</td>
+<td style="text-align: left;">137,752,065</td>
+</tr>
+<tr>
+<td style="text-align: left;">Thai</td>
+<td style="text-align: left;">66.1 GB</td>
+<td style="text-align: left;">5,030,254</td>
+<td style="text-align: left;">1,626,779,846</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tibetan</td>
+<td style="text-align: left;">234.5 MB</td>
+<td style="text-align: left;">18,683</td>
+<td style="text-align: left;">2,286,269</td>
+</tr>
+<tr>
+<td style="text-align: left;">Turkish</td>
+<td style="text-align: left;">75.1 GB</td>
+<td style="text-align: left;">10,826,031</td>
+<td style="text-align: left;">6,421,221,358</td>
+</tr>
+<tr>
+<td style="text-align: left;">Turkmen</td>
+<td style="text-align: left;">4.4 MB</td>
+<td style="text-align: left;">2,485</td>
+<td style="text-align: left;">276,632</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ukrainian</td>
+<td style="text-align: left;">48.8 GB</td>
+<td style="text-align: left;">4,558,214</td>
+<td style="text-align: left;">2,879,585,992</td>
+</tr>
+<tr>
+<td style="text-align: left;">Emiliano-Romagnolo[eml]</td>
+<td style="text-align: left;">901 Bytes</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">53</td>
+</tr>
+<tr>
+<td style="text-align: left;">Upper Sorbian</td>
+<td style="text-align: left;">132.8 kB</td>
+<td style="text-align: left;">110</td>
+<td style="text-align: left;">8,825</td>
+</tr>
+<tr>
+<td style="text-align: left;">Urdu</td>
+<td style="text-align: left;">3.4 GB</td>
+<td style="text-align: left;">336,994</td>
+<td style="text-align: left;">332,816,354</td>
+</tr>
+<tr>
+<td style="text-align: left;">Uyghur</td>
+<td style="text-align: left;">201.9 MB</td>
+<td style="text-align: left;">18,556</td>
+<td style="text-align: left;">11,240,889</td>
+</tr>
+<tr>
+<td style="text-align: left;">Uzbek</td>
+<td style="text-align: left;">19.9 MB</td>
+<td style="text-align: left;">9,526</td>
+<td style="text-align: left;">1,370,842</td>
+</tr>
+<tr>
+<td style="text-align: left;">Vietnamese</td>
+<td style="text-align: left;">98.9 GB</td>
+<td style="text-align: left;">9,587,233</td>
+<td style="text-align: left;">12,283,185,482</td>
+</tr>
+<tr>
+<td style="text-align: left;">Volapük</td>
+<td style="text-align: left;">825.9 kB</td>
+<td style="text-align: left;">661</td>
+<td style="text-align: left;">57,039</td>
+</tr>
+<tr>
+<td style="text-align: left;">Walloon</td>
+<td style="text-align: left;">105.7 kB</td>
+<td style="text-align: left;">138</td>
+<td style="text-align: left;">4,386</td>
+</tr>
+<tr>
+<td style="text-align: left;">Waray</td>
+<td style="text-align: left;">7.6 MB</td>
+<td style="text-align: left;">933</td>
+<td style="text-align: left;">830,872</td>
+</tr>
+<tr>
+<td style="text-align: left;">Welsh</td>
+<td style="text-align: left;">409.3 MB</td>
+<td style="text-align: left;">90,378</td>
+<td style="text-align: left;">49,488,495</td>
+</tr>
+<tr>
+<td style="text-align: left;">Western Frisian</td>
+<td style="text-align: left;">75.3 MB</td>
+<td style="text-align: left;">21,946</td>
+<td style="text-align: left;">6,357,929</td>
+</tr>
+<tr>
+<td style="text-align: left;">Western Mari</td>
+<td style="text-align: left;">743.5 kB</td>
+<td style="text-align: left;">155</td>
+<td style="text-align: left;">43,916</td>
+</tr>
+<tr>
+<td style="text-align: left;">Western Panjabi</td>
+<td style="text-align: left;">46.7 MB</td>
+<td style="text-align: left;">6,790</td>
+<td style="text-align: left;">4,060,419</td>
+</tr>
+<tr>
+<td style="text-align: left;">Wu Chinese</td>
+<td style="text-align: left;">137.2 kB</td>
+<td style="text-align: left;">88</td>
+<td style="text-align: left;">3,056</td>
+</tr>
+<tr>
+<td style="text-align: left;">Yiddish</td>
+<td style="text-align: left;">232.5 MB</td>
+<td style="text-align: left;">23,418</td>
+<td style="text-align: left;">15,809,780</td>
+</tr>
+<tr>
+<td style="text-align: left;">Yoruba</td>
+<td style="text-align: left;">24.7 kB</td>
+<td style="text-align: left;">26</td>
+<td style="text-align: left;">1,042</td>
+</tr>
+<tr>
+<td style="text-align: left;">Multilingual</td>
+<td style="text-align: left;">12.1 GB</td>
+<td style="text-align: left;">1,210,685</td>
+<td style="text-align: left;">936,187,711</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../oscar-2109/" class="md-footer__link md-footer__link--prev" aria-label="Previous: OSCAR 21.09">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                OSCAR 21.09
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../oscar-2301/" class="md-footer__link md-footer__link--next" aria-label="Next: OSCAR 23.01">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                OSCAR 23.01
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/oscarnlp" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.com/invite/4JNg9FTar4" target="_blank" rel="noopener" title="discord.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+    
+    
+      
+    
+    
+    
+      
+      
+    
+    <a href="https://mastodon.social/@oscarproj" target="_blank" rel="noopener me" title="mastodon.social" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.filesize.js"></script>
+      
+        <script src="../../javascripts/tablesort.js"></script>
+      
+    
+  </body>
+</html>

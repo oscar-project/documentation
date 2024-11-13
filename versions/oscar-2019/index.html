@@ -1,0 +1,2801 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation of the OSCAR Project, corpus, tools and community.">
+      
+      
+        <meta name="author" content="OSCAR Team">
+      
+      
+      
+        <link rel="prev" href="../mOSCAR/">
+      
+      
+        <link rel="next" href="../oscar-2109/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>OSCAR 2019 - OSCAR Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#oscar-2019" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="OSCAR Documentation" class="md-header__button md-logo" aria-label="OSCAR Documentation" data-md-component="logo">
+      
+  <img src="../../static/media/oscar.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OSCAR Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              OSCAR 2019
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/oscar-project/documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    documentation
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="OSCAR Documentation" class="md-nav__button md-logo" aria-label="OSCAR Documentation" data-md-component="logo">
+      
+  <img src="../../static/media/oscar.png" alt="logo">
+
+    </a>
+    OSCAR Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/oscar-project/documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    documentation
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OSCAR
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../accessing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting access to OSCAR
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quickstart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OSCAR Quickstart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Schema
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Schema
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schema/schema-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OSCAR Schema v2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/generation-jeanzay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generating a new OSCAR Version on Jean Zay
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/oscar-tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    oscar-tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Versions
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Versions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mOSCAR/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    mOSCAR
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    OSCAR 2019
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    OSCAR 2019
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citing-oscar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Citing OSCAR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-unshuffled-oscar" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Unshuffled OSCAR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloading-oscar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Downloading OSCAR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      License
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notice-and-take-down-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notice and take down policy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#featured-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Featured Models
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oscar-2109/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OSCAR 21.09
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oscar-2201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OSCAR 22.01
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oscar-2301/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OSCAR 23.01
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citing-oscar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Citing OSCAR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-unshuffled-oscar" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Unshuffled OSCAR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloading-oscar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Downloading OSCAR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      License
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notice-and-take-down-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notice and take down policy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#featured-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Featured Models
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="oscar-2019">OSCAR 2019</h1>
+<p>OSCAR 2019 is the original 2019 release of the <a href="https://oscar-corpus.com">OSCAR</a>  corpus.
+It has been generated from <a href="https://commoncrawl.org/">Common Crawl</a> corpus using the <a href="https://github.com/pjox/goclassy">goclassy</a> architecture.</p>
+<h2 id="features">Features</h2>
+<p>OSCAR 2019 is shuffled at line level and no metadata is provided. Thus it is mainly intended to be used in the training of unsupervised language models for NLP.</p>
+<p>Data is distributed by language in both original and deduplicated form.</p>
+<p>If you need the unshuffled version of OSCAR, please contact us using the contact form. Please include your name, affiliation, contact details, which languages do you need and a brief description of how you intend to use OSCAR. You can also download it using <a href="https://huggingface.co/datasets/oscar">HuggingFace’s datasets library</a>.</p>
+<p>Even though OSCAR is not <a href="https://en.wikipedia.org/wiki/Shareware#Postcardware">Postcardware</a>, we do appreciate when our users send us a postcard. If you want to send us one, you can find the address in the contact section down below.</p>
+<h2 id="citing-oscar">Citing OSCAR</h2>
+<p>If you use OSCAR to train a language model, text generation model or any other ML model in general please consider citing our latest paper:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>@inproceedings<span class="nb">{</span>ortiz-suarez-etal-2020-monolingual,
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>    title = "A Monolingual Approach to Contextualized Word Embeddings for Mid-Resource Languages",
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>    author = "Ortiz Su<span class="nb">{</span><span class="k">\'</span>a<span class="nb">}</span>rez, Pedro Javier  and
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>      Romary, Laurent  and
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>      Sagot, Beno<span class="nb">{</span><span class="k">\^\i</span><span class="nb">}</span>t",
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a>    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a>    month = jul,
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a>    year = "2020",
+<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a>    address = "Online",
+<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a>    publisher = "Association for Computational Linguistics",
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a>    url = "https://www.aclweb.org/anthology/2020.acl-main.156",
+<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a>    pages = "1703--1714",
+<a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a>    abstract = "We use the multilingual OSCAR corpus, extracted from Common Crawl via language classification, filtering and cleaning, to train monolingual contextualized word embeddings (ELMo) for five mid-resource languages. We then compare the performance of OSCAR-based and Wikipedia-based ELMo embeddings for these languages on the part-of-speech tagging and parsing tasks. We show that, despite the noise in the Common-Crawl-based OSCAR data, embeddings trained on OSCAR perform much better than monolingual embeddings trained on Wikipedia. They actually equal or improve the current state of the art in tagging and parsing for all five languages. In particular, they also improve over multilingual Wikipedia-based contextual embeddings (multilingual BERT), which almost always constitutes the previous state of the art, thereby showing that the benefit of a larger, more diverse corpus surpasses the cross-lingual benefit of multilingual embedding architectures.",
+<a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="nb">}</span>
+</code></pre></div>
+<h2 id="the-unshuffled-oscar">The Unshuffled OSCAR</h2>
+<p>If you need a copy of any of the unshuffled sub-corpora, please contact us using the contact form down below. Please include your name, affiliation, contact details, which languages do you need and a brief description of how you intend to use OSCAR. We will evaluate your request and answer accordingly.</p>
+<p>{{% callout note %}}
+The unshuffled OSCAR is now available in <a href="https://huggingface.co/docs/datasets/">HuggingFace’s datasets library</a>
+{{% /callout %}}
+They have obtained our permission to redistribute the unshuffled OSCAR and they allow users to download a corpus all at once as opposed to file by file. You can get more information about how to download OSCAR using their library by visiting <a href="https://huggingface.co/datasets/oscar">OSCAR's dataset card</a>.</p>
+<h2 id="downloading-oscar">Downloading OSCAR</h2>
+<p>All the data is distributed by language, both the original and the deduplicated versions of the data are available. To download a file just click the desired link on the table below. Languages are split in shards of around 700MB, these shards are standalone. A plain text file with checksums is also provided.</p>
+<p>The OSCAR corpus is yet to be filtered, so <strong>please be careful when using it</strong>, specially for text generation tasks! To see which sub-corpora have been audited, please refer to the list of publications above for more information.</p>
+<p>You'll be asked to create an <a href="https://humanid.huma-num.fr">HumanID</a> account in order to download a corpus. This is intended, and we do it in order to limit traffic and reduce abuse of the infrastructure. The OSCAR corpus is hosted by <a href="https://www.huma-num.fr">Huma-Num</a>, you can read more about them on their website.</p>
+<p>All sizes are for the <strong>uncompressed</strong> files.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><span style="float:left;">Language</span></th>
+<th style="text-align: right;"><span style="float:right;">Words original</span></th>
+<th style="text-align: right;"><span style="float:right;">Size original</span></th>
+<th style="text-align: right;"><span style="float:left;">File original</span></th>
+<th style="text-align: right;"><span style="float:left;">Words deduplicated</span></th>
+<th style="text-align: right;"><span style="float:left;">Size deduplicated</span></th>
+<th style="text-align: right;"><span style="float:left;">File deduplicated</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Afrikaans</td>
+<td style="text-align: right;">43,482,801</td>
+<td style="text-align: right;">241M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/af">af</a></td>
+<td style="text-align: right;">29,533,437</td>
+<td style="text-align: right;">163M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/af">af</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Albanian</td>
+<td style="text-align: right;">374,196,110</td>
+<td style="text-align: right;">2.3G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/sq">sq</a></td>
+<td style="text-align: right;">186,856,699</td>
+<td style="text-align: right;">1.2G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/sq">sq</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Alemannic</td>
+<td style="text-align: right;">841,750</td>
+<td style="text-align: right;">5.0M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/als">als</a></td>
+<td style="text-align: right;">459,001</td>
+<td style="text-align: right;">2.8M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/als">als</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Amharic</td>
+<td style="text-align: right;">28,301,601</td>
+<td style="text-align: right;">360M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/am">am</a></td>
+<td style="text-align: right;">16,086,628</td>
+<td style="text-align: right;">206M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/am">am</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Arabic</td>
+<td style="text-align: right;">8,117,162,828</td>
+<td style="text-align: right;">82G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ar">ar</a></td>
+<td style="text-align: right;">3,171,221,354</td>
+<td style="text-align: right;">32G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ar">ar</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Aragonese</td>
+<td style="text-align: right;">52,896</td>
+<td style="text-align: right;">1.3M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/an">an</a></td>
+<td style="text-align: right;">45,669</td>
+<td style="text-align: right;">801K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/an">an</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Armenian</td>
+<td style="text-align: right;">273,919,388</td>
+<td style="text-align: right;">3.7G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/hy">hy</a></td>
+<td style="text-align: right;">110,196,043</td>
+<td style="text-align: right;">1.5G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/hy">hy</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Assamese</td>
+<td style="text-align: right;">6,956,663</td>
+<td style="text-align: right;">113M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/as">as</a></td>
+<td style="text-align: right;">4,366,570</td>
+<td style="text-align: right;">71M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/as">as</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Asturian</td>
+<td style="text-align: right;">381,005</td>
+<td style="text-align: right;">2.4M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ast">ast</a></td>
+<td style="text-align: right;">325,237</td>
+<td style="text-align: right;">2.0M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ast">ast</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Avaric</td>
+<td style="text-align: right;">24,720</td>
+<td style="text-align: right;">409K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/av">av</a></td>
+<td style="text-align: right;">19,478</td>
+<td style="text-align: right;">324K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/av">av</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Azerbaijani</td>
+<td style="text-align: right;">322,641,710</td>
+<td style="text-align: right;">2.8G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/az">az</a></td>
+<td style="text-align: right;">167,742,296</td>
+<td style="text-align: right;">1.5G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/az">az</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Bashkir</td>
+<td style="text-align: right;">9,796,764</td>
+<td style="text-align: right;">128M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ba">ba</a></td>
+<td style="text-align: right;">6,922,589</td>
+<td style="text-align: right;">90M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ba">ba</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Basque</td>
+<td style="text-align: right;">120,456,652</td>
+<td style="text-align: right;">848M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/eu">eu</a></td>
+<td style="text-align: right;">45,359,710</td>
+<td style="text-align: right;">342M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/eu">eu</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Bavarian</td>
+<td style="text-align: right;">399</td>
+<td style="text-align: right;">503</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/bar">bar</a></td>
+<td style="text-align: right;">399</td>
+<td style="text-align: right;">503</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/bar">bar</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Belarusian</td>
+<td style="text-align: right;">144,579,630</td>
+<td style="text-align: right;">1.8G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/be">be</a></td>
+<td style="text-align: right;">83,499,037</td>
+<td style="text-align: right;">1.1G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/be">be</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Bengali</td>
+<td style="text-align: right;">623,575,733</td>
+<td style="text-align: right;">11G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/bn">bn</a></td>
+<td style="text-align: right;">363,766,143</td>
+<td style="text-align: right;">5.8G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/bn">bn</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Bihari</td>
+<td style="text-align: right;">8,848</td>
+<td style="text-align: right;">110K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/bh">bh</a></td>
+<td style="text-align: right;">2,875</td>
+<td style="text-align: right;">34K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/bh">bh</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Bishnupriya</td>
+<td style="text-align: right;">198,286</td>
+<td style="text-align: right;">4.1M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/bpy">bpy</a></td>
+<td style="text-align: right;">96,940</td>
+<td style="text-align: right;">1.7M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/bpy">bpy</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Bosnian</td>
+<td style="text-align: right;">106,448</td>
+<td style="text-align: right;">447K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/bs">bs</a></td>
+<td style="text-align: right;">20,485</td>
+<td style="text-align: right;">116K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/bs">bs</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Breton</td>
+<td style="text-align: right;">5,013,241</td>
+<td style="text-align: right;">29M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/br">br</a></td>
+<td style="text-align: right;">2,890,384</td>
+<td style="text-align: right;">16M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/br">br</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Bulgarian</td>
+<td style="text-align: right;">2,947,648,106</td>
+<td style="text-align: right;">32G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/bg">bg</a></td>
+<td style="text-align: right;">1,268,114,977</td>
+<td style="text-align: right;">14G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/bg">bg</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Burmese</td>
+<td style="text-align: right;">56,111,184</td>
+<td style="text-align: right;">1.9G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/my">my</a></td>
+<td style="text-align: right;">30,102,173</td>
+<td style="text-align: right;">1.1G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/my">my</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Catalan</td>
+<td style="text-align: right;">1,360,212,450</td>
+<td style="text-align: right;">8.0G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ca">ca</a></td>
+<td style="text-align: right;">729,333,440</td>
+<td style="text-align: right;">4.3G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ca">ca</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Cebuano</td>
+<td style="text-align: right;">6,603,567</td>
+<td style="text-align: right;">39M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ceb">ceb</a></td>
+<td style="text-align: right;">3,675,024</td>
+<td style="text-align: right;">24M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ceb">ceb</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Central Bikol</td>
+<td style="text-align: right;">312</td>
+<td style="text-align: right;">885</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/bcl">bcl</a></td>
+<td style="text-align: right;">312</td>
+<td style="text-align: right;">885</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/bcl">bcl</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Central Khmer</td>
+<td style="text-align: right;">20,690,610</td>
+<td style="text-align: right;">1.1G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/km">km</a></td>
+<td style="text-align: right;">10,082,245</td>
+<td style="text-align: right;">581M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/km">km</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Central Kurdish</td>
+<td style="text-align: right;">48,478,334</td>
+<td style="text-align: right;">487M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ckb">ckb</a></td>
+<td style="text-align: right;">18,726,721</td>
+<td style="text-align: right;">226M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ckb">ckb</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Chavacano</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: right;">520</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/cbk">cbk</a></td>
+<td style="text-align: right;">130</td>
+<td style="text-align: right;">520</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/cbk">cbk</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Chechen</td>
+<td style="text-align: right;">711,051</td>
+<td style="text-align: right;">8.3M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ce">ce</a></td>
+<td style="text-align: right;">568,146</td>
+<td style="text-align: right;">6.7M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ce">ce</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Chinese</td>
+<td style="text-align: right;">14,986,424,850</td>
+<td style="text-align: right;">508G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/zh">zh</a></td>
+<td style="text-align: right;">6,350,215,113</td>
+<td style="text-align: right;">249G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/zh">zh</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Chuvash</td>
+<td style="text-align: right;">3,041,614</td>
+<td style="text-align: right;">39M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/cv">cv</a></td>
+<td style="text-align: right;">2,054,810</td>
+<td style="text-align: right;">26M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/cv">cv</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Cornish</td>
+<td style="text-align: right;">8,329</td>
+<td style="text-align: right;">44K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/kw">kw</a></td>
+<td style="text-align: right;">2,704</td>
+<td style="text-align: right;">14K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/kw">kw</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Croatian</td>
+<td style="text-align: right;">34,232,765</td>
+<td style="text-align: right;">226M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/hr">hr</a></td>
+<td style="text-align: right;">16,727,640</td>
+<td style="text-align: right;">110M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/hr">hr</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Czech</td>
+<td style="text-align: right;">7,715,977,441</td>
+<td style="text-align: right;">53G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/cs">cs</a></td>
+<td style="text-align: right;">3,540,997,509</td>
+<td style="text-align: right;">24G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/cs">cs</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Danish</td>
+<td style="text-align: right;">2,637,463,889</td>
+<td style="text-align: right;">16G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/da">da</a></td>
+<td style="text-align: right;">1,620,091,317</td>
+<td style="text-align: right;">9.5G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/da">da</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Dhivehi</td>
+<td style="text-align: right;">7,559,472</td>
+<td style="text-align: right;">126M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/dv">dv</a></td>
+<td style="text-align: right;">4,726,660</td>
+<td style="text-align: right;">79M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/dv">dv</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Dimli</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">146</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/diq">diq</a></td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">146</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/diq">diq</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Dutch</td>
+<td style="text-align: right;">13,020,136,373</td>
+<td style="text-align: right;">78G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/nl">nl</a></td>
+<td style="text-align: right;">6,598,786,137</td>
+<td style="text-align: right;">39G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/nl">nl</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Eastern Mari</td>
+<td style="text-align: right;">565,992</td>
+<td style="text-align: right;">7.2M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/mhr">mhr</a></td>
+<td style="text-align: right;">469,297</td>
+<td style="text-align: right;">6.0M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/mhr">mhr</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Egyptian Arabic</td>
+<td style="text-align: right;">7,305,151</td>
+<td style="text-align: right;">66M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/arz">arz</a></td>
+<td style="text-align: right;">3,659,419</td>
+<td style="text-align: right;">33M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/arz">arz</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Emilian-Romagnol</td>
+<td style="text-align: right;">6,376</td>
+<td style="text-align: right;">25K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/eml">eml</a></td>
+<td style="text-align: right;">6,121</td>
+<td style="text-align: right;">24K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/eml">eml</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">English</td>
+<td style="text-align: right;">418,187,793,408</td>
+<td style="text-align: right;">2.3T</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/en">en</a></td>
+<td style="text-align: right;">215,841,256,971</td>
+<td style="text-align: right;">1.2T</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/en">en</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Erzya</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">1.4K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/myv">myv</a></td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">1.2K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/myv">myv</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Esperanto</td>
+<td style="text-align: right;">48,486,161</td>
+<td style="text-align: right;">299M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/eo">eo</a></td>
+<td style="text-align: right;">37,324,446</td>
+<td style="text-align: right;">228M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/eo">eo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Estonian</td>
+<td style="text-align: right;">643,163,730</td>
+<td style="text-align: right;">4.8G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/et">et</a></td>
+<td style="text-align: right;">309,931,463</td>
+<td style="text-align: right;">2.3G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/et">et</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Finnish</td>
+<td style="text-align: right;">3,196,666,419</td>
+<td style="text-align: right;">27G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/fi">fi</a></td>
+<td style="text-align: right;">1,597,855,468</td>
+<td style="text-align: right;">13G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/fi">fi</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">French</td>
+<td style="text-align: right;">46,896,036,417</td>
+<td style="text-align: right;">282G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/fr">fr</a></td>
+<td style="text-align: right;">23,206,776,649</td>
+<td style="text-align: right;">138G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/fr">fr</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Galician</td>
+<td style="text-align: right;">102,011,291</td>
+<td style="text-align: right;">620M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/gl">gl</a></td>
+<td style="text-align: right;">63,600,602</td>
+<td style="text-align: right;">384M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/gl">gl</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Georgian</td>
+<td style="text-align: right;">171,950,621</td>
+<td style="text-align: right;">3.6G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ka">ka</a></td>
+<td style="text-align: right;">91,569,739</td>
+<td style="text-align: right;">1.9G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ka">ka</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">German</td>
+<td style="text-align: right;">44,878,908,446</td>
+<td style="text-align: right;">308G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/de">de</a></td>
+<td style="text-align: right;">21,529,164,172</td>
+<td style="text-align: right;">145G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/de">de</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Goan Konkani</td>
+<td style="text-align: right;">124,277</td>
+<td style="text-align: right;">2.2M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/gom">gom</a></td>
+<td style="text-align: right;">102,306</td>
+<td style="text-align: right;">1.8M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/gom">gom</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Guarani</td>
+<td style="text-align: right;">7,382</td>
+<td style="text-align: right;">36K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/gn">gn</a></td>
+<td style="text-align: right;">4,680</td>
+<td style="text-align: right;">24K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/gn">gn</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Gujarati</td>
+<td style="text-align: right;">72,045,701</td>
+<td style="text-align: right;">1.1G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/gu">gu</a></td>
+<td style="text-align: right;">50,023,432</td>
+<td style="text-align: right;">722M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/gu">gu</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Haitian</td>
+<td style="text-align: right;">1,014</td>
+<td style="text-align: right;">3.9K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ht">ht</a></td>
+<td style="text-align: right;">832</td>
+<td style="text-align: right;">3.3K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ht">ht</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Hebrew</td>
+<td style="text-align: right;">2,067,753,528</td>
+<td style="text-align: right;">20G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/he">he</a></td>
+<td style="text-align: right;">1,032,018,056</td>
+<td style="text-align: right;">9.8G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/he">he</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Hindi</td>
+<td style="text-align: right;">1,372,234,782</td>
+<td style="text-align: right;">17G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/hi">hi</a></td>
+<td style="text-align: right;">745,774,934</td>
+<td style="text-align: right;">8.9G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/hi">hi</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Hungarian</td>
+<td style="text-align: right;">5,163,936,345</td>
+<td style="text-align: right;">40G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/hu">hu</a></td>
+<td style="text-align: right;">2,339,127,555</td>
+<td style="text-align: right;">18G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/hu">hu</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Icelandic</td>
+<td style="text-align: right;">219,900,094</td>
+<td style="text-align: right;">1.5G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/is">is</a></td>
+<td style="text-align: right;">129,818,331</td>
+<td style="text-align: right;">846M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/is">is</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Ido</td>
+<td style="text-align: right;">25,702</td>
+<td style="text-align: right;">147K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/io">io</a></td>
+<td style="text-align: right;">22,773</td>
+<td style="text-align: right;">130K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/io">io</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Iloko</td>
+<td style="text-align: right;">142,942</td>
+<td style="text-align: right;">874K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ilo">ilo</a></td>
+<td style="text-align: right;">105,564</td>
+<td style="text-align: right;">636K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ilo">ilo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Indonesian</td>
+<td style="text-align: right;">4,574,692,265</td>
+<td style="text-align: right;">30G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/id">id</a></td>
+<td style="text-align: right;">2,394,957,629</td>
+<td style="text-align: right;">16G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/id">id</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Interlingua</td>
+<td style="text-align: right;">180,231</td>
+<td style="text-align: right;">662K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ia">ia</a></td>
+<td style="text-align: right;">100,019</td>
+<td style="text-align: right;">360K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ia">ia</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Interlingue</td>
+<td style="text-align: right;">5,352</td>
+<td style="text-align: right;">24K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ie">ie</a></td>
+<td style="text-align: right;">602</td>
+<td style="text-align: right;">1.6K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ie">ie</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Irish</td>
+<td style="text-align: right;">14,483,593</td>
+<td style="text-align: right;">88M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ga">ga</a></td>
+<td style="text-align: right;">10,017,303</td>
+<td style="text-align: right;">60M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ga">ga</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Italian</td>
+<td style="text-align: right;">22,248,707,341</td>
+<td style="text-align: right;">137G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/it">it</a></td>
+<td style="text-align: right;">11,250,012,896</td>
+<td style="text-align: right;">69G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/it">it</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Japanese</td>
+<td style="text-align: right;">4,962,979,182</td>
+<td style="text-align: right;">216G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ja">ja</a></td>
+<td style="text-align: right;">1,123,067,063</td>
+<td style="text-align: right;">106G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ja">ja</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Javanese</td>
+<td style="text-align: right;">104,896</td>
+<td style="text-align: right;">659K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/jv">jv</a></td>
+<td style="text-align: right;">86,654</td>
+<td style="text-align: right;">583K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/jv">jv</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Kalmyk</td>
+<td style="text-align: right;">10,277</td>
+<td style="text-align: right;">113K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/xal">xal</a></td>
+<td style="text-align: right;">10,155</td>
+<td style="text-align: right;">112K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/xal">xal</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Kannada</td>
+<td style="text-align: right;">81,186,863</td>
+<td style="text-align: right;">1.7G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/kn">kn</a></td>
+<td style="text-align: right;">49,343,462</td>
+<td style="text-align: right;">1.1G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/kn">kn</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Karachay-Balkar</td>
+<td style="text-align: right;">185,436</td>
+<td style="text-align: right;">2.6M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/krc">krc</a></td>
+<td style="text-align: right;">166,496</td>
+<td style="text-align: right;">2.3M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/krc">krc</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Kazakh</td>
+<td style="text-align: right;">191,126,469</td>
+<td style="text-align: right;">2.7G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/kk">kk</a></td>
+<td style="text-align: right;">108,388,743</td>
+<td style="text-align: right;">1.5G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/kk">kk</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Kirghiz</td>
+<td style="text-align: right;">44,194,823</td>
+<td style="text-align: right;">600M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ky">ky</a></td>
+<td style="text-align: right;">28,982,620</td>
+<td style="text-align: right;">388M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ky">ky</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Komi</td>
+<td style="text-align: right;">201,404</td>
+<td style="text-align: right;">2.3M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/kv">kv</a></td>
+<td style="text-align: right;">95,243</td>
+<td style="text-align: right;">1.2M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/kv">kv</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Korean</td>
+<td style="text-align: right;">2,368,765,142</td>
+<td style="text-align: right;">24G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ko">ko</a></td>
+<td style="text-align: right;">1,120,375,149</td>
+<td style="text-align: right;">12G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ko">ko</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Kurdish</td>
+<td style="text-align: right;">15,561,003</td>
+<td style="text-align: right;">94M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ku">ku</a></td>
+<td style="text-align: right;">9,946,440</td>
+<td style="text-align: right;">60M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ku">ku</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Lao</td>
+<td style="text-align: right;">4,133,311</td>
+<td style="text-align: right;">174M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/lo">lo</a></td>
+<td style="text-align: right;">2,583,342</td>
+<td style="text-align: right;">114M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/lo">lo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Latin</td>
+<td style="text-align: right;">4,122,201</td>
+<td style="text-align: right;">26M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/la">la</a></td>
+<td style="text-align: right;">1,328,038</td>
+<td style="text-align: right;">8.3M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/la">la</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Latvian</td>
+<td style="text-align: right;">520,761,977</td>
+<td style="text-align: right;">4.0G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/lv">lv</a></td>
+<td style="text-align: right;">236,428,905</td>
+<td style="text-align: right;">1.8G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/lv">lv</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Lezghian</td>
+<td style="text-align: right;">247,646</td>
+<td style="text-align: right;">3.3M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/lez">lez</a></td>
+<td style="text-align: right;">224,871</td>
+<td style="text-align: right;">3.0M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/lez">lez</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Limburgan</td>
+<td style="text-align: right;">4,730</td>
+<td style="text-align: right;">29K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/li">li</a></td>
+<td style="text-align: right;">4,283</td>
+<td style="text-align: right;">27K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/li">li</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Lithuanian</td>
+<td style="text-align: right;">1,159,661,742</td>
+<td style="text-align: right;">8.8G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/lt">lt</a></td>
+<td style="text-align: right;">516,183,525</td>
+<td style="text-align: right;">3.9G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/lt">lt</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Lojban</td>
+<td style="text-align: right;">154,330</td>
+<td style="text-align: right;">736K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/jbo">jbo</a></td>
+<td style="text-align: right;">141,973</td>
+<td style="text-align: right;">678K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/jbo">jbo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Lombard</td>
+<td style="text-align: right;">75,229</td>
+<td style="text-align: right;">443K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/lmo">lmo</a></td>
+<td style="text-align: right;">73,665</td>
+<td style="text-align: right;">433K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/lmo">lmo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Low German</td>
+<td style="text-align: right;">2,906,347</td>
+<td style="text-align: right;">18M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/nds">nds</a></td>
+<td style="text-align: right;">2,146,417</td>
+<td style="text-align: right;">13M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/nds">nds</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Lower Sorbian</td>
+<td style="text-align: right;">1,787</td>
+<td style="text-align: right;">13K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/dsb">dsb</a></td>
+<td style="text-align: right;">966</td>
+<td style="text-align: right;">7.1K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/dsb">dsb</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Luxembourgish</td>
+<td style="text-align: right;">4,403,577</td>
+<td style="text-align: right;">29M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/lb">lb</a></td>
+<td style="text-align: right;">3,087,650</td>
+<td style="text-align: right;">21M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/lb">lb</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Macedonian</td>
+<td style="text-align: right;">189,289,873</td>
+<td style="text-align: right;">2.1G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/mk">mk</a></td>
+<td style="text-align: right;">102,849,595</td>
+<td style="text-align: right;">1.2G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/mk">mk</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Maithili</td>
+<td style="text-align: right;">69,161</td>
+<td style="text-align: right;">317K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/mai">mai</a></td>
+<td style="text-align: right;">874</td>
+<td style="text-align: right;">11K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/mai">mai</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Malagasy</td>
+<td style="text-align: right;">3,068,360</td>
+<td style="text-align: right;">21M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/mg">mg</a></td>
+<td style="text-align: right;">1,872,044</td>
+<td style="text-align: right;">13M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/mg">mg</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Malay</td>
+<td style="text-align: right;">16,696,882</td>
+<td style="text-align: right;">111M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ms">ms</a></td>
+<td style="text-align: right;">6,045,753</td>
+<td style="text-align: right;">42M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ms">ms</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Malayalam</td>
+<td style="text-align: right;">189,534,472</td>
+<td style="text-align: right;">4.9G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ml">ml</a></td>
+<td style="text-align: right;">95,892,551</td>
+<td style="text-align: right;">2.5G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ml">ml</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Maltese</td>
+<td style="text-align: right;">2,995,654</td>
+<td style="text-align: right;">24M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/mt">mt</a></td>
+<td style="text-align: right;">2,163,358</td>
+<td style="text-align: right;">17M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/mt">mt</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Marathi</td>
+<td style="text-align: right;">162,609,404</td>
+<td style="text-align: right;">2.7G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/mr">mr</a></td>
+<td style="text-align: right;">82,130,803</td>
+<td style="text-align: right;">1.4G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/mr">mr</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Mazanderani</td>
+<td style="text-align: right;">73,870</td>
+<td style="text-align: right;">691K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/mzn">mzn</a></td>
+<td style="text-align: right;">64,481</td>
+<td style="text-align: right;">602K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/mzn">mzn</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Minangkabau</td>
+<td style="text-align: right;">5,682</td>
+<td style="text-align: right;">608K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/min">min</a></td>
+<td style="text-align: right;">4,825</td>
+<td style="text-align: right;">310K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/min">min</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Mingrelian</td>
+<td style="text-align: right;">299,098</td>
+<td style="text-align: right;">5.8M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/xmf">xmf</a></td>
+<td style="text-align: right;">228,629</td>
+<td style="text-align: right;">4.4M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/xmf">xmf</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Mirandese</td>
+<td style="text-align: right;">171</td>
+<td style="text-align: right;">1.2K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/mwl">mwl</a></td>
+<td style="text-align: right;">152</td>
+<td style="text-align: right;">1.1K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/mwl">mwl</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Modern Greek</td>
+<td style="text-align: right;">5,479,180,137</td>
+<td style="text-align: right;">62G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/el">el</a></td>
+<td style="text-align: right;">2,412,419,435</td>
+<td style="text-align: right;">27G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/el">el</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Mongolian</td>
+<td style="text-align: right;">181,307,167</td>
+<td style="text-align: right;">2.2G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/mn">mn</a></td>
+<td style="text-align: right;">68,362,013</td>
+<td style="text-align: right;">838M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/mn">mn</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Nahuatl languages</td>
+<td style="text-align: right;">1,234</td>
+<td style="text-align: right;">12K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/nah">nah</a></td>
+<td style="text-align: right;">1,193</td>
+<td style="text-align: right;">11K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/nah">nah</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Neapolitan</td>
+<td style="text-align: right;">5,282</td>
+<td style="text-align: right;">17K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/nap">nap</a></td>
+<td style="text-align: right;">4,147</td>
+<td style="text-align: right;">13K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/nap">nap</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Nepali</td>
+<td style="text-align: right;">107,448,208</td>
+<td style="text-align: right;">1.8G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ne">ne</a></td>
+<td style="text-align: right;">71,628,317</td>
+<td style="text-align: right;">1.2G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ne">ne</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Newari</td>
+<td style="text-align: right;">564,697</td>
+<td style="text-align: right;">5.5M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/new">new</a></td>
+<td style="text-align: right;">288,995</td>
+<td style="text-align: right;">4.1M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/new">new</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Northern Frisian</td>
+<td style="text-align: right;">1,516</td>
+<td style="text-align: right;">4.4K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/frr">frr</a></td>
+<td style="text-align: right;">1,516</td>
+<td style="text-align: right;">4.4K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/frr">frr</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Northern Luri</td>
+<td style="text-align: right;">8,022</td>
+<td style="text-align: right;">76K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/lrc">lrc</a></td>
+<td style="text-align: right;">6,740</td>
+<td style="text-align: right;">63K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/lrc">lrc</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Norwegian</td>
+<td style="text-align: right;">1,344,326,388</td>
+<td style="text-align: right;">8.0G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/no">no</a></td>
+<td style="text-align: right;">804,894,377</td>
+<td style="text-align: right;">4.7G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/no">no</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Norwegian Nynorsk</td>
+<td style="text-align: right;">14,764,980</td>
+<td style="text-align: right;">85M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/nn">nn</a></td>
+<td style="text-align: right;">9,435,139</td>
+<td style="text-align: right;">54M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/nn">nn</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Occitan</td>
+<td style="text-align: right;">750,301</td>
+<td style="text-align: right;">5.8M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/oc">oc</a></td>
+<td style="text-align: right;">512,678</td>
+<td style="text-align: right;">3.7M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/oc">oc</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Oriya</td>
+<td style="text-align: right;">14,938,567</td>
+<td style="text-align: right;">248M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/or">or</a></td>
+<td style="text-align: right;">11,321,740</td>
+<td style="text-align: right;">188M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/or">or</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Ossetian</td>
+<td style="text-align: right;">1,031,268</td>
+<td style="text-align: right;">13M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/os">os</a></td>
+<td style="text-align: right;">878,765</td>
+<td style="text-align: right;">11M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/os">os</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Pampanga</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: right;">760</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/pam">pam</a></td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/pam">pam</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Panjabi</td>
+<td style="text-align: right;">61,847,806</td>
+<td style="text-align: right;">763M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/pa">pa</a></td>
+<td style="text-align: right;">37,555,835</td>
+<td style="text-align: right;">460M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/pa">pa</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Persian</td>
+<td style="text-align: right;">9,096,554,121</td>
+<td style="text-align: right;">79G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/fa">fa</a></td>
+<td style="text-align: right;">4,363,505,319</td>
+<td style="text-align: right;">38G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/fa">fa</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Piemontese</td>
+<td style="text-align: right;">362,013</td>
+<td style="text-align: right;">2.1M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/pms">pms</a></td>
+<td style="text-align: right;">337,246</td>
+<td style="text-align: right;">1.9M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/pms">pms</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Polish</td>
+<td style="text-align: right;">15,277,255,137</td>
+<td style="text-align: right;">109G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/pl">pl</a></td>
+<td style="text-align: right;">6,708,709,674</td>
+<td style="text-align: right;">47G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/pl">pl</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Portuguese</td>
+<td style="text-align: right;">20,641,903,898</td>
+<td style="text-align: right;">124G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/pt">pt</a></td>
+<td style="text-align: right;">10,751,156,918</td>
+<td style="text-align: right;">64G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/pt">pt</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Pushto</td>
+<td style="text-align: right;">46,559,441</td>
+<td style="text-align: right;">361M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ps">ps</a></td>
+<td style="text-align: right;">31,347,348</td>
+<td style="text-align: right;">242M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ps">ps</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Quechua</td>
+<td style="text-align: right;">10,186</td>
+<td style="text-align: right;">78K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/qu">qu</a></td>
+<td style="text-align: right;">8,691</td>
+<td style="text-align: right;">67K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/qu">qu</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Romanian</td>
+<td style="text-align: right;">3,984,317,058</td>
+<td style="text-align: right;">25G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ro">ro</a></td>
+<td style="text-align: right;">1,741,794,069</td>
+<td style="text-align: right;">11G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ro">ro</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Romansh</td>
+<td style="text-align: right;">1,093</td>
+<td style="text-align: right;">7.4K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/rm">rm</a></td>
+<td style="text-align: right;">960</td>
+<td style="text-align: right;">6.5K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/rm">rm</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Russia Buriat</td>
+<td style="text-align: right;">963</td>
+<td style="text-align: right;">13K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/bxr">bxr</a></td>
+<td style="text-align: right;">809</td>
+<td style="text-align: right;">11K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/bxr">bxr</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Russian</td>
+<td style="text-align: right;">92,522,407,837</td>
+<td style="text-align: right;">1.2T</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ru">ru</a></td>
+<td style="text-align: right;">46,692,691,520</td>
+<td style="text-align: right;">568G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ru">ru</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Sanskrit</td>
+<td style="text-align: right;">4,331,569</td>
+<td style="text-align: right;">93M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/sa">sa</a></td>
+<td style="text-align: right;">1,713,930</td>
+<td style="text-align: right;">37M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/sa">sa</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Scottish Gaelic</td>
+<td style="text-align: right;">310,689</td>
+<td style="text-align: right;">1.9M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/gd">gd</a></td>
+<td style="text-align: right;">207,110</td>
+<td style="text-align: right;">1.3M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/gd">gd</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Serbian</td>
+<td style="text-align: right;">364,395,411</td>
+<td style="text-align: right;">3.9G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/sr">sr</a></td>
+<td style="text-align: right;">207,561,168</td>
+<td style="text-align: right;">2.2G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/sr">sr</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Serbo-Croatian</td>
+<td style="text-align: right;">5,292,184</td>
+<td style="text-align: right;">25M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/sh">sh</a></td>
+<td style="text-align: right;">1,040,573</td>
+<td style="text-align: right;">5.8M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/sh">sh</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Sicilian</td>
+<td style="text-align: right;">554</td>
+<td style="text-align: right;">3.3K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/scn">scn</a></td>
+<td style="text-align: right;">468</td>
+<td style="text-align: right;">2.8K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/scn">scn</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Sindhi</td>
+<td style="text-align: right;">43,530,158</td>
+<td style="text-align: right;">347M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/sd">sd</a></td>
+<td style="text-align: right;">33,028,015</td>
+<td style="text-align: right;">263M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/sd">sd</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Sinhala</td>
+<td style="text-align: right;">93,053,465</td>
+<td style="text-align: right;">1.4G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/si">si</a></td>
+<td style="text-align: right;">50,864,857</td>
+<td style="text-align: right;">802M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/si">si</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Slovak</td>
+<td style="text-align: right;">1,322,247,763</td>
+<td style="text-align: right;">9.1G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/sk">sk</a></td>
+<td style="text-align: right;">656,346,179</td>
+<td style="text-align: right;">4.5G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/sk">sk</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Slovenian</td>
+<td style="text-align: right;">387,399,700</td>
+<td style="text-align: right;">2.5G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/sl">sl</a></td>
+<td style="text-align: right;">193,926,684</td>
+<td style="text-align: right;">1.3G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/sl">sl</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Somali</td>
+<td style="text-align: right;">1,202</td>
+<td style="text-align: right;">61K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/so">so</a></td>
+<td style="text-align: right;">472</td>
+<td style="text-align: right;">16K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/so">so</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">South Azerbaijani</td>
+<td style="text-align: right;">2,175,054</td>
+<td style="text-align: right;">27M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/azb">azb</a></td>
+<td style="text-align: right;">1,528,709</td>
+<td style="text-align: right;">19M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/azb">azb</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Spanish</td>
+<td style="text-align: right;">47,545,122,279</td>
+<td style="text-align: right;">278G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/es">es</a></td>
+<td style="text-align: right;">25,928,290,729</td>
+<td style="text-align: right;">149G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/es">es</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Sundanese</td>
+<td style="text-align: right;">30,321</td>
+<td style="text-align: right;">211K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/su">su</a></td>
+<td style="text-align: right;">20,278</td>
+<td style="text-align: right;">141K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/su">su</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Swahili</td>
+<td style="text-align: right;">2,211,927</td>
+<td style="text-align: right;">13M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/sw">sw</a></td>
+<td style="text-align: right;">1,376,963</td>
+<td style="text-align: right;">8.1M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/sw">sw</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Swedish</td>
+<td style="text-align: right;">7,155,994,312</td>
+<td style="text-align: right;">44G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/sv">sv</a></td>
+<td style="text-align: right;">4,106,120,608</td>
+<td style="text-align: right;">25G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/sv">sv</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Tagalog</td>
+<td style="text-align: right;">98,949,299</td>
+<td style="text-align: right;">573M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/tl">tl</a></td>
+<td style="text-align: right;">70,121,601</td>
+<td style="text-align: right;">407M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/tl">tl</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Tajik</td>
+<td style="text-align: right;">31,758,142</td>
+<td style="text-align: right;">379M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/tg">tg</a></td>
+<td style="text-align: right;">21,029,893</td>
+<td style="text-align: right;">249M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/tg">tg</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Tamil</td>
+<td style="text-align: right;">420,537,132</td>
+<td style="text-align: right;">9.3G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ta">ta</a></td>
+<td style="text-align: right;">226,013,330</td>
+<td style="text-align: right;">5.1G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ta">ta</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Tatar</td>
+<td style="text-align: right;">51,034,893</td>
+<td style="text-align: right;">670M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/tt">tt</a></td>
+<td style="text-align: right;">23,825,695</td>
+<td style="text-align: right;">305M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/tt">tt</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Telugu</td>
+<td style="text-align: right;">123,711,517</td>
+<td style="text-align: right;">2.5G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/te">te</a></td>
+<td style="text-align: right;">79,094,167</td>
+<td style="text-align: right;">1.6G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/te">te</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Thai</td>
+<td style="text-align: right;">951,743,087</td>
+<td style="text-align: right;">36G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/th">th</a></td>
+<td style="text-align: right;">368,965,202</td>
+<td style="text-align: right;">16G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/th">th</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Tibetan</td>
+<td style="text-align: right;">1,483,589</td>
+<td style="text-align: right;">187M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/bo">bo</a></td>
+<td style="text-align: right;">936,556</td>
+<td style="text-align: right;">138M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/bo">bo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Turkish</td>
+<td style="text-align: right;">7,577,388,700</td>
+<td style="text-align: right;">60G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/tr">tr</a></td>
+<td style="text-align: right;">3,365,734,289</td>
+<td style="text-align: right;">27G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/tr">tr</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Turkmen</td>
+<td style="text-align: right;">1,113,869</td>
+<td style="text-align: right;">11M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/tk">tk</a></td>
+<td style="text-align: right;">752,326</td>
+<td style="text-align: right;">6.8M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/tk">tk</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Tuvinian</td>
+<td style="text-align: right;">759</td>
+<td style="text-align: right;">12K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/tyv">tyv</a></td>
+<td style="text-align: right;">540</td>
+<td style="text-align: right;">7.9K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/tyv">tyv</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Uighur</td>
+<td style="text-align: right;">8,657,141</td>
+<td style="text-align: right;">122M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ug">ug</a></td>
+<td style="text-align: right;">5,852,225</td>
+<td style="text-align: right;">83M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ug">ug</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Ukrainian</td>
+<td style="text-align: right;">4,204,381,276</td>
+<td style="text-align: right;">53G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/uk">uk</a></td>
+<td style="text-align: right;">2,252,380,351</td>
+<td style="text-align: right;">28G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/uk">uk</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Upper Sorbian</td>
+<td style="text-align: right;">545,351</td>
+<td style="text-align: right;">4.2M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/hsb">hsb</a></td>
+<td style="text-align: right;">236,867</td>
+<td style="text-align: right;">1.8M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/hsb">hsb</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Urdu</td>
+<td style="text-align: right;">331,817,982</td>
+<td style="text-align: right;">2.7G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/ur">ur</a></td>
+<td style="text-align: right;">218,030,228</td>
+<td style="text-align: right;">1.7G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/ur">ur</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Uzbek</td>
+<td style="text-align: right;">2,450,256</td>
+<td style="text-align: right;">21M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/uz">uz</a></td>
+<td style="text-align: right;">1,381,644</td>
+<td style="text-align: right;">12M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/uz">uz</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Venetian</td>
+<td style="text-align: right;">3,492</td>
+<td style="text-align: right;">18K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/vec">vec</a></td>
+<td style="text-align: right;">3,199</td>
+<td style="text-align: right;">17K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/vec">vec</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Vietnamese</td>
+<td style="text-align: right;">12,036,845,359</td>
+<td style="text-align: right;">68G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/vi">vi</a></td>
+<td style="text-align: right;">5,577,159,843</td>
+<td style="text-align: right;">32G</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/vi">vi</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Volapük</td>
+<td style="text-align: right;">321,121</td>
+<td style="text-align: right;">2.0M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/vo">vo</a></td>
+<td style="text-align: right;">318,568</td>
+<td style="text-align: right;">2.0M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/vo">vo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Walloon</td>
+<td style="text-align: right;">50,720</td>
+<td style="text-align: right;">273K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/wa">wa</a></td>
+<td style="text-align: right;">37,543</td>
+<td style="text-align: right;">203K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/wa">wa</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Waray</td>
+<td style="text-align: right;">397,315</td>
+<td style="text-align: right;">2.5M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/war">war</a></td>
+<td style="text-align: right;">336,311</td>
+<td style="text-align: right;">2.2M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/war">war</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Welsh</td>
+<td style="text-align: right;">37,422,441</td>
+<td style="text-align: right;">213M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/cy">cy</a></td>
+<td style="text-align: right;">23,574,673</td>
+<td style="text-align: right;">133M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/cy">cy</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Western Frisian</td>
+<td style="text-align: right;">5,691,077</td>
+<td style="text-align: right;">35M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/fy">fy</a></td>
+<td style="text-align: right;">4,223,816</td>
+<td style="text-align: right;">26M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/fy">fy</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Western Mari</td>
+<td style="text-align: right;">93,338</td>
+<td style="text-align: right;">1.2M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/mrj">mrj</a></td>
+<td style="text-align: right;">87,780</td>
+<td style="text-align: right;">1.1M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/mrj">mrj</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Western Panjabi</td>
+<td style="text-align: right;">1,426,986</td>
+<td style="text-align: right;">12M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/pnb">pnb</a></td>
+<td style="text-align: right;">1,111,112</td>
+<td style="text-align: right;">9.0M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/pnb">pnb</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Wu Chinese</td>
+<td style="text-align: right;">11,189</td>
+<td style="text-align: right;">109K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/wuu">wuu</a></td>
+<td style="text-align: right;">4,333</td>
+<td style="text-align: right;">32K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/wuu">wuu</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Yakut</td>
+<td style="text-align: right;">2,547,623</td>
+<td style="text-align: right;">42M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/sah">sah</a></td>
+<td style="text-align: right;">1,789,174</td>
+<td style="text-align: right;">26M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/sah">sah</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Yiddish</td>
+<td style="text-align: right;">13,834,320</td>
+<td style="text-align: right;">141M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/yi">yi</a></td>
+<td style="text-align: right;">8,212,970</td>
+<td style="text-align: right;">84M</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/yi">yi</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Yoruba</td>
+<td style="text-align: right;">8,906</td>
+<td style="text-align: right;">55K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/yo">yo</a></td>
+<td style="text-align: right;">3,518</td>
+<td style="text-align: right;">27K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/yo">yo</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Yue Chinese</td>
+<td style="text-align: right;">186</td>
+<td style="text-align: right;">3.7K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-orig/yue">yue</a></td>
+<td style="text-align: right;">128</td>
+<td style="text-align: right;">2.2K</td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/shuff-dedup/yue">yue</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="license">License</h2>
+<p>These data are released under this licensing scheme:</p>
+<ul>
+<li>We do not own any of the text from which these data has been extracted.</li>
+<li>We license the actual packaging of these data under the <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0 license ("no rights reserved")</a>.</li>
+<li>To the extent possible under law, <a href="https://team.inria.fr/almanach/oscar/" rel="dct:publisher"> <span property="dct:title">Inria</span></a> has waived all copyright and related or neighboring rights to <span property="dct:title">OSCAR</span>.</li>
+<li>This work is published from: <span about="https://team.inria.fr/almanach/oscar/" content="FR" datatype="dct:ISO3166" property="vcard:Country">France</span>.</li>
+</ul>
+<p><a href="http://creativecommons.org/publicdomain/zero/1.0/" rel="license">
+<img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/88x31.png" style="border-style: none;"/>
+</a></p>
+<h2 id="notice-and-take-down-policy">Notice and take down policy</h2>
+<p><strong>Notice:</strong> Should you consider that our data contains material that is owned by you and should therefore not be reproduced here, please:</p>
+<ul>
+<li>Clearly identify yourself, with detailed contact data such as an address, telephone number or email address at which you can be contacted.</li>
+<li>Clearly identify the copyrighted work claimed to be infringed.</li>
+<li>Clearly identify the material that is claimed to be infringing and information reasonably sufficient to allow us to locate the material.</li>
+<li>And use the contact form below.</li>
+</ul>
+<p><strong>Take down:</strong> We will comply to legitimate requests by removing the affected sources from the next release of the corpus.</p>
+<h2 id="models">Models</h2>
+<p>Here is a list of some language models that have been trained using the OSCAR corpus or that are part of the OSCAR project:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><span style="float:left;">Model</span></th>
+<th style="text-align: right;"><span style="float:right;">Language</span></th>
+<th style="text-align: right;"><span style="float:right;">Corpus</span></th>
+<th style="text-align: left;"><span style="float:left;">Authors</span></th>
+<th style="text-align: right;"><span style="float:left;">Paper</span></th>
+<th style="text-align: right;"><span style="float:left;">Files</span></th>
+<th style="text-align: right;"><span style="float:left;">License</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ELMo</td>
+<td style="text-align: right;">Bulgarian</td>
+<td style="text-align: right;">OSCAR</td>
+<td style="text-align: left;"><a href="https://pjortiz.com/">Pedro J. Ortiz</a>, <a href="http://alpage.inria.fr/~sagot/">Benoît Sagot</a> and <a href="https://cv.archives-ouvertes.fr/laurentromary">Laurent Romary</a></td>
+<td style="text-align: right;"><a href="https://www.aclweb.org/anthology/2020.acl-main.156/">ACL 2020</a></td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/models/cc/bg.zip">bg.zip</a></td>
+<td style="text-align: right;"><a href="/files/licenses/LICENSE">MIT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ELMo</td>
+<td style="text-align: right;">Bulgarian</td>
+<td style="text-align: right;">Wikipedia</td>
+<td style="text-align: left;"><a href="https://pjortiz.com/">Pedro J. Ortiz</a>, <a href="http://alpage.inria.fr/~sagot/">Benoît Sagot</a> and <a href="https://cv.archives-ouvertes.fr/laurentromary">Laurent Romary</a></td>
+<td style="text-align: right;"><a href="https://www.aclweb.org/anthology/2020.acl-main.156/">ACL 2020</a></td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/models/wiki/bg.zip">bg.zip</a></td>
+<td style="text-align: right;"><a href="/files/licenses/LICENSE">MIT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ELMo</td>
+<td style="text-align: right;">Catalan</td>
+<td style="text-align: right;">OSCAR</td>
+<td style="text-align: left;"><a href="https://pjortiz.com/">Pedro J. Ortiz</a>, <a href="http://alpage.inria.fr/~sagot/">Benoît Sagot</a> and <a href="https://cv.archives-ouvertes.fr/laurentromary">Laurent Romary</a></td>
+<td style="text-align: right;"><a href="https://www.aclweb.org/anthology/2020.acl-main.156/">ACL 2020</a></td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/models/cc/ca.zip">ca.zip</a></td>
+<td style="text-align: right;"><a href="/files/licenses/LICENSE">MIT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ELMo</td>
+<td style="text-align: right;">Catalan</td>
+<td style="text-align: right;">Wikipedia</td>
+<td style="text-align: left;"><a href="https://pjortiz.com/">Pedro J. Ortiz</a>, <a href="http://alpage.inria.fr/~sagot/">Benoît Sagot</a> and <a href="https://cv.archives-ouvertes.fr/laurentromary">Laurent Romary</a></td>
+<td style="text-align: right;"><a href="https://www.aclweb.org/anthology/2020.acl-main.156/">ACL 2020</a></td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/models/wiki/ca.zip">ca.zip</a></td>
+<td style="text-align: right;"><a href="/files/licenses/LICENSE">MIT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ELMo</td>
+<td style="text-align: right;">Danish</td>
+<td style="text-align: right;">OSCAR</td>
+<td style="text-align: left;"><a href="https://pjortiz.com/">Pedro J. Ortiz</a>, <a href="http://alpage.inria.fr/~sagot/">Benoît Sagot</a> and <a href="https://cv.archives-ouvertes.fr/laurentromary">Laurent Romary</a></td>
+<td style="text-align: right;"><a href="https://www.aclweb.org/anthology/2020.acl-main.156/">ACL 2020</a></td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/models/cc/da.zip">da.zip</a></td>
+<td style="text-align: right;"><a href="/files/licenses/LICENSE">MIT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ELMo</td>
+<td style="text-align: right;">Danish</td>
+<td style="text-align: right;">Wikipedia</td>
+<td style="text-align: left;"><a href="https://pjortiz.com/">Pedro J. Ortiz</a>, <a href="http://alpage.inria.fr/~sagot/">Benoît Sagot</a> and <a href="https://cv.archives-ouvertes.fr/laurentromary">Laurent Romary</a></td>
+<td style="text-align: right;"><a href="https://www.aclweb.org/anthology/2020.acl-main.156/">ACL 2020</a></td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/models/wiki/da.zip">da.zip</a></td>
+<td style="text-align: right;"><a href="/files/licenses/LICENSE">MIT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ELMo</td>
+<td style="text-align: right;">French</td>
+<td style="text-align: right;">OSCAR</td>
+<td style="text-align: left;"><a href="https://pjortiz.com">Pedro J. Ortiz</a>, <a href="https://github.com/YoannDupont">Yoann Dupont</a>, <a href="https://benjamin-mlr.github.io">Benjamin Muller</a>, <a href="https://cv.archives-ouvertes.fr/laurentromary">Laurent Romary</a> and <a href="http://alpage.inria.fr/~sagot/">Benoît Sagot</a></td>
+<td style="text-align: right;"><a href="https://www.aclweb.org/anthology/2020.lrec-1.569/">LREC 2020</a></td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/models/cc/fr.zip">fr.zip</a></td>
+<td style="text-align: right;"><a href="/files/licenses/LICENSE">MIT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ELMo</td>
+<td style="text-align: right;">Finnish</td>
+<td style="text-align: right;">OSCAR</td>
+<td style="text-align: left;"><a href="https://pjortiz.com/">Pedro J. Ortiz</a>, <a href="http://alpage.inria.fr/~sagot/">Benoît Sagot</a> and <a href="https://cv.archives-ouvertes.fr/laurentromary">Laurent Romary</a></td>
+<td style="text-align: right;"><a href="https://www.aclweb.org/anthology/2020.acl-main.156/">ACL 2020</a></td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/models/cc/fi.zip">fi.zip</a></td>
+<td style="text-align: right;"><a href="/files/licenses/LICENSE">MIT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ELMo</td>
+<td style="text-align: right;">Finnish</td>
+<td style="text-align: right;">Wikipedia</td>
+<td style="text-align: left;"><a href="https://pjortiz.com/">Pedro J. Ortiz</a>, <a href="http://alpage.inria.fr/~sagot/">Benoît Sagot</a> and <a href="https://cv.archives-ouvertes.fr/laurentromary">Laurent Romary</a></td>
+<td style="text-align: right;"><a href="https://www.aclweb.org/anthology/2020.acl-main.156/">ACL 2020</a></td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/models/wiki/fi.zip">fi.zip</a></td>
+<td style="text-align: right;"><a href="/files/licenses/LICENSE">MIT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ELMo</td>
+<td style="text-align: right;">Indonesian</td>
+<td style="text-align: right;">OSCAR</td>
+<td style="text-align: left;"><a href="https://pjortiz.com/">Pedro J. Ortiz</a>, <a href="http://alpage.inria.fr/~sagot/">Benoît Sagot</a> and <a href="https://cv.archives-ouvertes.fr/laurentromary">Laurent Romary</a></td>
+<td style="text-align: right;"><a href="https://www.aclweb.org/anthology/2020.acl-main.156/">ACL 2020</a></td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/models/cc/id.zip">id.zip</a></td>
+<td style="text-align: right;"><a href="/files/licenses/LICENSE">MIT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ELMo</td>
+<td style="text-align: right;">Indonesian</td>
+<td style="text-align: right;">Wikipedia</td>
+<td style="text-align: left;"><a href="https://pjortiz.com/">Pedro J. Ortiz</a>, <a href="http://alpage.inria.fr/~sagot/">Benoît Sagot</a> and <a href="https://cv.archives-ouvertes.fr/laurentromary">Laurent Romary</a></td>
+<td style="text-align: right;"><a href="https://www.aclweb.org/anthology/2020.acl-main.156/">ACL 2020</a></td>
+<td style="text-align: right;"><a href="https://oscar-public.huma-num.fr/models/wiki/id.zip">id.zip</a></td>
+<td style="text-align: right;"><a href="/files/licenses/LICENSE">MIT</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="featured-models">Featured Models</h2>
+<p>Here is a list of Language models trained by the community:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><span style="float:left;">Model</span></th>
+<th style="text-align: right;"><span style="float:right;">Language</span></th>
+<th style="text-align: right;"><span style="float:right;">Cased</span></th>
+<th style="text-align: right;"><span style="float:right;">Corpus</span></th>
+<th style="text-align: left;"><span style="float:left;">Authors</span></th>
+<th style="text-align: right;"><span style="float:right;">Paper</span></th>
+<th style="text-align: right;"><span style="float:right;">Website</span></th>
+<th style="text-align: right;"><span style="float:right;">Files</span></th>
+<th style="text-align: right;"><span style="float:left;">License</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">AraBERT</td>
+<td style="text-align: right;">Arabic</td>
+<td style="text-align: right;">Cased</td>
+<td style="text-align: right;">OSCAR, Wikipedia, 1.5B words Arabic Corpus, OSIAN, Assafir</td>
+<td style="text-align: left;"><a href="https://github.com/WissamAntoun">Wissam Antoun</a>, <a href="https://github.com/fadybaly">Fady Baly</a> and Hazem Hajj</td>
+<td style="text-align: right;"><a href="https://www.aclweb.org/anthology/2020.osact-1.2/">ACL Anthology</a></td>
+<td style="text-align: right;"><a href="https://github.com/aub-mind/arabert">GitHub</a></td>
+<td style="text-align: right;"><a href="https://huggingface.co/aubmindlab">Hugging Face</a></td>
+<td style="text-align: right;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">Arabic-BERT</td>
+<td style="text-align: right;">Arabic</td>
+<td style="text-align: right;">Cased</td>
+<td style="text-align: right;">OSCAR and Wikipedia</td>
+<td style="text-align: left;"><a href="https://github.com/alisafaya">Ali Safaya</a></td>
+<td style="text-align: right;"><a href="https://arxiv.org/abs/2007.13184">ArXiv</a></td>
+<td style="text-align: right;"><a href="https://github.com/alisafaya/Arabic-BERT">GitHub</a></td>
+<td style="text-align: right;"><a href="https://huggingface.co/asafaya/bert-base-arabic">Hugging Face</a></td>
+<td style="text-align: right;"><a href="https://raw.githubusercontent.com/alisafaya/Arabic-BERT/master/LICENSE">MIT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AraELECTRA</td>
+<td style="text-align: right;">Arabic</td>
+<td style="text-align: right;">Cased</td>
+<td style="text-align: right;">OSCAR, Wikipedia, 1.5B words Arabic Corpus, OSIAN, Assafir</td>
+<td style="text-align: left;"><a href="https://github.com/WissamAntoun">Wissam Antoun</a>, <a href="https://github.com/fadybaly">Fady Baly</a> and Hazem Hajj</td>
+<td style="text-align: right;"><a href="https://arxiv.org/abs/2012.15516">ArXiV</a></td>
+<td style="text-align: right;"><a href="https://github.com/aub-mind/arabert">GitHub</a></td>
+<td style="text-align: right;"><a href="https://huggingface.co/aubmindlab">Hugging Face</a></td>
+<td style="text-align: right;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">AraGPT2</td>
+<td style="text-align: right;">Arabic</td>
+<td style="text-align: right;">Cased</td>
+<td style="text-align: right;">OSCAR, Wikipedia, 1.5B words Arabic Corpus, OSIAN, Assafir</td>
+<td style="text-align: left;"><a href="https://github.com/WissamAntoun">Wissam Antoun</a>, <a href="https://github.com/fadybaly">Fady Baly</a> and Hazem Hajj</td>
+<td style="text-align: right;"><a href="https://arxiv.org/abs/2012.15520">ArXiv</a></td>
+<td style="text-align: right;"><a href="https://github.com/aub-mind/arabert">GitHub</a></td>
+<td style="text-align: right;"><a href="https://huggingface.co/aubmindlab">Hugging Face</a></td>
+<td style="text-align: right;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">CamemBERT</td>
+<td style="text-align: right;">French</td>
+<td style="text-align: right;">Cased</td>
+<td style="text-align: right;">OSCAR</td>
+<td style="text-align: left;"><a href="https://github.com/louismartin">Louis Martin</a>, <a href="https://benjamin-mlr.github.io">Benjamin Muller</a>, <a href="https://pjortiz.com">Pedro Javier Ortiz Suárez</a>, <a href="https://github.com/YoannDupont">Yoann Dupont</a>, <a href="https://cv.archives-ouvertes.fr/laurentromary">Laurent Romary</a>, <a href="http://alpage.inria.fr/~clerger/">Éric Villemonte de la Clergerie</a>, <a href="http://pauillac.inria.fr/~seddah/">Djamé Seddah</a> and <a href="http://alpage.inria.fr/~sagot/">Benoît Sagot</a></td>
+<td style="text-align: right;"><a href="https://www.aclweb.org/anthology/2020.acl-main.645/">ACL 2020</a></td>
+<td style="text-align: right;"><a href="https://camembert-model.fr">camembert-model.fr</a></td>
+<td style="text-align: right;"><a href="https://dl.fbaipublicfiles.com/fairseq/models/camembert-base.tar.gz">camembert-base.tar.gz</a></td>
+<td style="text-align: right;"><a href="/files/licenses/LICENSE_CamemBERT">MIT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">CamemBERT</td>
+<td style="text-align: right;">French</td>
+<td style="text-align: right;">Cased</td>
+<td style="text-align: right;">Subsample of OSCAR (4 GB of text)</td>
+<td style="text-align: left;"><a href="https://github.com/louismartin">Louis Martin</a>, <a href="https://benjamin-mlr.github.io">Benjamin Muller</a>, <a href="https://pjortiz.com">Pedro Javier Ortiz Suárez</a>, <a href="https://github.com/YoannDupont">Yoann Dupont</a>, <a href="https://cv.archives-ouvertes.fr/laurentromary">Laurent Romary</a>, <a href="http://alpage.inria.fr/~clerger/">Éric Villemonte de la Clergerie</a>, <a href="http://pauillac.inria.fr/~seddah/">Djamé Seddah</a> and <a href="http://alpage.inria.fr/~sagot/">Benoît Sagot</a></td>
+<td style="text-align: right;"><a href="https://www.aclweb.org/anthology/2020.acl-main.645/">ACL 2020</a></td>
+<td style="text-align: right;"><a href="https://camembert-model.fr">camembert-model.fr</a></td>
+<td style="text-align: right;"><a href="https://dl.fbaipublicfiles.com/fairseq/models/camembert-base-oscar-4gb.tar.gz">camembert-base-oscar-4gb.tar.gz</a></td>
+<td style="text-align: right;"><a href="/files/licenses/LICENSE_CamemBERT">MIT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">LePetit</td>
+<td style="text-align: right;">French</td>
+<td style="text-align: right;">Cased</td>
+<td style="text-align: right;">Subsample of OSCAR (2 GB of text)</td>
+<td style="text-align: left;">Vincent Micheli, Martin d'Hoffschmidt, Quentin Heinrich</td>
+<td style="text-align: right;"><a href="https://medium.com/illuin/lepetit-a-pre-training-efficient-and-lightning-fast-french-language-model-96495ad726b3">Medium blog</a></td>
+<td style="text-align: right;"><a href="https://www.illuin.tech">illuin.tech</a></td>
+<td style="text-align: right;"><a href="https://huggingface.co/illuin/lepetit">Hugging Face</a></td>
+<td style="text-align: right;">MIT</td>
+</tr>
+<tr>
+<td style="text-align: left;">GigaBERT</td>
+<td style="text-align: right;">Arabic</td>
+<td style="text-align: right;">Cased and Uncased</td>
+<td style="text-align: right;">OSCAR, Wikipedia, Gigaword</td>
+<td style="text-align: left;">Wuwei Lan, Yang Chen, Wei Xu, Alan Ritter</td>
+<td style="text-align: right;"><a href="https://www.aclweb.org/anthology/2020.emnlp-main.382/">EMNLP 2020</a></td>
+<td style="text-align: right;"><a href="https://github.com/lanwuwei/GigaBERT">GitHub</a></td>
+<td style="text-align: right;"><a href="https://huggingface.co/lanwuwei/GigaBERT-v3-Arabic-and-English">Hugging Face</a></td>
+<td style="text-align: right;">MIT</td>
+</tr>
+<tr>
+<td style="text-align: left;">ELECTRA</td>
+<td style="text-align: right;">Norwegian</td>
+<td style="text-align: right;">Cased</td>
+<td style="text-align: right;">OSCAR and OPUS</td>
+<td style="text-align: left;"><a href="https://huggingface.co/ViktorAlm">Viktor Alm</a></td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;"><a href="https://huggingface.co/ViktorAlm/electra-base-norwegian-uncased-discriminator">Hugging Face</a></td>
+<td style="text-align: right;"><a href="https://huggingface.co/ViktorAlm/electra-base-norwegian-uncased-discriminator">Hugging Face</a></td>
+<td style="text-align: right;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">BERT</td>
+<td style="text-align: right;">Romanian</td>
+<td style="text-align: right;">Cased</td>
+<td style="text-align: right;">OSCAR, Wikipedia and OPUS</td>
+<td style="text-align: left;"><a href="https://github.com/dumitrescustefan">Dumitrescu Stefan</a> and <a href="https://github.com/avramandrei">Andrei Avram</a></td>
+<td style="text-align: right;">SOON</td>
+<td style="text-align: right;"><a href="https://github.com/dumitrescustefan/Romanian-Transformers">GitHub</a></td>
+<td style="text-align: right;"><a href="https://huggingface.co/dumitrescustefan/bert-base-romanian-cased-v1#list-files">Hugging Face</a></td>
+<td style="text-align: right;"><a href="/files/licenses/LICENSE_Romanian">MIT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">BERT</td>
+<td style="text-align: right;">Romanian</td>
+<td style="text-align: right;">Uncased</td>
+<td style="text-align: right;">OSCAR, Wikipedia and OPUS</td>
+<td style="text-align: left;"><a href="https://github.com/dumitrescustefan">Dumitrescu Stefan</a> and <a href="https://github.com/avramandrei">Andrei Avram</a></td>
+<td style="text-align: right;">SOON</td>
+<td style="text-align: right;"><a href="https://github.com/dumitrescustefan/Romanian-Transformers">GitHub</a></td>
+<td style="text-align: right;"><a href="https://huggingface.co/dumitrescustefan/bert-base-romanian-uncased-v1#list-files">Hugging Face</a></td>
+<td style="text-align: right;"><a href="/files/licenses/LICENSE_Romanian">MIT</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">RoBERTa</td>
+<td style="text-align: right;">Sinhala</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">OSCAR</td>
+<td style="text-align: left;"><a href="https://huggingface.co/keshan">Keshan Sodimana</a></td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;"><a href="https://huggingface.co/keshan/SinhalaBERTo">Hugging Face</a></td>
+<td style="text-align: right;"><a href="https://huggingface.co/keshan/SinhalaBERTo">Hugging Face</a></td>
+<td style="text-align: right;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">BERT</td>
+<td style="text-align: right;">Turkish</td>
+<td style="text-align: right;">Cased and Uncased</td>
+<td style="text-align: right;">OSCAR, Wikipedia and OPUS</td>
+<td style="text-align: left;"><a href="https://github.com/stefan-it">Stefan Schweter</a></td>
+<td style="text-align: right;"><a href="https://doi.org/10.5281/zenodo.3770924">Zenodo</a></td>
+<td style="text-align: right;"><a href="https://github.com/stefan-it/turkish-bert">GitHub</a></td>
+<td style="text-align: right;"><a href="https://huggingface.co/models?search=dbmdz%2Fbert-base-turkish">Hugging Face</a></td>
+<td style="text-align: right;">MIT</td>
+</tr>
+<tr>
+<td style="text-align: left;">ELECTRA</td>
+<td style="text-align: right;">Turkish</td>
+<td style="text-align: right;">Cased</td>
+<td style="text-align: right;">OSCAR, Wikipedia and OPUS</td>
+<td style="text-align: left;"><a href="https://github.com/stefan-it">Stefan Schweter</a></td>
+<td style="text-align: right;"><a href="https://doi.org/10.5281/zenodo.3770924">Zenodo</a></td>
+<td style="text-align: right;"><a href="https://github.com/stefan-it/turkish-bert">GitHub</a></td>
+<td style="text-align: right;"><a href="https://huggingface.co/models?search=dbmdz%2Felectra-base-turkish">Hugging Face</a></td>
+<td style="text-align: right;">MIT</td>
+</tr>
+<tr>
+<td style="text-align: left;">XLMIndic</td>
+<td style="text-align: right;">Hindi, Bengali, Gujarati, Panjabi, Marathi, Oriya, Assamese, Sinhala, Nepali, Bihari, Bishnupriya, Maithili, Goan Konkani, Sanskrit</td>
+<td style="text-align: right;">Cased</td>
+<td style="text-align: right;">OSCAR</td>
+<td style="text-align: left;"><a href="https://github.com/ibraheem-moosa">Ibraheem Muhammad Moosa</a>, <a href="https://github.com/mandelbrot-walker">Mahmud Shimul</a> and Ashfia Binte Habib</td>
+<td style="text-align: right;"><a href="https://arxiv.org/abs/2201.12501">Arxiv</a></td>
+<td style="text-align: right;"><a href="https://github.com/ibraheem-moosa/XLM-Indic">GitHub</a></td>
+<td style="text-align: right;"><a href="https://huggingface.co/ibraheemmoosa/xlmindic-base-uniscript">Hugging Face</a></td>
+<td style="text-align: right;">MIT</td>
+</tr>
+</tbody>
+</table>
+<p>If you have trained a model using the OSCAR corpus and would like to have it featured here, please open a pull request in our <a href="https://github.com/pjox/oscar-website">GitHub repo</a>. Help us grow the community!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../mOSCAR/" class="md-footer__link md-footer__link--prev" aria-label="Previous: mOSCAR">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                mOSCAR
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../oscar-2109/" class="md-footer__link md-footer__link--next" aria-label="Next: OSCAR 21.09">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                OSCAR 21.09
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/oscarnlp" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.com/invite/4JNg9FTar4" target="_blank" rel="noopener" title="discord.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+    
+    
+      
+    
+    
+    
+      
+      
+    
+    <a href="https://mastodon.social/@oscarproj" target="_blank" rel="noopener me" title="mastodon.social" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.filesize.js"></script>
+      
+        <script src="../../javascripts/tablesort.js"></script>
+      
+    
+  </body>
+</html>
