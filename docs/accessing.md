@@ -1,45 +1,6 @@
 # Getting access to OSCAR
 
-There are two ways of accessing OSCAR: through [Huma-Num](https://www.huma-num.fr/), or through [HuggingFace](https://huggingface.co/).
-Depending on your status, you might not have the choice.
-
-|              | Research/Academic  | Individual               |
-|--------------|:--------------------:|:--------------------------:|
-| Huma-Num     | :heavy_check_mark: | :heavy_multiplication_x: |
-| Hugging-Face | :heavy_check_mark: | :heavy_check_mark:       |
-
-=== "Huma-Num"
-
-    You can apply for an access request by sending us an email!
-
-    !!! warning
-        Carefully respect the following instructions, as incorrect submissions might significantly delay your access.
-
-    !!! danger
-        Do not create an account by yourselves, as it could delay you access by weeks! We will create an account for you.
-        
-    Send us an email at **contact at oscar-project.org**, with **OSCAR Access Request** as the title, and the following (completed) as the body:
-
-    !!! warning
-        Please send your email using your institutional/academic address when possible. Otherwise, your access might be delayed/refused.
-        
-    ```
-    - First name:
-    - Last name:
-    - Affiliation:
-    - Contact details:
-    - Corpus version: 
-    - Languages:
-
-    + a short description of your usecase.
-    ```
-
-    !!! note
-        Access requests can take **some days** to be answered, sometimes more.
-
-        We post updates on our [Discord](https://discord.com/invite/4JNg9FTar4) server on exceptional delays, and you can always contact us there to inquire about yours.
-    
-    After some time, you should get an email back from us with access instructions!
+To acces the dataset please go to [HuggingFace](https://huggingface.co/).
 
 === "HuggingFace"
 
@@ -49,8 +10,8 @@ Depending on your status, you might not have the choice.
 
     1. Create an account on [HuggingFace](https://huggingface.co/).
     2. Create a [user access token](https://huggingface.co/docs/hub/security-tokens). 
-    2. Open the OSCAR Team [page](https://huggingface.co/oscar-corpus).
-    3. Open your corpus of choice. Instructions should be in the corpus page.
+    3. Open the OSCAR Team [page](https://huggingface.co/oscar-corpus).
+    4. Open your corpus of choice. Instructions should be in the corpus page.
 
     After all of this, you should be able to easily use OSCAR data with the `datasets` library :slight_smile: :
 
